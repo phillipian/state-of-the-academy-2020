@@ -1,5 +1,5 @@
 let colorsArray = {
-    "general": ["#234F84","#0f64a0","#0087bf","#54a5cf","#86c6e3","#b4dbea","#e4f2f7"],
+    "general": ["#235085","#1065a1","#0b88c0","#22a7d3","#4ac2e5","#8dd1e9","#c6e6f3","#e3f4fb"],
     "politics": ["#660066", "#7a2475", "#935d96", "#a880ac", "#bd98ba", "#dac7d8"],
     "wellness": ["#6cb643", "#99c872", "#b2d593", "#cae3cb"],
     "sex": ["#c6307c", "#d5739d", "#e1aac0", "#f0d3dc"],
@@ -9,7 +9,7 @@ let colorsArray = {
 
 sota.setColors(colorsArray);
 
-sota.setStyles(); // for custom sotaConfig; for default options, don't pass any params
+sota.setStyles("/fonts"); // for custom sotaConfig; for default options, don't pass any params
 
 sota.barChart({ selector: "#module-general-class-d3", dataFile: "data/general/class", totalResp: 1052, displayPercentage: true });
 
