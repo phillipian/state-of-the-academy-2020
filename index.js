@@ -9,13 +9,59 @@ let colorsArray = {
 
 sota.setColors(colorsArray);
 
-sota.setStyles("/fonts"); // for custom sotaConfig; for default options, don't pass any params
+sota.setStyles("/fonts"); // for custom sotaConfig; for default options, don't pass any params (other than font path)
 
-sota.barChart({ selector: "#module-general-class-d3", dataFile: "data/general/class", totalResp: 1052, displayPercentage: true });
+// GENERAL
 
-sota.barChart({ selector: "#module-general-ethnicity-d3", dataFile: "data/general/ethnicity", totalResp: 1052, maxVal: true, displayPercentage: true });
+sota.barChart({ selector: "#module-general-class-d3", dataFile: "data/general/class", totalResp: 1041, displayPercentage: true });
 
-sota.stackedBarChart({ selector: "#module-general-legacy-income-d3", dataFile: "data/general/legacyXincome", labelStyle: "onBar", showLegend: true })
+sota.pieChart({ selector: "#module-general-boarding-d3", dataFile: "data/general/boarding"});
+
+sota.pieChart({ selector: "#module-general-from-d3", dataFile: "data/general/from"});
+
+"module-general-community-d3" //pie
+
+"module-general-parentsCollege-d3"  //stacked bar
+
+"module-general-legacy-d3"  //
+
+"module-general-sex-d3" //bar
+
+"module-general-gender-d3"  //bar
+
+"module-general-sexualOrientation-d3" //bar
+
+"module-general-sexOr-gender-d3"  //grouped bar
+
+"module-general-romantic-d3"  //bar
+
+"module-general-race-d3"  //column
+
+"module-general-ethnicity-d3" //bar
+
+"module-general-religion-d3"  //bar
+
+"module-general-learning-disability-d3" //pie
+
+"module-general-temperament-d3" //pie or column
+
+"module-general-varsity-d3" //pie
+
+"module-general-income-d3"  // pie
+
+"module-general-finAid-d3"  //column
+
+"module-general-socioeconomic-income-d3"  // several pies
+
+"module-general-legacy-income-d3" // stacked bar
+
+"module-general-varisty-income-d3"  //stacked bar
+
+"module-general-incarcerated-d3"  //pie
+
+// sota.stackedBarChart({ selector: "#module-general-legacy-income-d3", dataFile: "data/general/legacyXincome", labelStyle: "onBar", showLegend: true })
+
+
 // sota.pieChart({ selector: "#module-general-community-d3", dataFile: "data/community"});
 //
 // sota.lineGraph({ selector: "#module-discipline-time-d3", dataFile: "data/disc-time", inputIsPercentage: true, maxVal: 8 })
