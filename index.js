@@ -53,13 +53,12 @@ sota.pieChart({ selector: "#module-general-from-d3", dataFile: "data/general/fro
 
 "module-general-socioeconomic-income-d3"  // several pies
 
-"module-general-legacy-income-d3" // stacked bar
+sota.stackedBarChart({ selector: "#module-general-legacy-income-d3", dataFile: "data/general/legacyXincome", labelStyle: "onBar", showLegend: true })
 
 "module-general-varisty-income-d3"  //stacked bar
 
 "module-general-incarcerated-d3"  //pie
 
-// sota.stackedBarChart({ selector: "#module-general-legacy-income-d3", dataFile: "data/general/legacyXincome", labelStyle: "onBar", showLegend: true })
 
 
 // sota.pieChart({ selector: "#module-general-community-d3", dataFile: "data/community"});
