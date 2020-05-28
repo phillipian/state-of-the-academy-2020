@@ -1,3 +1,4 @@
-groups,Urban,Suburban,Rural
-Yes,40,107,27
-No,268,552,38
+group,Yes,No
+Urban,40,268
+Suburban,107,552
+Rural,27,38

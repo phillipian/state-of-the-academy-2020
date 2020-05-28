@@ -1,5 +1,9 @@
-groups,Allergies,Gluten free,Pescetarian,Religious,Vegan,Vegetarian,None,Other
-Daily,16,11,8,7,8,17,1,9
-Weekly,26,5,12,26,6,25,12,18
-Monthly,56,1,7,6,0,5,9,13
-Not applicable,33,1,1,2,0,1,714,17
+group,Daily,Weekly,Monthly,Not applicable
+Allergies,16,26,56,33
+Gluten free,11,5,1,1
+Pescetarian,8,12,7,1
+Religious,7,26,6,2
+Vegan,8,6,0,0
+Vegetarian,17,25,5,1
+None,1,12,9,714
+Other,9,18,13,17

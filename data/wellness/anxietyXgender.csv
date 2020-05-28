@@ -1,4 +1,3 @@
-groups,Man,Woman
-"Yes, before coming to Andover",32,50
-"Yes, after coming to Andover",32,81
-"No",424,401
+group,"Yes, before coming to Andover","Yes, after coming to Andover",No
+Man,32,32,424
+Woman,50,81,401

@@ -1,3 +1,8 @@
-group,"Conservative","Independent","Liberal","Libertarian","Socialist","Other","Unsure"
-Yes,126,106,256,24,22,9,118
-No,9,47,248,3,22,5,140
+group,Yes,No
+Conservative,126,9
+Independent,106,47
+Liberal,256,248
+Libertarian,24,3
+Socialist,22,22
+Other,9,5
+Unsure,118,140

@@ -1,3 +1,15 @@
-group,African American,East Asian,Ethnically Jewish,Hispanic,Latinx,Middle Eastern,Native American,North African,Pacific Islander,South Asian,Southeast Asian,Sub-Saharan African,West Indian/Caribbean,White
-Yes,40,189,39,52,40,21,6,1,7,40,62,13,18,410
-No,31,53,12,30,33,10,7,1,1,11,19,3,13,141
+group,Yes,No
+African American,40,31
+East Asian,189,53
+Ethnically Jewish,39,12
+Hispanic,52,30
+Latinx,40,33
+Middle Eastern,21,10
+Native American,6,7
+North African,1,1
+Pacific Islander,7,1
+South Asian,40,11
+Southeast Asian,62,19
+Sub-Saharan African,13,3
+West Indian/Caribbean,18,13
+White,410,141

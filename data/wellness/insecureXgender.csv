@@ -1,5 +1,3 @@
-groups,Man,Woman
-"Yes, always",29,133
-"Yes, regularly",58,173
-"Yes, sometimes",190,190
-"No",210,36
+group,"Yes, always","Yes, regularly","Yes, sometimes",No
+Man,29,58,190,210
+Woman,133,173,190,36

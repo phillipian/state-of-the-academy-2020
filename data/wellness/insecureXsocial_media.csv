@@ -1,5 +1,7 @@
-groups,5 hours or more,4 hours,3 hours,2 hours,1 hours,30 minutes or less
-"Yes, always",19,33,56,27,21,11
-"Yes, regularly",19,32,80,61,26,16
-"Yes, sometimes",30,33,106,11,57,45
-"No",7,21,57,76,52,33
+group,"Yes, always","Yes, regularly","Yes, sometimes",No
+5 hours or more,19,19,30,7
+4 hours,33,32,33,21
+3 hours,56,80,106,57
+2 hours,27,61,11,76
+1 hours,21,26,57,52
+30 minutes or less,11,16,45,33

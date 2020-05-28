@@ -1,3 +1,5 @@
-group,"1 year","2 years","3 years","4 years"
-Yes,129,47,33,22
-No,172,251,210,158
+group,Yes,No
+1 year,129,172
+2 years,47,251
+3 years,33,210
+4 years,22,158

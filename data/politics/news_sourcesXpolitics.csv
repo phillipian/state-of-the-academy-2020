@@ -1,15 +1,8 @@
-group,"Conservative","Independent","Liberal","Libertarian","Socialist","Other","Unsure"
-"BBC",40,40,144,10,22,7,72
-"Buzzfeed",17,21,99,6,6,3,62
-"CNN",72,86,286,16,25,8,127
-"Daily Mail",37,24,87,6,7,5,48
-"Fox News",90,36,32,10,3,5,46
-"NPR",26,39,148,4,23,3,29
-"The Boston Globe",33,36,89,6,6,3,41
-"The Chicago Tribune",9,7,19,2,4,2,5
-"The Los Angeles Times",12,8,33,1,4,2,22
-"The New York Times",95,116,362,19,38,11,168
-"The Wall Street Journal",72,57,154,10,15,8,63
-"The Washington Post",65,49,228,10,23,7,68
-"Not applicable (I don't read the news)",9,13,22,0,3,0,49
-"Other",10,11,42,6,8,3,27
+group,BBC,Buzzfeed,CNN,Daily Mail,Fox News,NPR,The Boston Globe,The Chicago Tribune,The Los Angeles Times,The New York Times,The Wall Street Journal,The Washington Post,Not applicable (I don't read the news),Other
+Conservative,40,17,72,37,90,26,33,9,12,95,72,65,9,10
+Independent,40,21,86,24,36,39,36,7,8,116,57,49,13,11
+Liberal,144,99,286,87,32,148,89,19,33,362,154,228,22,42
+Libertarian,10,6,16,6,10,4,6,2,1,19,10,10,0,6
+Socialist,22,6,25,7,3,23,6,4,4,38,15,23,3,8
+Other,7,3,8,5,5,3,3,2,2,11,8,7,0,3
+Unsure,72,62,127,48,46,29,41,5,22,168,63,68,49,27

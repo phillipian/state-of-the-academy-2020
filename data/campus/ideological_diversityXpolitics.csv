@@ -1,3 +1,8 @@
-group,Conservative,Independent,Liberal,Libertarian,Socialist,Other,Unsure
-Yes,50,77,246,6,24,6,162
-No,83,76,155,21,18,7,89
+group,Yes,No
+Conservative,50,83
+Independent,77,76
+Liberal,246,155
+Libertarian,6,21
+Socialist,24,18
+Other,6,7
+Unsure,162,89

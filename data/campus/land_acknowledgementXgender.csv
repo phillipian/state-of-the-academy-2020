@@ -1,4 +1,3 @@
-group,Man,Woman
-"Yes",158,315
-"In some circumstances",222,185
-"No",99,30
+group,Yes,In some circumstances,No
+Man,158,222,99
+Woman,315,185,30

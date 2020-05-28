@@ -1,9 +1,3 @@
-group,man,woman
-Asexual,0,6
-Bisexual,25,76
-Demisexual,0,8
-Heterosexual,441,383
-Homosexual,15,17
-Pansexual,5,9
-Other,0,0
-Unsure,6,36
+group,Asexual,Bisexual,Demisexual,Heterosexual,Homosexual,Pansexual,Other,Unsure
+man,0,25,0,441,15,5,0,6
+woman,6,76,8,383,17,9,0,36

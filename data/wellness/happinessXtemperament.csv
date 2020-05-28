@@ -1,3 +1,4 @@
-groups,Extrovert,Ambivert,Introvert
-Yes,177,526,192
-No,15,81,41
+group,Yes,No
+Extrovert,177,15
+Ambivert,526,81
+Introvert,192,41

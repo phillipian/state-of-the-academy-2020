@@ -1,4 +1,3 @@
-groups,Man,Woman
-Reddit,151,39
-TikTok,211,314
-VSCO,49,248
+group,Reddit,TikTok,VSCO
+Man,151,211,49
+Woman,39,314,248

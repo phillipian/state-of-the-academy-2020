@@ -1,8 +1,3 @@
-group,Man,Woman
-Conservative,90,44
-Independent,91,59
-Liberal,142,256
-Libertarian,16,11
-Socialist,22,21
-Other,9,4
-Unsure,119,137
+group,Conservative,Independent,Liberal,Libertarian,Socialist,Other,Unsure
+Man,90,91,142,16,22,9,119
+Woman,44,59,256,11,21,4,137
