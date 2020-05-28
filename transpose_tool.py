@@ -13,6 +13,7 @@ if __name__ == '__main__':
     subprocess.call('mkdir {}'.format(old_folder_path), shell=True)
     for file in os.listdir(path):
         if 'X' in file and '.csv' in file:
+            print('transposing file: {}'.format(file))
             temp = pd.read_csv(os.path.join(path, file), index_col=0)
             transposed = pd.DataFrame(temp.T)
             subprocess.call('mv {} {}'.format(os.path.join(path, file), old_folder_path), shell=True)

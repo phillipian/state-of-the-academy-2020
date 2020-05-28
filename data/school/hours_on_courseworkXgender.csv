@@ -1,11 +1,3 @@
-group,Man,Woman
-10 hours or more,4,2
-9 hours,2,4
-8 hours,3,15
-7 hours,15,22
-6 hours,39,81
-5 hours,82,150
-4 hours,157,158
-3 hours,122,80
-2 hours,50,17
-1 hour or less,9,2
+group,10 hours or more,9 hours,8 hours,7 hours,6 hours,5 hours,4 hours,3 hours,2 hours,1 hour or less
+Man,4,2,3,15,39,82,157,122,50,9
+Woman,2,4,15,22,81,150,158,80,17,2

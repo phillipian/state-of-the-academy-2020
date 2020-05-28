@@ -1,4 +1,4 @@
-group,Extrovert,Ambivert,Introvert
-"Yes, positively",162,468,172
-"Yes, negatively",12,57,28,
-"No",18,74,32
+group,"Yes, positively","Yes, negatively",No
+Extrovert,162,12,18
+Ambivert,468,57,74
+Introvert,172,28,32

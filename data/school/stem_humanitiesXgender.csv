@@ -1,4 +1,3 @@
-group,Man,Woman
-STEM,243,213
-Humanities,132,204
-No Preference,108,114
+group,STEM,Humanities,No Preference
+Man,243,132,108
+Woman,213,204,114
