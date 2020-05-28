@@ -23,45 +23,45 @@ sota.pieChart({ selector: "#module-general-boarding-d3", dataFile: "data/general
 
 sota.pieChart({ selector: "#module-general-from-d3", dataFile: "data/general/from"});
 
-"module-general-community-d3" //pie
+sota.pieChart({ selector: "#module-general-community-d3", dataFile: "data/general/community_type"});
 
-"module-general-parentsCollege-d3"  //stacked bar
+sota.barChart({ selector: "#module-general-parentsCollege-d3", dataFile: "data/general/parents_college", totalResp: 1041, displayPercentage: true });
 
-"module-general-legacy-d3"  //
+sota.pieChart({ selector: "#module-general-legacy-d3", dataFile: "data/general/andover_legacy"});
 
-"module-general-sex-d3" //bar
+sota.barChart({ selector: "#module-general-sex-d3", dataFile: "data/general/sex", totalResp: 1041, displayPercentage: true });
 
-"module-general-gender-d3"  //bar
+sota.barChart({ selector: "#module-general-gender-d3", dataFile: "data/general/gender", totalResp: 1041, displayPercentage: true });
 
-"module-general-sexualOrientation-d3" //bar
+sota.barChart({ selector: "#module-general-sexualOrientation-d3", dataFile: "data/general/sexual_orientation", totalResp: 1041, displayPercentage: true });
 
-"module-general-sexOr-gender-d3"  //grouped bar
+sota.stackedBarChart({ selector: "#module-general-sexOr-gender-d3", dataFile: "data/general/sexual_orientationXgender", labelStyle: "onBar", showLegend: true })
 
-"module-general-romantic-d3"  //bar
+sota.barChart({ selector: "#module-general-romantic-d3", dataFile: "data/general/romantic_orientation", totalResp: 1041, displayPercentage: true });
 
-"module-general-race-d3"  //column
+// sota.columnChart({ selector: "#module-general-race-d3", dataFile: "data/general/race", totalResp: 1042 }) // need to calculate total or smthng
 
-"module-general-ethnicity-d3" //bar
+// sota.barChart({ selector: "#module-general-ethnicity-d3", dataFile: "data/general/ethnicity", totalResp: 1041, displayPercentage: true }); //calculate total
 
-"module-general-religion-d3"  //bar
+// sota.barChart({ selector: "#module-general-religion-d3", dataFile: "data/general/religion", totalResp: 1041, displayPercentage: true }); //calculate total
 
-"module-general-learning-disability-d3" //pie
+sota.pieChart({ selector: "#module-general-learning-disability-d3", dataFile: "data/general/learning_disability"});
 
-"module-general-temperament-d3" //pie or column
+sota.columnChart({ selector: "#module-general-temperament-d3", dataFile: "data/general/temperament", totalResp: 1042 })
 
-"module-general-varsity-d3" //pie
+sota.pieChart({ selector: "#module-general-varsity-d3", dataFile: "data/general/varsity"});
 
-"module-general-income-d3"  // pie
+sota.pieChart({ selector: "#module-general-income-d3", dataFile: "data/general/income"});
 
-"module-general-finAid-d3"  //column
+// sota.columnChart({ selector: "#module-general-finAid-d3", dataFile: "data/general/financial_aid", totalResp: 1042 }) // need to calculate total or smthng
 
-"module-general-socioeconomic-income-d3"  // several pies
+// "module-general-socioeconomic-income-d3"  // several pies
 
 sota.stackedBarChart({ selector: "#module-general-legacy-income-d3", dataFile: "data/general/legacyXincome", labelStyle: "onBar", showLegend: true })
 
-"module-general-varisty-income-d3"  //stacked bar
+sota.stackedBarChart({ selector: "#module-general-varisty-income-d3", dataFile: "data/general/varsityXincome", labelStyle: "onBar", showLegend: true })
 
-"module-general-incarcerated-d3"  //pie
+sota.pieChart({ selector: "#module-general-incarcerated-d3", dataFile: "data/general/incarcerated"});
 
 // sota.pieChart({ selector: "#module-general-community-d3", dataFile: "data/community"});
 //
