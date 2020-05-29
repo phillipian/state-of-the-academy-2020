@@ -1,0 +1,126 @@
+body{
+    padding-top: 64px;
+}
+
+.sota-navbar{
+    color: #fff;
+}
+
+.navbar-logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo a{
+    height: 50%!important;
+}
+
+.navbar-logo img{
+    height: 100%;
+}
+
+.sota-navbar .sz-navbar-item{
+    height: 64px;
+    flex-grow: 0;
+    margin-right: 0;
+}
+
+.sz-navbar-item{ /* lower specificity */
+    background-color: #000;
+}
+
+@media (min-width: 600px){
+    .sota-navbar .sz-navbar-items{
+        margin-left: auto;
+    }
+
+    .sz-navbar-item.navbar-sota{
+        display: none;
+    }
+
+    .navbar-logo{
+        margin-right: 32px;
+    }
+}
+
+@media (max-width: 600px){
+    .sota-navbar .sz-navbar-items{
+        background-color: #000;
+        z-index: 4;
+        height: 100vh;
+        box-sizing: border-box;
+        justify-content: flex-start;
+    }
+
+    .sota-navbar div.sz-navbar-item{
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .sz-navbar-inner > .navbar-sota{
+        display: none;
+    }
+}
+
+.sota-navbar .sz-navbar-item a, .sota-navbar .sz-navbar-item span{
+    line-height: 64px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    height: 64px;
+    padding: 0 8px;
+    display: block;
+}
+
+section:before{
+    content: "";
+    z-index: 4;
+    position: sticky;
+    top: 64px;
+    width: 100%;
+    height: 8px;
+    background-color: inherit;
+    display: block;
+}
+
+.sec-general{
+    background-color: #235085;
+}
+
+.sec-politics{
+    background-color: #2C3278;
+}
+
+.sec-campus{
+    background-color: #762670;
+}
+
+.sec-school{
+    background-color: #812F54;
+}
+
+.sec-discipline{
+    background-color: #B53432;
+}
+
+.sec-sex{
+    background-color: #C7327E;
+}
+
+.sec-drugs{
+    background-color: #E77929;
+}
+
+.sec-wellness{
+    background-color: #6CB645;
+}
+
+.sec-covid{
+    background-color: #008244;
+}
+
+.sec-community{
+    background-color: #089181;
+}
