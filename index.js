@@ -67,7 +67,7 @@ sota.pieChart({ selector: "#module-general-incarcerated-d3", dataFile: "data/gen
 // POLITICS AND WORLDVIEW
 sota.pieChart({ selector: "#module-politics-affiliation-d3", dataFile: "data/politics/political_affiliation"});
 
-sota.barChart({ selector: "#module-politics-news_sources-d3", dataFile: "data/politics/news_sources", totalResp: 1032, displayPercentage: true });
+sota.columnChart({ selector: "#module-politics-news_sources-d3", dataFile: "data/politics/news_sources", totalResp: 1032, displayPercentage: true });
 
 sota.pieChart({ selector: "#module-politics-affirmative_action-d3", dataFile: "data/politics/affirmative_action"});
 
@@ -97,27 +97,28 @@ sota.stackedBarChart({ selector: "#module-politics-politicsXleadership-d3", data
 
 sota.pieChart({ selector: "#module-politics-informed-d3", dataFile: "data/politics/informed"});
 
-sota.groupedBarChart({ selector: "#module-politics-news_sourcesXpolitics-d3", dataFile: "data/politics/politics_old/news_sourcesXpolitics", totalResp: {"BBC":335,"Buzzfeed":214,"CNN":620,"Daily Mail":214,"Fox News":222,"NPR":272,"The Boston Globe":214,"The Chicago Tribune":48,"The Los Angeles Times":82,"The New York Times":809,"The Wall Street Journal":379,"The Washington Post":450,"Not applicable (I don't read the news)":96,"Other":107} });
+// sota.stackedBarChart({ selector: "#module-politics-news_sourcesXpolitics-d3", dataFile: "data/politics/news_sourcesXpolitics", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+sota.stackedBarChart({ selector: "#module-politics-politicsXnews_sources-d3", dataFile: "data/politics/politics_old/news_sourcesXpolitics", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
-module-politics-news_sourcesXpolitics-d3
+sota.columnChart({ selector: "#module-politics-top_5_news_sources-d3", dataFile: "data/politics/top_5_news_sources", totalResp: 1037 });
 
-module-politics-news_sources-d3
+// module-politics-news_sources-d3 // need total numbers
 
-module-politics-affirmative_actionXclass-d3
+sota.stackedColumnChart({ selector: "#module-politics-affirmative_actionXclass-d3", dataFile: "data/politics/affirmative_actionXclass", totalResp: 1023 })
 
-module-politics-affirmative_actionXrace-d3
+sota.stackedColumnChart({ selector: "#module-politics-affirmative_actionXrace-d3", dataFile: "data/politics/affirmative_actionXrace", totalResp: 1012 })
 
-module-politics-reverse_racismXclass-d3
+sota.stackedColumnChart({ selector: "#module-politics-reverse_racismXclass-d3", dataFile: "data/politics/reverse_racismXclass", totalResp: 1026 })
 
-module-politics-womens_rightsXfeminist-d3
+sota.stackedBarChart({ selector: "#module-politics-womens_rightsXfeminist-d3", dataFile: "data/politics/womens_rightsXfeminist", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
-module-politics-feministXgender-d3
+sota.stackedBarChart({ selector: "#module-politics-feministXgender-d3", dataFile: "data/politics/feministXgender", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
-module-politics-abortionXgender-d3
+sota.stackedColumnChart({ selector: "#module-politics-abortionXgender-d3", dataFile: "data/politics/abortionXgender", totalResp: 1015 })
 
-module-politics-prison_reformXincarceration-d3
+sota.stackedBarChart({ selector: "#module-politics-prison_reformXincarceration-d3", dataFile: "data/politics/prison_reformXincarceration", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
-module-politics-firearmXcommunity-d3
+sota.stackedColumnChart({ selector: "#module-politics-firearmsXcommunity-d3", dataFile: "data/politics/firearmsXcommunity", totalResp: 1032 })
 
 // sota.pieChart({ selector: "#module-general-community-d3", dataFile: "data/community"});
 //
