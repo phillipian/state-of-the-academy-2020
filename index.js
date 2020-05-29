@@ -64,6 +64,9 @@ sota.stackedBarChart({ selector: "#module-general-varisty-income-d3", dataFile: 
 
 sota.pieChart({ selector: "#module-general-incarcerated-d3", dataFile: "data/general/incarcerated"});
 
+// POLITICS AND WORLDVIEW
+
+
 // sota.pieChart({ selector: "#module-general-community-d3", dataFile: "data/community"});
 //
 // sota.lineGraph({ selector: "#module-discipline-time-d3", dataFile: "data/disc-time", inputIsPercentage: true, maxVal: 8 })
