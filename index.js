@@ -34,7 +34,7 @@ sota.barChart({ selector: "#module-general-gender-d3", dataFile: "data/general/g
 
 sota.barChart({ selector: "#module-general-sexualOrientation-d3", dataFile: "data/general/sexual_orientation", totalResp: 1041, displayPercentage: true });
 
-sota.stackedBarChart({ selector: "#module-general-sexOr-gender-d3", dataFile: "data/general/sexual_orientationXgender", labelStyle: "onBar", showLegend: true })
+sota.stackedBarChart({ selector: "#module-general-sexOr-gender-d3", dataFile: "data/general/sexual_orientationXgender", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true })
 
 sota.barChart({ selector: "#module-general-romantic-d3", dataFile: "data/general/romantic_orientation", totalResp: 1041, displayPercentage: true });
 
@@ -58,9 +58,9 @@ sota.columnChart({ selector: "#module-general-finAid-d3", dataFile: "data/genera
 
 // "module-general-socioeconomic-income-d3"  // several pies
 
-sota.stackedBarChart({ selector: "#module-general-legacy-income-d3", dataFile: "data/general/legacyXincome", labelStyle: "onBar", showLegend: true })
+sota.stackedBarChart({ selector: "#module-general-legacy-income-d3", dataFile: "data/general/legacyXincome", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true })
 
-sota.stackedBarChart({ selector: "#module-general-varisty-income-d3", dataFile: "data/general/varsityXincome", labelStyle: "onBar", showLegend: true })
+sota.stackedBarChart({ selector: "#module-general-varisty-income-d3", dataFile: "data/general/varsityXincome", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true })
 
 sota.pieChart({ selector: "#module-general-incarcerated-d3", dataFile: "data/general/incarcerated"});
 
@@ -89,15 +89,15 @@ sota.stackedBarChart({ selector: "#module-politics-abortion-d3", dataFile: "data
 
 sota.pieChart({ selector: "#module-politics-local_politics-d3", dataFile: "data/politics/local_politics"});
 
-sota.stackedBarChart({ selector: "#module-politics-censorshipXpolitics-d3", dataFile: "data/politics/censorshipXpolitics", labelStyle: "onBar", showLegend: true });
+sota.stackedBarChart({ selector: "#module-politics-censorshipXpolitics-d3", dataFile: "data/politics/censorshipXpolitics", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
-sota.groupedBarChart({ selector: "#module-politics-politicsXgender-d3", dataFile: "data/politics/politics_old/politicsXgender", totalResp: {Man:489,Woman:532} });
+sota.stackedBarChart({ selector: "#module-politics-politicsXgender-d3", dataFile: "data/politics/politicsXgender", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
-sota.stackedBarChart({ selector: "#module-politics-politicsXleadership-d3", dataFile: "data/politics/politicsXleadership", labelStyle: "onBar", showLegend: true });
+sota.stackedBarChart({ selector: "#module-politics-politicsXleadership-d3", dataFile: "data/politics/politicsXleadership", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
 sota.pieChart({ selector: "#module-politics-informed-d3", dataFile: "data/politics/informed"});
 
-module-politics-informed-d3
+sota.groupedBarChart({ selector: "#module-politics-news_sourcesXpolitics-d3", dataFile: "data/politics/politics_old/news_sourcesXpolitics", totalResp: {"BBC":335,"Buzzfeed":214,"CNN":620,"Daily Mail":214,"Fox News":222,"NPR":272,"The Boston Globe":214,"The Chicago Tribune":48,"The Los Angeles Times":82,"The New York Times":809,"The Wall Street Journal":379,"The Washington Post":450,"Not applicable (I don't read the news)":96,"Other":107} });
 
 module-politics-news_sourcesXpolitics-d3
 
