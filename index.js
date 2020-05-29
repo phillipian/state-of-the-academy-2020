@@ -16,7 +16,6 @@ sota.setColors(colorsArray);
 sota.setStyles("/fonts"); // for custom sotaConfig; for default options, don't pass any params (other than font path)
 
 // GENERAL
-
 sota.barChart({ selector: "#module-general-class-d3", dataFile: "data/general/class", totalResp: 1041, displayPercentage: true });
 
 sota.pieChart({ selector: "#module-general-boarding-d3", dataFile: "data/general/boarding"});
@@ -39,11 +38,12 @@ sota.stackedBarChart({ selector: "#module-general-sexOr-gender-d3", dataFile: "d
 
 sota.barChart({ selector: "#module-general-romantic-d3", dataFile: "data/general/romantic_orientation", totalResp: 1041, displayPercentage: true });
 
-// sota.columnChart({ selector: "#module-general-race-d3", dataFile: "data/general/race", totalResp: 1042 }) // need to calculate total or smthng
+sota.columnChart({ selector: "#module-general-race-d3", dataFile: "data/general/race", totalResp: 1029 });
 
-// sota.barChart({ selector: "#module-general-ethnicity-d3", dataFile: "data/general/ethnicity", totalResp: 1041, displayPercentage: true }); //calculate total
+// tick frequency too high
+sota.barChart({ selector: "#module-general-ethnicity-d3", dataFile: "data/general/ethnicity", totalResp: 1039, displayPercentage: true });
 
-// sota.barChart({ selector: "#module-general-religion-d3", dataFile: "data/general/religion", totalResp: 1041, displayPercentage: true }); //calculate total
+sota.barChart({ selector: "#module-general-religion-d3", dataFile: "data/general/religion", totalResp: 1038, displayPercentage: true });
 
 sota.pieChart({ selector: "#module-general-learning-disability-d3", dataFile: "data/general/learning_disability"});
 
@@ -53,7 +53,8 @@ sota.pieChart({ selector: "#module-general-varsity-d3", dataFile: "data/general/
 
 sota.pieChart({ selector: "#module-general-income-d3", dataFile: "data/general/income"});
 
-// sota.columnChart({ selector: "#module-general-finAid-d3", dataFile: "data/general/financial_aid", totalResp: 1042 }) // need to calculate total or smthng
+// label goes off the page
+sota.columnChart({ selector: "#module-general-finAid-d3", dataFile: "data/general/financial_aid", totalResp: 1037 });
 
 // "module-general-socioeconomic-income-d3"  // several pies
 
