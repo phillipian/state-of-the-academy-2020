@@ -1,4 +1,2 @@
-label,value
-Extrovert,193
-Ambivert,614
-Introvert,235
+group,Extrovert,Ambivert,Introvert
+temperament,193,614,235

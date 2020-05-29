@@ -47,7 +47,7 @@ sota.barChart({ selector: "#module-general-religion-d3", dataFile: "data/general
 
 sota.pieChart({ selector: "#module-general-learning-disability-d3", dataFile: "data/general/learning_disability"});
 
-sota.columnChart({ selector: "#module-general-temperament-d3", dataFile: "data/general/temperament", totalResp: 1042 })
+sota.stackedBarChart({ selector: "#module-general-temperament-d3", dataFile: "data/general/temperament", totalResp: 1042, displayPercentage: true })
 
 sota.pieChart({ selector: "#module-general-varsity-d3", dataFile: "data/general/varsity"});
 
@@ -65,7 +65,59 @@ sota.stackedBarChart({ selector: "#module-general-varisty-income-d3", dataFile: 
 sota.pieChart({ selector: "#module-general-incarcerated-d3", dataFile: "data/general/incarcerated"});
 
 // POLITICS AND WORLDVIEW
+sota.pieChart({ selector: "#module-politics-affiliation-d3", dataFile: "data/politics/political_affiliation"});
 
+sota.barChart({ selector: "#module-politics-news_sources-d3", dataFile: "data/politics/news_sources", totalResp: 1032, displayPercentage: true });
+
+sota.pieChart({ selector: "#module-politics-affirmative_action-d3", dataFile: "data/politics/affirmative_action"});
+
+sota.stackedBarChart({ selector: "#module-politics-reverse_racism-d3", dataFile: "data/politics/reverse_racism", labelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-politics-blm-d3", dataFile: "data/politics/blm"});
+
+sota.stackedBarChart({ selector: "#module-politics-womens_rights-d3", dataFile: "data/politics/womens_rights", labelStyle: "onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-politics-feminist-d3", dataFile: "data/politics/feminist", labelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-politics-climate_change-d3", dataFile: "data/politics/climate_change"});
+
+sota.pieChart({ selector: "#module-politics-immigration-d3", dataFile: "data/politics/immigration"});
+
+sota.pieChart({ selector: "#module-politics-border_security-d3", dataFile: "data/politics/border_security"});
+
+sota.stackedBarChart({ selector: "#module-politics-abortion-d3", dataFile: "data/politics/abortion", labelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-politics-local_politics-d3", dataFile: "data/politics/local_politics"});
+
+sota.stackedBarChart({ selector: "#module-politics-censorshipXpolitics-d3", dataFile: "data/politics/censorshipXpolitics", labelStyle: "onBar", showLegend: true });
+
+sota.groupedBarChart({ selector: "#module-politics-politicsXgender-d3", dataFile: "data/politics/politics_old/politicsXgender", totalResp: {Man:489,Woman:532} });
+
+sota.stackedBarChart({ selector: "#module-politics-politicsXleadership-d3", dataFile: "data/politics/politicsXleadership", labelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-politics-informed-d3", dataFile: "data/politics/informed"});
+
+module-politics-informed-d3
+
+module-politics-news_sourcesXpolitics-d3
+
+module-politics-news_sources-d3
+
+module-politics-affirmative_actionXclass-d3
+
+module-politics-affirmative_actionXrace-d3
+
+module-politics-reverse_racismXclass-d3
+
+module-politics-womens_rightsXfeminist-d3
+
+module-politics-feministXgender-d3
+
+module-politics-abortionXgender-d3
+
+module-politics-prison_reformXincarceration-d3
+
+module-politics-firearmXcommunity-d3
 
 // sota.pieChart({ selector: "#module-general-community-d3", dataFile: "data/community"});
 //

@@ -1,4 +1,2 @@
-label,value
-"Yes, always",756
-"Yes, only in some circumstances",238
-"No",35
+group,"Yes, always","Yes, only in some circumstances","No"
+answer,756,238,35
