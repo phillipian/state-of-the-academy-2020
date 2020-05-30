@@ -16,7 +16,7 @@ window.addEventListener("scroll", () => {
             const sectionElem = sectionElems[i];
             const section = sections[i];
             const navbarItem = document.querySelector(".sech-" + section) || document.querySelector(".sec-" + section);
-            if (window.scrollY > sectionElem.offsetTop && window.scrollY < sectionElem.offsetTop + sectionElem.offsetHeight){
+            if (window.scrollY >= sectionElem.offsetTop && window.scrollY < sectionElem.offsetTop + sectionElem.offsetHeight){
                 navbarItem.classList.remove("sech-" + section);
                 navbarItem.classList.add("sec-" + section);
             } else{
