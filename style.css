@@ -61,6 +61,46 @@ body{
     .sz-navbar-inner > .navbar-sota{
         display: none;
     }
+
+    .sech-general{
+        background-color: #235085;
+    }
+
+    .sech-politics{
+        background-color: #2C3278;
+    }
+
+    .sech-campus{
+        background-color: #762670;
+    }
+
+    .sech-school{
+        background-color: #812F54;
+    }
+
+    .sech-discipline{
+        background-color: #B53432;
+    }
+
+    .sech-sex{
+        background-color: #C7327E;
+    }
+
+    .sech-drugs{
+        background-color: #E77929;
+    }
+
+    .sech-wellness{
+        background-color: #6CB645;
+    }
+
+    .sech-covid{
+        background-color: #008244;
+    }
+
+    .sech-community{
+        background-color: #089181;
+    }
 }
 
 .sota-navbar .sz-navbar-item a, .sota-navbar .sz-navbar-item span{
@@ -85,42 +125,42 @@ section:before{
     display: block;
 }
 
-.sec-general{
+.sec-general, .sech-general:hover{
     background-color: #235085;
 }
 
-.sec-politics{
+.sec-politics, .sech-politics:hover{
     background-color: #2C3278;
 }
 
-.sec-campus{
+.sec-campus, .sech-campus:hover{
     background-color: #762670;
 }
 
-.sec-school{
+.sec-school, .sech-school:hover{
     background-color: #812F54;
 }
 
-.sec-discipline{
+.sec-discipline, .sech-discipline:hover{
     background-color: #B53432;
 }
 
-.sec-sex{
+.sec-sex, .sech-sex:hover{
     background-color: #C7327E;
 }
 
-.sec-drugs{
+.sec-drugs, .sech-drugs:hover{
     background-color: #E77929;
 }
 
-.sec-wellness{
+.sec-wellness, .sech-wellness:hover{
     background-color: #6CB645;
 }
 
-.sec-covid{
+.sec-covid, .sech-covid:hover{
     background-color: #008244;
 }
 
-.sec-community{
+.sec-community, .sech-community:hover{
     background-color: #089181;
 }
