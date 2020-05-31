@@ -1,6 +1,2 @@
-label,value
-Daily,25
-Weekly,153
-About once a month,88
-Several times a year,137
-Not applicable,628
+group,Daily,Weekly,About once a month,Several times a year,Not applicable
+answer,25,153,88,137,628

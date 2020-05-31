@@ -273,7 +273,59 @@ sota.pieChart({ selector: "#module-discipline-room_visit-d3", dataFile: "data/di
 sota.pieChart({ selector: "#module-discipline-parietal-d3", dataFile: "data/discipline/parietal"});
 
 // SEX
+sota.groupedBarChart({ selector: "#module-sex-sexXclass-d3", dataFile: "data/sex/sexXclass", totalResp: {2023:216,2022:271,2021:271,2020:267} })
 
+sota.stackedBarChart({ selector: "#module-sex-frequency-d3", dataFile: "data/sex/frequency", labelStyle: "onBar", showLegend: true });
+
+sota.barChart({ selector: "#module-sex-number_of_partners-d3", dataFile: "data/sex/number_of_partners", totalResp: 1022, displayPercentage: true });
+
+module-sex-hookup_culture-d3
+
+module-sex-hookup_cultureXclass-d3
+
+module-sex-peer_pressure-d3
+
+module-sex-partner_pressure-d3
+
+module-sex-partner_pressureXgender-d3
+
+module-sex-sexualOrientation-d3
+
+module-sex-verbal_consent-d3
+
+module-sex-protection-d3
+
+module-sex-hookup-d3
+
+module-sex-relationshipXclass-d3
+
+module-sex-relationship_classXclass-d3
+
+module-sex-sex_ed2015-d3
+
+module-sex-masturbationXgender-d3
+
+module-sex-masturbation_tellXgender-d3
+
+module-sex-pornXfeminist-d3
+
+module-sex-harassment-d3
+
+module-sex-harassmentXgender-d3
+
+module-sex-assault-d3
+
+module-sex-assaultXgender-d3
+
+module-sex-explicit_photo-d3
+
+// DRUGS AND ALCOHOL
+
+// WELLNESS
+
+// COVID-19
+
+// COMMUNITY
 
 
 // sota.pieChart({ selector: "#module-general-community-d3", dataFile: "data/community"});
