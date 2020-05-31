@@ -238,6 +238,41 @@ sota.pieChart({ selector: "#module-school-board_member-d3", dataFile: "data/scho
 sota.stackedColumnChart({ selector: "#module-school-student_leaderXtemperment-d3", dataFile: "data/school/student_leaderXtemperment" });
 
 // DISCIPLINE
+sota.barChart({ selector: "#module-discipline-understand_processes-d3", dataFile: "data/discipline/understand_processes", totalResp: 1022, displayPercentage: true });
+
+sota.stackedBarChart({ selector: "#module-discipline-understand_processesXboarding-d3", dataFile: "data/discipline/understand_processesXboarding", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-discipline-CCCDC-d3", dataFile: "data/discipline/CCCDC"});
+
+sota.columnChart({ selector: "#module-discipline-consequences-d3", dataFile: "data/discipline/consequences", totalResp: 1023 });
+
+sota.stackedBarChart({ selector: "#module-discipline-effectiveXDC-d3", dataFile: "data/discipline/effectiveXDC", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-discipline-cruise-d3", dataFile: "data/discipline/cruise"});
+
+sota.pieChart({ selector: "#module-discipline-cheated-d3", dataFile: "data/discipline/cheated"});
+
+sota.stackedColumnChart({ selector: "#module-discipline-cheatedXclass-d3", dataFile: "data/discipline/cheatedXclass" });
+
+sota.pieChart({ selector: "#module-discipline-plagiarized-d3", dataFile: "data/discipline/plagiarized"});
+
+sota.pieChart({ selector: "#module-discipline-major_offenses-d3", dataFile: "data/discipline/major_offenses"});
+
+sota.stackedBarChart({ selector: "#module-discipline-major_offensesXboarding-d3", dataFile: "data/discipline/major_offensesXboarding", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-discipline-contraband_search-d3", dataFile: "data/discipline/contraband_search"});
+
+sota.stackedBarChart({ selector: "#module-discipline-favors_privileged-d3", dataFile: "data/discipline/favors_privileged", labelStyle: "onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-discipline-favors_privilegedXincome-d3", dataFile: "data/discipline/favors_privilegedXincome", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-discipline-favors_privilegedXclass-d3", dataFile: "data/discipline/favors_privilegedXclass", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-discipline-room_visit-d3", dataFile: "data/discipline/room_visit"});
+
+sota.pieChart({ selector: "#module-discipline-parietal-d3", dataFile: "data/discipline/parietal"});
+
+// SEX
 
 
 
