@@ -1,4 +1,2 @@
-label,value
-Yes,387
-No,167
-Unsure,470
+group,Yes,No,Unsure
+answer,387,167,470

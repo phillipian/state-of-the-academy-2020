@@ -1,4 +1,2 @@
-label,value
-"Yes",485
-"In some circumstances",407
-"No",131
+group,Yes,In some circumstances,No
+answer,485,407,131

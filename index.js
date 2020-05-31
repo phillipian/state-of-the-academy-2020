@@ -46,7 +46,7 @@ sota.barChart({ selector: "#module-general-religion-d3", dataFile: "data/general
 
 sota.pieChart({ selector: "#module-general-learning-disability-d3", dataFile: "data/general/learning_disability"});
 
-sota.stackedBarChart({ selector: "#module-general-temperament-d3", dataFile: "data/general/temperament", totalResp: 1042, displayPercentage: true })
+sota.stackedBarChart({ selector: "#module-general-temperment-d3", dataFile: "data/general/temperment", totalResp: 1042, displayPercentage: true })
 
 sota.pieChart({ selector: "#module-general-varsity-d3", dataFile: "data/general/varsity"});
 
@@ -130,6 +130,115 @@ sota.stackedBarChart({ selector: "#module-politics-prison_reformXincarceration-d
 sota.stackedColumnChart({ selector: "#module-politics-firearmsXcommunity-d3", dataFile: "data/politics/firearmsXcommunity" })
 
 // CAMPUS CULTURE
+sota.pieChart({ selector: "#module-campus-student_council-d3", dataFile: "data/campus/student_council"});
+
+sota.stackedBarChart({ selector: "#module-campus-aramark-d3", dataFile: "data/campus/aramark", labelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-campus-commons_staff-d3", dataFile: "data/campus/commons_staff"});
+
+sota.stackedBarChart({ selector: "#module-campus-climate_change-d3", dataFile: "data/campus/climate_change", labelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-campus-fossil_fuel-d3", dataFile: "data/campus/fossil_fuel"});
+
+sota.pieChart({ selector: "#module-campus-climate_curriculum-d3", dataFile: "data/campus/climate_curriculum"});
+
+sota.pieChart({ selector: "#module-campus-cliamte_cafe_reasons-d3", dataFile: "data/campus/climate_cafe_reasons"});
+
+sota.pieChart({ selector: "#module-campus-rape_culture-d3", dataFile: "data/campus/rape_culture"});
+
+sota.pieChart({ selector: "#module-campus-bkh_valentines-d3", dataFile: "data/campus/bkh_valentines"});
+
+sota.pieChart({ selector: "#module-campus-prom-d3", dataFile: "data/campus/prom"});
+
+sota.stackedBarChart({ selector: "#module-campus-ideological_diversity-d3", dataFile: "data/campus/ideological_diversity", labelStyle: "onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-campus-mlk_day-d3", dataFile: "data/campus/mlk_day", labelStyle: "onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-campus-indigenous_people-d3", dataFile: "data/campus/indigenous_people", labelStyle: "onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-campus-land_acknowledgement-d3", dataFile: "data/campus/land_acknowledgement", labelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-campus-combined_dorms-d3", dataFile: "data/campus/combined_dorms"});
+
+sota.pieChart({ selector: "#module-campus-food_order-d3", dataFile: "data/campus/food_order"});
+
+sota.pieChart({ selector: "#module-campus-den_purchases-d3", dataFile: "data/campus/den_purchases"});
+
+sota.stackedBarChart({ selector: "#module-campus-athletics-d3", dataFile: "data/campus/athletics", labelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-campus-shuman-d3", dataFile: "data/campus/shuman"});
+
+sota.pieChart({ selector: "#module-campus-rape_culture-d3", dataFile: "data/campus/rape_culture", inputIsPercentage:true});
+
+sota.stackedBarChart({ selector: "#module-campus-councilXattended-d3", dataFile: "data/campus/councilXattended", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-campus-fossil_fuelXincome-d3", dataFile: "data/campus/fossil_fuelXincome", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-campus-fossil_fuelXpolitics-d3", dataFile: "data/campus/fossil_fuelXpolitics", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+
+sota.stackedColumnChart({ selector: "#module-campus-rape_cultureXgender-d3", dataFile: "data/campus/rape_cultureXgender" })
+
+sota.stackedBarChart({ selector: "#module-campus-promXclass-d3", dataFile: "data/campus/promXclass", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+
+sota.stackedColumnChart({ selector: "#module-campus-ideological_diversityXpolitics-d3", dataFile: "data/campus/ideological_diversityXpolitics" })
+
+sota.stackedColumnChart({ selector: "#module-campus-mlk_dayXethnicity-d3", dataFile: "data/campus/mlk_dayXethnicity" })
+
+sota.stackedBarChart({ selector: "#module-campus-land_acknowledgementXgender-d3", dataFile: "data/campus/land_acknowledgementXgender", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+
+// SCHOOL
+sota.lineGraph({ selector: "#module-school-gpa-d3", dataFile: "data/school/gpa", maxVal: 160 })
+
+// module-school-gpaXgender-d3 // two lines
+
+// module-school-gpaXincome
+
+sota.lineGraph({ selector: "#module-school-gpa2016-d3", dataFile: "data/school/gpa2016", maxVal: 6.0, minVal: 5.0 })
+
+sota.pieChart({ selector: "#module-school-stem_humanities-d3", dataFile: "data/school/stem_humanities"});
+
+sota.stackedBarChart({ selector: "#module-school-stem_humanitiesXgender-d3", dataFile: "data/school/stem_humanitiesXgender", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+
+sota.stackedColumnChart({ selector: "#module-school-hours_on_courseworkXgender-d3", dataFile: "data/school/school_old/hours_on_courseworkXgender" });
+
+sota.pieChart({ selector: "#module-school-switch_teacher-d3", dataFile: "data/school/switch_teacher"});
+
+sota.stackedBarChart({ selector: "#module-school-extracurriculars-d3", dataFile: "data/school/extracurriculars", labelStyle: "onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-school-leaving-d3", dataFile: "data/school/leaving", labelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-school-teacher_care-d3", dataFile: "data/school/teacher_care"});
+
+sota.stackedBarChart({ selector: "#module-school-family_relationship-d3", dataFile: "data/school/family_relationship", labelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-school-character-d3", dataFile: "data/school/character"});
+
+sota.stackedBarChart({ selector: "#module-school-characterXtemperment-d3", dataFile: "data/school/characterXtemperment", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-school-come_to_andover-d3", dataFile: "data/school/come_to_andover"});
+
+sota.stackedBarChart({ selector: "#module-school-children-d3", dataFile: "data/school/children", labelStyle: "onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-school-childrenXclass-d3", dataFile: "data/school/childrenXclass", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+
+sota.stackedColumnChart({ selector: "#module-school-collegeXincome-d3", dataFile: "data/school/collegeXincome" });
+
+sota.stackedColumnChart({ selector: "#module-school-collegeXclass-d3", dataFile: "data/school/collegeXclass" });
+
+sota.stackedColumnChart({ selector: "#module-school-collegeXlocation-d3", dataFile: "data/school/collegeXlocation" });
+
+sota.stackedBarChart({ selector: "#module-school-learning_disabilityXaccomodation-d3", dataFile: "data/school/learning_disabilityXaccomodation", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-school-study_spaces-d3", dataFile: "data/school/come_to_andover"});
+
+sota.pieChart({ selector: "#module-school-student_leader-d3", dataFile: "data/school/student_leader"});
+
+sota.pieChart({ selector: "#module-school-board_member-d3", dataFile: "data/school/board_member"});
+
+sota.stackedColumnChart({ selector: "#module-school-student_leaderXtemperment-d3", dataFile: "data/school/student_leaderXtemperment" });
+
+// DISCIPLINE
+
 
 
 // sota.pieChart({ selector: "#module-general-community-d3", dataFile: "data/community"});
