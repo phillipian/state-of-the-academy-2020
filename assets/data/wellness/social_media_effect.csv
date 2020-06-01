@@ -1,5 +1,2 @@
-label,value
-More positively than negatively,355
-Equally positively and negatively,489
-More netagively than positively,162
-Not applicable,27
+group,More positively than negatively,Equally positively and negatively,More netagively than positively,Not applicable
+answer,355,489,162,27

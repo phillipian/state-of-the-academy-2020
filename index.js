@@ -6,8 +6,8 @@ let colorsArray = {
     "discipline": ["#B53432", "#C74F50", "#D47173","#E4A8A6", "#F0D1CA"],
     "sex": ["#D5127D", "#DF5694", "#E680A9", "#ECA8C1", "#F8D3DD"],
     "drugs": ["#E77929", "#EFA05E", "#F3B572", "#F6CC99", "#FAE3C4"],
-    "wellness": ["#69B645", "#98C970", "#B1D281", "#CEDFA6", "E3EFCE"],
-    "covid": ["#088446", "#32A068", "#7CC193", "#B2DAB8", "E2F1E1"],
+    "wellness": ["#69B645", "#98C970", "#B1D281", "#CEDFA6", "#E3EFCE"],
+    "covid": ["#088446", "#32A068", "#7CC193", "#B2DAB8", "#E2F1E1"],
     "community": ["#279680", "#29AD97", "#78C4B1", "#AEDCCA", "#C8E7DD"]
 }
 
@@ -360,55 +360,52 @@ sota.columnChart({ selector: "#module-wellness-sleep-d3", dataFile: "assets/data
 
 sota.barChart({ selector: "#module-wellness-had-d3", dataFile: "assets/data/wellness/had", totalResp: 1034, displayPercentage: true });
 
-module-wellness-anxietyXgender-d3
+sota.stackedBarChart({ selector: "#module-wellness-anxietyXgender-d3", dataFile: "assets/data/wellness/anxietyXgender", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
-module-wellness-insecureXsocial_media-d3
+sota.stackedColumnChart({ selector: "#module-wellness-insecureXsocial_media-d3", dataFile: "assets/data/wellness/insecureXsocial_media" });
 
-module-wellness-insecureXgender-d3
+sota.stackedBarChart({ selector: "#module-wellness-insecureXgender-d3", dataFile: "assets/data/wellness/insecureXgender", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
-module-wellness-insecureXsocial_media-d3
+sota.pieChart({ selector: "#module-wellness-insecure_body-d3", dataFile: "assets/data/wellness/insecure_body"});
 
-module-wellness-insecureXgender-d3
+sota.pieChart({ selector: "#module-wellness-insecure_academic-d3", dataFile: "assets/data/wellness/insecure_academic"});
 
-module-wellness-insecure_body-d3
+sota.pieChart({ selector: "#module-wellness-sykes-d3", dataFile: "assets/data/wellness/sykes" });
 
-module-wellness-insecure_academic-d3
+sota.pieChart({ selector: "#module-wellness-sykes_resources-d3", dataFile: "assets/data/wellness/sykes_resources" });
 
-module-wellness-sykes-d3
+sota.stackedBarChart({ selector: "#module-wellness-counselorXgender-d3", dataFile: "assets/data/wellness/counselorXgender", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
-module-wellness-sykes_resources-d3
+sota.stackedBarChart({ selector: "#module-wellness-sykes_resourcesXcounselor-d3", dataFile: "assets/data/wellness/sykes_resourcesXcounselor", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
-module-wellness-counselorXgender-d3
+sota.pieChart({ selector: "#module-wellness-sykes_phy_resources-d3", dataFile: "assets/data/wellness/sykes_phy_resources" });
 
-module-wellness-sykes_resourcesXcounselor-d3
+sota.pieChart({ selector: "#module-wellness-happiness-d3", dataFile: "assets/data/wellness/happiness" });
 
-module-wellness-sykes_phy_resources-d3
+sota.pieChart({ selector: "#module-wellness-general_happiness-d3", dataFile: "assets/data/wellness/happiness" });
 
-module-wellness-happiness-d3
+sota.barChart({ selector: "#module-wellness-support_system-d3", dataFile: "assets/data/wellness/support_system", totalResp: 1035, displayPercentage: true });
 
-module-wellness-general_happiness-d3
+sota.pieChart({ selector: "#module-wellness-support_system_adequacy-d3", dataFile: "assets/data/wellness/support_system_adequacy" });
 
-module-wellness-support_system-d3
+sota.stackedBarChart({ selector: "#module-wellness-social_media_effect-d3", dataFile: "assets/data/wellness/social_media_effect", labelStyle: "onBar", showLegend: true });
 
-module-wellness-support_system_adequacy-d3
+sota.pieChart({ selector: "#module-wellness-skip_meals-d3", dataFile: "assets/data/wellness/skip_meals" });
 
-module-wellness-social_media_effect-d3
+sota.stackedBarChart({ selector: "#module-wellness-happinessXretrospect-d3", dataFile: "assets/data/wellness/happinessXretrospect", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
-module-wellness-skip_meals-d3
+sota.stackedColumnChart({ selector: "#module-wellness-happinessXclass-d3", dataFile: "assets/data/wellness/happinessXclass" });
 
-module-wellness-happinessXretrospect-d3
+sota.stackedColumnChart({ selector: "#module-wellness-happinessXtemperament-d3", dataFile: "assets/data/wellness/happinessXtemperament" });
 
-module-wellness-happinessXclass-d3
+sota.pieChart({ selector: "#module-wellness-bullied-d3", dataFile: "assets/data/wellness/bullied" });
 
-module-wellness-happinessXtemperament-d3
+// sota.groupedBarChart({ selector: "#module-wellness-social_media-d3", dataFile: "assets/data/wellness/social_media", totalResp: {2023:216,2022:271,2021:271,2020:267} })
+sota.barChart({ selector: "#module-wellness-social_media-d3", dataFile: "assets/data/wellness/social_media", totalResp: 1034, displayPercentage: true });
 
-module-wellness-bullied-d3
+sota.stackedBarChart({ selector: "#module-wellness-social_mediaXgender-d3", dataFile: "assets/data/wellness/social_mediaXgender", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
-module-wellness-social_media-d3
-
-module-wellness-social_mediaXgender-d3
-
-module-wellness-commons_limitXdietary_restriction-d3
+sota.stackedBarChart({ selector: "#module-wellness-commons_limitXdietary_restrictions-d3", dataFile: "assets/data/wellness/commons_limitXdietary_restrictions", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
 // COVID-19
 
