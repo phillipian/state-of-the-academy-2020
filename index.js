@@ -400,7 +400,6 @@ sota.stackedColumnChart({ selector: "#module-wellness-happinessXtemperament-d3",
 
 sota.pieChart({ selector: "#module-wellness-bullied-d3", dataFile: "assets/data/wellness/bullied" });
 
-// sota.groupedBarChart({ selector: "#module-wellness-social_media-d3", dataFile: "assets/data/wellness/social_media", totalResp: {2023:216,2022:271,2021:271,2020:267} })
 sota.barChart({ selector: "#module-wellness-social_media-d3", dataFile: "assets/data/wellness/social_media", totalResp: 1034, displayPercentage: true });
 
 sota.stackedBarChart({ selector: "#module-wellness-social_mediaXgender-d3", dataFile: "assets/data/wellness/social_mediaXgender", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
@@ -408,5 +407,28 @@ sota.stackedBarChart({ selector: "#module-wellness-social_mediaXgender-d3", data
 sota.stackedBarChart({ selector: "#module-wellness-commons_limitXdietary_restrictions-d3", dataFile: "assets/data/wellness/commons_limitXdietary_restrictions", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
 // COVID-19
+sota.pieChart({ selector: "#module-covid-currently_residing-d3", dataFile: "assets/data/covid/currently_residing" });
+
+sota.columnChart({ selector: "#module-covid-staying_with-d3", dataFile: "assets/data/covid/staying_with" });
+
+sota.pieChart({ selector: "#module-covid-quiet_spaces-d3", dataFile: "assets/data/covid/quiet_spaces" });
+
+sota.stackedBarChart({ selector: "#module-covid-quiet_spacesXincome-d3", dataFile: "assets/data/covid/quiet_spacesXincome", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.barChart({ selector: "#module-covid-time_zones-d3", dataFile: "assets/data/covid/time_zones", totalResp: 1023, displayPercentage: true });
+
+sota.stackedBarChart({ selector: "#module-covid-remote_learning-d3", dataFile: "assets/data/covid/remote_learning", labelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-covid-immunocompromised-d3", dataFile: "assets/data/covid/immunocompromised" });
+
+sota.pieChart({ selector: "#module-covid-test_positive-d3", dataFile: "assets/data/covid/test_positive" });
+
+sota.stackedBarChart({ selector: "#module-covid-andover_response-d3", dataFile: "assets/data/covid/andover_response", labelStyle: "onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-covid-us_responseXpolitics-d3", dataFile: "assets/data/covid/us_responseXpolitics", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-covid-social_distance-d3", dataFile: "assets/data/covid/social_distance" });
+
+sota.stackedBarChart({ selector: "#module-covid-vacationXincome-d3", dataFile: "assets/data/covid/vacationXincome", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
 // COMMUNITY

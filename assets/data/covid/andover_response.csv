@@ -1,4 +1,2 @@
-label,value
-An overreaction,42
-Enough of a response,912
-Not enough of a response,70
+group,An overreaction,Enough of a response,Not enough of a response
+answer,42,912,70
