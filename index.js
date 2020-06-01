@@ -13,7 +13,7 @@ let colorsArray = {
 
 sota.setColors(colorsArray);
 
-sota.setStyles("/assets/fonts"); // for custom sotaConfig; for default options, don't pass any params (other than font path)
+sota.setStyles("./assets/fonts"); // for custom sotaConfig; for default options, don't pass any params (other than font path)
 
 // GENERAL
 sota.barChart({ selector: "#module-general-class-d3", dataFile: "assets/data/general/class", totalResp: 1041, displayPercentage: true });
@@ -432,6 +432,70 @@ sota.pieChart({ selector: "#module-covid-social_distance-d3", dataFile: "assets/
 sota.stackedBarChart({ selector: "#module-covid-vacationXincome-d3", dataFile: "assets/data/covid/vacationXincome", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
 // COMMUNITY
+
+sota.barChart({ selector: "#module-community-faculty_diversity-d3", dataFile: "assets/data/community/faculty_diversity", totalResp: 1020, displayPercentage: true });
+
+sota.pieChart({ selector: "#module-community-faculty_support-d3", dataFile: "assets/data/community/faculty_support" });
+
+sota.barChart({ selector: "#module-community-social_divide-d3", dataFile: "assets/data/community/social_divide", totalResp: 1019, displayPercentage: true });
+
+sota.barChart({ selector: "#module-community-leadership-d3", dataFile: "assets/data/community/leadership", totalResp: 1015, displayPercentage: true });
+
+sota.barChart({ selector: "#module-community-discrimination-d3", dataFile: "assets/data/community/discrimination", totalResp: 1015, displayPercentage: true });
+
+sota.barChart({ selector: "#module-community-classroom_comfort-d3", dataFile: "assets/data/community/classroom_comfort", totalResp: 1016, displayPercentage: true });
+
+sota.barChart({ selector: "#module-community-identity_discussion-d3", dataFile: "assets/data/community/identity_discussion", totalResp: 1016, displayPercentage: true });
+
+sota.pieChart({ selector: "#module-community-day_student-d3", dataFile: "assets/data/community/day_student" });
+
+sota.stackedBarChart({ selector: "#module-community-faculty_diversityXrace-d3", dataFile: "assets/data/community/faculty_diversityXrace", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-community-faculty_diversityXgender-d3", dataFile: "assets/data/community/faculty_diversityXgender", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-community-faculty_supportXgender-d3", dataFile: "assets/data/community/faculty_supportXgender", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-community-social_divideXrace-d3", dataFile: "assets/data/community/social_divideXrace", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-community-social_divideXstatus-d3", dataFile: "assets/data/community/social_divideXstatus", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-community-social_divideXpolitics-d3", dataFile: "assets/data/community/social_divideXpolitics", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-community-social_divideXclass-d3", dataFile: "assets/data/community/social_divideXclass", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-community-leadershipXgender-d3", dataFile: "assets/data/community/leadershipXgender", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-community-leadershipXrace-d3", dataFile: "assets/data/community/leadershipXrace", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-community-leadershipXstatus-d3", dataFile: "assets/data/community/leadershipXstatus", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-community-classroom_comfortXgender-d3", dataFile: "assets/data/community/classroom_comfortXgender", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-community-classroom_comfortXethnicity-d3", dataFile: "assets/data/community/classroom_comfortXethnicity", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+// sota.pieChart({ selector: "#module-community-ebi-d3", dataFile: "assets/data/community/ebi", inputIsPercentage: true });
+
+sota.stackedBarChart({ selector: "#module-community-ebiXclass-d3", dataFile: "assets/data/community/ebiXclass", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedColumnChart({ selector: "#module-community-day_supportXboarding-d3", dataFile: "assets/data/community/day_supportXboarding" });
+
+sota.stackedBarChart({ selector: "#module-community-fitness_centerXgender-d3", dataFile: "assets/data/community/fitness_centerXgender", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-community-fitness_centerXvarsity-d3", dataFile: "assets/data/community/fitness_centerXvarsity", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+// sota.stackedBarChart({ selector: "#module-community-camdXrace-d3", dataFile: "assets/data/community/camdXrace", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true, inputIsPercentage: true });
+//
+// sota.stackedBarChart({ selector: "#module-community-camdXpolitics-d3", dataFile: "assets/data/community/camdXpolitics", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true, inputIsPercentage: true });
+//
+// sota.stackedBarChart({ selector: "#module-community-silentXrace-d3", dataFile: "assets/data/community/silentXrace", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true, inputIsPercentage: true });
+//
+// sota.stackedBarChart({ selector: "#module-community-lower_rightXrace-d3", dataFile: "assets/data/community/lower_rightXrace", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true, inputIsPercentage: true });
+//
+// sota.stackedBarChart({ selector: "#module-community-lower_rightXvarsity-d3", dataFile: "assets/data/community/lower_rightXvarsity", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true, inputIsPercentage: true });
+
+sota.pieChart({ selector: "#module-community-language-d3", dataFile: "assets/data/community/language" });
+
+sota.stackedBarChart({ selector: "#module-community-languageXrace-d3", dataFile: "assets/data/community/languageXrace", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
 document.addEventListener("sotaChartRendered", () => {
     console.log("chart rendered");
