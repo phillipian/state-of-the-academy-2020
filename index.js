@@ -476,7 +476,7 @@ sota.stackedBarChart({ selector: "#module-community-classroom_comfortXethnicity-
 
 sota.stackedBarChart({ selector: "#module-community-ebiXclass-d3", dataFile: "assets/data/community/ebiXclass", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
-sota.stackedColumnChart({ selector: "#module-community-day_supportXboarding-d3", dataFile: "assets/data/communityday_supportXboarding" });
+sota.stackedColumnChart({ selector: "#module-community-day_supportXboarding-d3", dataFile: "assets/data/community/day_supportXboarding" });
 
 sota.stackedBarChart({ selector: "#module-community-fitness_centerXgender-d3", dataFile: "assets/data/community/fitness_centerXgender", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
