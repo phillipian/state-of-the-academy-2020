@@ -46,7 +46,7 @@ sota.barChart({ selector: "#module-general-religion-d3", dataFile: "assets/data/
 
 sota.pieChart({ selector: "#module-general-learning-disability-d3", dataFile: "assets/data/general/learning_disability"});
 
-sota.stackedBarChart({ selector: "#module-general-temperment-d3", dataFile: "assets/data/general/temperment", totalResp: 1042, displayPercentage: true })
+sota.stackedBarChart({ selector: "#module-general-temperament-d3", dataFile: "assets/data/general/temperament", totalResp: 1042, displayPercentage: true })
 
 sota.pieChart({ selector: "#module-general-varsity-d3", dataFile: "assets/data/general/varsity"});
 
@@ -213,7 +213,7 @@ sota.stackedBarChart({ selector: "#module-school-family_relationship-d3", dataFi
 
 sota.pieChart({ selector: "#module-school-character-d3", dataFile: "assets/data/school/character"});
 
-sota.stackedBarChart({ selector: "#module-school-characterXtemperment-d3", dataFile: "assets/data/school/characterXtemperment", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+sota.stackedBarChart({ selector: "#module-school-characterXtemperament-d3", dataFile: "assets/data/school/characterXtemperament", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
 
 sota.pieChart({ selector: "#module-school-come_to_andover-d3", dataFile: "assets/data/school/come_to_andover"});
 
@@ -235,7 +235,7 @@ sota.pieChart({ selector: "#module-school-student_leader-d3", dataFile: "assets/
 
 sota.pieChart({ selector: "#module-school-board_member-d3", dataFile: "assets/data/school/board_member"});
 
-sota.stackedColumnChart({ selector: "#module-school-student_leaderXtemperment-d3", dataFile: "assets/data/school/student_leaderXtemperment" });
+sota.stackedColumnChart({ selector: "#module-school-student_leaderXtemperament-d3", dataFile: "assets/data/school/student_leaderXtemperament" });
 
 // DISCIPLINE
 sota.barChart({ selector: "#module-discipline-understand_processes-d3", dataFile: "assets/data/discipline/understand_processes", totalResp: 1022, displayPercentage: true });
@@ -319,9 +319,96 @@ sota.stackedBarChart({ selector: "#module-sex-assaultXgender-d3", dataFile: "ass
 sota.pieChart({ selector: "#module-sex-explicit_photo-d3", dataFile: "assets/data/sex/explicit_photo"});
 
 // DRUGS AND ALCOHOL
+sota.stackedBarChart({ selector: "#module-drugs-alcoholXclass-d3", dataFile: "assets/data/drugs-alcohol/alcoholXclass", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
+sota.stackedBarChart({ selector: "#module-drugs-tobaccoXclass-d3", dataFile: "assets/data/drugs-alcohol/tobaccoXclass", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-drugs-juulXclass-d3", dataFile: "assets/data/drugs-alcohol/juulXclass", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-drugs-marijuanaXclass-d3", dataFile: "assets/data/drugs-alcohol/marijuanaXclass", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedColumnChart({ selector: "#module-drugs-dorm_influenceXcluster-d3", dataFile: "assets/data/drugs-alcohol/dorm_influenceXcluster" });
+
+sota.stackedBarChart({ selector: "#module-drugs-drug_frequency-d3", dataFile: "assets/data/drugs-alcohol/drug_frequency", labelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-drugs-study_drugs-d3", dataFile: "assets/data/drugs-alcohol/study_drugs"});
+
+sota.stackedBarChart({ selector: "#module-drugs-juulXincome-d3", dataFile: "assets/data/drugs-alcohol/juulXincome", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+
+sota.stackedColumnChart({ selector: "#module-drugs-normalizedXconsumption-d3", dataFile: "assets/data/drugs-alcohol/normalizedXconsumption" });
+
+// placeholder
+
+sota.pieChart({ selector: "#module-drugs-normalized-d3", dataFile: "assets/data/drugs-alcohol/normalized"});
+
+sota.barChart({ selector: "#module-drugs-hard_drugs-d3", dataFile: "assets/data/drugs-alcohol/hard_drugs", totalResp: 1014, displayPercentage: true });
+
+sota.stackedBarChart({ selector: "#module-drugs-drugs_stress-d3", dataFile: "assets/data/drugs-alcohol/drugs_stress", labelStyle: "onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-drugs-peer_pressure-d3", dataFile: "assets/data/drugs-alcohol/peer_pressure", labelStyle: "onBar", showLegend: true });
+
+sota.pieChart({ selector: "#module-drugs-selling-d3", dataFile: "assets/data/drugs-alcohol/selling"});
+
+sota.pieChart({ selector: "#module-drugs-influence-d3", dataFile: "assets/data/drugs-alcohol/influence"});
+
+sota.stackedBarChart({ selector: "#module-drugs-fake_id-d3", dataFile: "assets/data/drugs-alcohol/fake_id", labelStyle: "onBar", showLegend: true });
+
+sota.stackedBarChart({ selector: "#module-drugs-sanctuary-d3", dataFile: "assets/data/drugs-alcohol/sanctuary", labelStyle: "onBar", showLegend: true });
 
 // WELLNESS
+sota.columnChart({ selector: "#module-wellness-sleep-d3", dataFile: "assets/data/wellness/sleep" });
+
+sota.barChart({ selector: "#module-wellness-had-d3", dataFile: "assets/data/wellness/had", totalResp: 1034, displayPercentage: true });
+
+module-wellness-anxietyXgender-d3
+
+module-wellness-insecureXsocial_media-d3
+
+module-wellness-insecureXgender-d3
+
+module-wellness-insecureXsocial_media-d3
+
+module-wellness-insecureXgender-d3
+
+module-wellness-insecure_body-d3
+
+module-wellness-insecure_academic-d3
+
+module-wellness-sykes-d3
+
+module-wellness-sykes_resources-d3
+
+module-wellness-counselorXgender-d3
+
+module-wellness-sykes_resourcesXcounselor-d3
+
+module-wellness-sykes_phy_resources-d3
+
+module-wellness-happiness-d3
+
+module-wellness-general_happiness-d3
+
+module-wellness-support_system-d3
+
+module-wellness-support_system_adequacy-d3
+
+module-wellness-social_media_effect-d3
+
+module-wellness-skip_meals-d3
+
+module-wellness-happinessXretrospect-d3
+
+module-wellness-happinessXclass-d3
+
+module-wellness-happinessXtemperament-d3
+
+module-wellness-bullied-d3
+
+module-wellness-social_media-d3
+
+module-wellness-social_mediaXgender-d3
+
+module-wellness-commons_limitXdietary_restriction-d3
 
 // COVID-19
 

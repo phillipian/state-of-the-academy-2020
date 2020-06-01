@@ -1,6 +1,2 @@
-label,value
-Daily,68
-Weekly,107
-About once per month,70
-About once a term,105
-Not applicable,679
+group,Daily,Weekly,About once per month,About once a term,Not applicable
+answer,68,107,70,105,679

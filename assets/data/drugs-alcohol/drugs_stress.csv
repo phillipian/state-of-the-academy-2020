@@ -1,4 +1,2 @@
-label,value
-Yes,179
-No,179
-Not applicable,669
+group,Yes,No,Not applicable
+answer,179,179,669
