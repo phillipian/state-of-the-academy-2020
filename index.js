@@ -432,3 +432,27 @@ sota.pieChart({ selector: "#module-covid-social_distance-d3", dataFile: "assets/
 sota.stackedBarChart({ selector: "#module-covid-vacationXincome-d3", dataFile: "assets/data/covid/vacationXincome", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
 // COMMUNITY
+
+document.addEventListener("sotaChartRendered", () => {
+    console.log("chart rendered");
+})
+
+const sections = document.querySelectorAll(".container");
+
+sections.forEach((e) => {
+    let count = 0;
+    const total = e.querySelectorAll(".module svg").length;
+
+    e.addEventListener("sotaChartRendered", () => {
+        count++;
+        console.log(e, count, total);
+
+        if (count == total){
+            const msnry = new Masonry(e, {
+                itemSelector: ".module",
+                columnWidth: ".module",
+                gutter: 48
+            })
+        }
+    })
+})
