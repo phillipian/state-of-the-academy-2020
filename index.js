@@ -13,7 +13,7 @@ let colorsArray = {
 
 sota.setColors(colorsArray);
 
-sota.setStyles("/assets/fonts"); // for custom sotaConfig; for default options, don't pass any params (other than font path)
+sota.setStyles("./assets/fonts"); // for custom sotaConfig; for default options, don't pass any params (other than font path)
 
 // GENERAL
 sota.barChart({ selector: "#module-general-class-d3", dataFile: "assets/data/general/class", totalResp: 1041, displayPercentage: true });
@@ -476,7 +476,7 @@ sota.stackedBarChart({ selector: "#module-community-classroom_comfortXethnicity-
 
 sota.stackedBarChart({ selector: "#module-community-ebiXclass-d3", dataFile: "assets/data/community/ebiXclass", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
-sota.stackedColumnChart({ selector: "#module-community-day_supportXboarding-d3", dataFile: "assets/data/day_supportXboarding" });
+sota.stackedColumnChart({ selector: "#module-community-day_supportXboarding-d3", dataFile: "assets/data/communityday_supportXboarding" });
 
 sota.stackedBarChart({ selector: "#module-community-fitness_centerXgender-d3", dataFile: "assets/data/community/fitness_centerXgender", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
