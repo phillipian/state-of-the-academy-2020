@@ -351,7 +351,7 @@ window.onload = () => {
 
     sota.pieChart({selector: "#module-campus-combined_dorms-d3", dataFile: "assets/data/campus/combined_dorms"});
 
-    sota.pieChart({selector: "#module-campus-food_order-d3", dataFile: "assets/data/campus/food_order"});
+    sota.barChart({selector: "#module-campus-food_order-d3", dataFile: "assets/data/campus/food_order",totalResp: 1022,displayPercentage: true});
 
     sota.pieChart({selector: "#module-campus-den_purchases-d3", dataFile: "assets/data/campus/den_purchases"});
 
@@ -684,7 +684,7 @@ window.onload = () => {
         showLegend: true
     });
 
-    sota.pieChart({selector: "#module-sex-protection-d3", dataFile: "assets/data/sex/protection"});
+    sota.barChart({selector: "#module-sex-protection-d3", dataFile: "assets/data/sex/protection", totalResp:336, displayPercentage:true});
 
     sota.pieChart({selector: "#module-sex-hookup-d3", dataFile: "assets/data/sex/hookup"});
 
@@ -771,7 +771,7 @@ window.onload = () => {
         dataFile: "assets/data/drugs-alcohol/tobaccoXclass",
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        showLegend: true
+        showLegend: false
     });
 
     sota.stackedBarChart({
@@ -779,7 +779,7 @@ window.onload = () => {
         dataFile: "assets/data/drugs-alcohol/juulXclass",
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        showLegend: true
+        showLegend: false
     });
 
     sota.stackedBarChart({
@@ -787,7 +787,7 @@ window.onload = () => {
         dataFile: "assets/data/drugs-alcohol/marijuanaXclass",
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        showLegend: true
+        showLegend: false
     });
 
     sota.stackedColumnChart({
@@ -966,7 +966,13 @@ window.onload = () => {
         dataFile: "assets/data/wellness/happinessXtemperament"
     });
 
-    sota.pieChart({selector: "#module-wellness-bullied-d3", dataFile: "assets/data/wellness/bullied"});
+    // sota.pieChart({selector: "#module-wellness-bullied-d3", dataFile: "assets/data/wellness/bullied"});
+    sota.stackedBarChart({
+        selector: "#module-wellness-bullied-d3",
+        dataFile: "assets/data/wellness/bullied",
+        labelStyle: "onBar",
+        showLegend: true
+    });
 
     sota.barChart({
         selector: "#module-wellness-social_media-d3",
@@ -977,7 +983,7 @@ window.onload = () => {
 
     sota.stackedBarChart({
         selector: "#module-wellness-social_mediaXgender-d3",
-        dataFile: "assets/data/wellness/social_mediaXgender",
+        dataFile: "assets/data/wellness/wellness_old/social_mediaXgender",
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
         showLegend: true
@@ -1116,19 +1122,24 @@ window.onload = () => {
         showLegend: true
     });
 
-    sota.stackedBarChart({
-        selector: "#module-community-faculty_supportXgender-d3",
-        dataFile: "assets/data/community/faculty_supportXgender",
-        labelStyle: "onBar",
-        groupLabelStyle: "onBar",
-        showLegend: true
+    sota.barChart({
+        selector: "#module-community-faculty_supportXgender_man-d3",
+        dataFile: "assets/data/community/faculty_supportXgender_man",
+        totalResp:473,
+        displayPercentage:true
+    });
+
+    sota.barChart({
+        selector: "#module-community-faculty_supportXgender_woman-d3",
+        dataFile: "assets/data/community/faculty_supportXgender_woman",
+        totalResp:521,
+        displayPercentage:true
     });
 
     sota.stackedBarChart({
         selector: "#module-community-social_divideXrace-d3",
         dataFile: "assets/data/community/social_divideXrace",
         labelStyle: "onBar",
-        groupLabelStyle: "onBar",
         showLegend: true
     });
 
@@ -1136,7 +1147,6 @@ window.onload = () => {
         selector: "#module-community-social_divideXstatus-d3",
         dataFile: "assets/data/community/social_divideXstatus",
         labelStyle: "onBar",
-        groupLabelStyle: "onBar",
         showLegend: true
     });
 
@@ -1144,7 +1154,6 @@ window.onload = () => {
         selector: "#module-community-social_divideXpolitics-d3",
         dataFile: "assets/data/community/social_divideXpolitics",
         labelStyle: "onBar",
-        groupLabelStyle: "onBar",
         showLegend: true
     });
 
@@ -1215,7 +1224,6 @@ window.onload = () => {
         selector: "#module-community-fitness_centerXgender-d3",
         dataFile: "assets/data/community/fitness_centerXgender",
         labelStyle: "onBar",
-        groupLabelStyle: "onBar",
         showLegend: true
     });
 
@@ -1223,19 +1231,18 @@ window.onload = () => {
         selector: "#module-community-fitness_centerXvarsity-d3",
         dataFile: "assets/data/community/fitness_centerXvarsity",
         labelStyle: "onBar",
-        groupLabelStyle: "onBar",
         showLegend: true
     });
 
-// sota.stackedBarChart({ selector: "#module-community-camdXrace-d3", dataFile: "assets/data/community/camdXrace", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true, inputIsPercentage: true });
-//
-// sota.stackedBarChart({ selector: "#module-community-camdXpolitics-d3", dataFile: "assets/data/community/camdXpolitics", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true, inputIsPercentage: true });
-//
-// sota.stackedBarChart({ selector: "#module-community-silentXrace-d3", dataFile: "assets/data/community/silentXrace", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true, inputIsPercentage: true });
-//
-// sota.stackedBarChart({ selector: "#module-community-lower_rightXrace-d3", dataFile: "assets/data/community/lower_rightXrace", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true, inputIsPercentage: true });
-//
-// sota.stackedBarChart({ selector: "#module-community-lower_rightXvarsity-d3", dataFile: "assets/data/community/lower_rightXvarsity", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true, inputIsPercentage: true });
+sota.stackedBarChart({ selector: "#module-community-camdXrace-d3", dataFile: "assets/data/community/camdXrace", labelStyle: "onBar", showLegend: true, inputIsPercentage: true });
+
+sota.stackedBarChart({ selector: "#module-community-camdXpolitics-d3", dataFile: "assets/data/community/camdXpolitics", labelStyle: "onBar", showLegend: true, inputIsPercentage: true });
+
+sota.stackedBarChart({ selector: "#module-community-silentXrace-d3", dataFile: "assets/data/community/silentXrace", labelStyle: "onBar", showLegend: true, inputIsPercentage: true });
+
+sota.stackedBarChart({ selector: "#module-community-lower_rightXrace-d3", dataFile: "assets/data/community/lower_rightXrace", labelStyle: "onBar", showLegend: true, inputIsPercentage: true });
+
+sota.stackedBarChart({ selector: "#module-community-lower_rightXvarsity-d3", dataFile: "assets/data/community/lower_rightXvarsity", labelStyle: "onBar", showLegend: true, inputIsPercentage: true });
 
     sota.pieChart({selector: "#module-community-language-d3", dataFile: "assets/data/community/language"});
 
