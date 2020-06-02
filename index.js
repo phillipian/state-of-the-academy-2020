@@ -46,7 +46,7 @@ sota.barChart({ selector: "#module-general-religion-d3", dataFile: "assets/data/
 
 sota.pieChart({ selector: "#module-general-learning-disability-d3", dataFile: "assets/data/general/learning_disability"});
 
-sota.stackedBarChart({ selector: "#module-general-temperament-d3", dataFile: "assets/data/general/temperament", totalResp: 1042, displayPercentage: true })
+sota.stackedBarChart({ selector: "#module-general-temperament-d3", dataFile: "assets/data/general/temperament", labelStyle: "onBar", showLegend: true })
 
 sota.pieChart({ selector: "#module-general-varsity-d3", dataFile: "assets/data/general/varsity"});
 
@@ -54,25 +54,11 @@ sota.pieChart({ selector: "#module-general-income-d3", dataFile: "assets/data/ge
 
 sota.columnChart({ selector: "#module-general-finAid-d3", dataFile: "assets/data/general/financial_aid", totalResp: 1037 });
 
-sota.pieChart({ selector: "#module-general-socioeconomicXincome0-d3", dataFile: "assets/data/general/socioeconomicXincome0"});
+sota.stackedBarChart({ selector: "#module-general-socioeconomicXincome-d3", dataFile: "assets/data/general/socioeconomicXincome0", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true});
 
-sota.pieChart({ selector: "#module-general-socioeconomicXincome1-d3", dataFile: "assets/data/general/socioeconomicXincome1"});
+sota.stackedBarChart({ selector: "#module-general-legacy-income-d3", dataFile: "assets/data/general/legacyXincome", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: false })
 
-sota.pieChart({ selector: "#module-general-socioeconomicXincome2-d3", dataFile: "assets/data/general/socioeconomicXincome2"});
-
-sota.pieChart({ selector: "#module-general-socioeconomicXincome3-d3", dataFile: "assets/data/general/socioeconomicXincome3"});
-
-sota.pieChart({ selector: "#module-general-socioeconomicXincome4-d3", dataFile: "assets/data/general/socioeconomicXincome4"});
-
-sota.pieChart({ selector: "#module-general-socioeconomicXincome5-d3", dataFile: "assets/data/general/socioeconomicXincome5"});
-
-sota.pieChart({ selector: "#module-general-socioeconomicXincome6-d3", dataFile: "assets/data/general/socioeconomicXincome6"});
-
-sota.pieChart({ selector: "#module-general-socioeconomicXincome7-d3", dataFile: "assets/data/general/socioeconomicXincome7"});
-
-sota.stackedBarChart({ selector: "#module-general-legacy-income-d3", dataFile: "assets/data/general/legacyXincome", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true })
-
-sota.stackedBarChart({ selector: "#module-general-varisty-income-d3", dataFile: "assets/data/general/varsityXincome", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true })
+sota.stackedBarChart({ selector: "#module-general-varsity-income-d3", dataFile: "assets/data/general/varsityXincome", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true })
 
 sota.pieChart({ selector: "#module-general-incarcerated-d3", dataFile: "assets/data/general/incarcerated"});
 

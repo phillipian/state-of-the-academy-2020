@@ -1,6 +1,9 @@
-label,value
-Upper class,180
-Upper-middle class,45
-Middle class,6
-Lower-middle class,0
-Lower class,0
+group,Upper class,Upper-middle class,Middle class,Lower-middle class,Lower class
+"$500,000 or more",180,45,6,0,0
+"$250,000 to $499,999",53,107,9,0,0
+"$150,000 to $249,999",13,88,31,1,0
+"$100,000 to $149,999",3,28,53,11,0
+"$60,000 to $99,999",0,9,26,18,3
+"$35,000 to $59,999",1,1,10,17,6
+"$34,999 or less",0,1,3,7,26
+Unsure,55,139,77,12,0
