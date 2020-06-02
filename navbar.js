@@ -37,6 +37,7 @@ const navbarCheck = document.getElementById("sz-navbar-check");
 
 for (let i = 0; i < navbarItems.length; i++){
     navbarItems[i].addEventListener("click", () => {
+        changeColors();
         navbarCheck.checked = false;
     })
 }
