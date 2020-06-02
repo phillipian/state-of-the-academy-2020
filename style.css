@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .sota-navbar{
     color: #fff;
 }
