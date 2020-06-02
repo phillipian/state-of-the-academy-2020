@@ -310,9 +310,11 @@ window.onload = () => {
         dataFile: "assets/data/campus/climate_curriculum"
     });
 
-    sota.pieChart({
+    sota.barChart({
         selector: "#module-campus-cliamte_cafe_reasons-d3",
-        dataFile: "assets/data/campus/climate_cafe_reasons"
+        dataFile: "assets/data/campus/climate_cafe_reasons",
+        totalResp:1026,
+        displayPercentage:true
     });
 
     sota.pieChart({selector: "#module-campus-rape_culture-d3", dataFile: "assets/data/campus/rape_culture"});
@@ -383,7 +385,7 @@ window.onload = () => {
         dataFile: "assets/data/campus/fossil_fuelXincome",
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        showLegend: true
+        showLegend: false
     });
 
     sota.stackedBarChart({
@@ -391,7 +393,7 @@ window.onload = () => {
         dataFile: "assets/data/campus/fossil_fuelXpolitics",
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        showLegend: true
+        showLegend: false
     });
 
     sota.stackedColumnChart({
@@ -404,7 +406,7 @@ window.onload = () => {
         dataFile: "assets/data/campus/promXclass",
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        showLegend: true
+        showLegend: false
     });
 
     sota.stackedColumnChart({
@@ -422,7 +424,7 @@ window.onload = () => {
         dataFile: "assets/data/campus/land_acknowledgementXgender",
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        showLegend: true
+        showLegend: false
     });
 
 // SCHOOL
@@ -486,7 +488,7 @@ window.onload = () => {
         dataFile: "assets/data/school/characterXtemperament",
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        showLegend: true
+        showLegend: false
     });
 
     sota.pieChart({selector: "#module-school-come_to_andover-d3", dataFile: "assets/data/school/come_to_andover"});
@@ -503,7 +505,7 @@ window.onload = () => {
         dataFile: "assets/data/school/childrenXclass",
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        showLegend: true
+        showLegend: false
     });
 
     sota.stackedColumnChart({
@@ -529,7 +531,7 @@ window.onload = () => {
         showLegend: true
     });
 
-    sota.pieChart({selector: "#module-school-study_spaces-d3", dataFile: "assets/data/school/come_to_andover"});
+    sota.pieChart({selector: "#module-school-study_spaces-d3", dataFile: "assets/data/school/study_spaces"});
 
     sota.pieChart({selector: "#module-school-student_leader-d3", dataFile: "assets/data/school/student_leader"});
 
@@ -613,7 +615,7 @@ window.onload = () => {
         dataFile: "assets/data/discipline/favors_privilegedXincome",
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        showLegend: true
+        showLegend: false
     });
 
     sota.stackedBarChart({
@@ -621,7 +623,7 @@ window.onload = () => {
         dataFile: "assets/data/discipline/favors_privilegedXclass",
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        showLegend: true
+        showLegend: false
     });
 
     sota.pieChart({selector: "#module-discipline-room_visit-d3", dataFile: "assets/data/discipline/room_visit"});
@@ -817,8 +819,6 @@ window.onload = () => {
         dataFile: "assets/data/drugs-alcohol/normalizedXconsumption"
     });
 
-// placeholder
-
     sota.pieChart({selector: "#module-drugs-normalized-d3", dataFile: "assets/data/drugs-alcohol/normalized"});
 
     sota.barChart({
@@ -844,7 +844,7 @@ window.onload = () => {
 
     sota.pieChart({selector: "#module-drugs-selling-d3", dataFile: "assets/data/drugs-alcohol/selling"});
 
-    sota.pieChart({selector: "#module-drugs-influence-d3", dataFile: "assets/data/drugs-alcohol/influence"});
+    sota.barChart({selector: "#module-drugs-influence-d3", dataFile: "assets/data/drugs-alcohol/influence", totalResp:1028, displayPercentage:true});
 
     sota.stackedBarChart({
         selector: "#module-drugs-fake_id-d3",
@@ -1042,7 +1042,7 @@ window.onload = () => {
         dataFile: "assets/data/covid/us_responseXpolitics",
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
-        showLegend: true
+        showLegend: false
     });
 
     sota.pieChart({selector: "#module-covid-social_distance-d3", dataFile: "assets/data/covid/social_distance"});
