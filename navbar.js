@@ -1,16 +1,21 @@
 const sections = ["general", "politics", "campus", "school", "discipline", "sex", "drugs", "wellness", "covid", "community"];
 const sectionElems = [];
 
-console.log(sections);
-
 for (section of sections){
     console.log(section);
     sectionElems.push(document.getElementById(section));
 }
 
-console.log(sectionElems);
+window.onload = () => {
+    changeColors();
+    console.log("changed colors");
+}
 
 window.addEventListener("scroll", () => {
+    changeColors();
+})
+
+function changeColors(){
     if (window.innerWidth > 600){
         for (i in sectionElems){
             const sectionElem = sectionElems[i];
@@ -25,4 +30,13 @@ window.addEventListener("scroll", () => {
             }
         }
     }
-})
+}
+
+const navbarItems = document.querySelectorAll(".sz-navbar-item");
+const navbarCheck = document.getElementById("sz-navbar-check");
+
+for (let i = 0; i < navbarItems.length; i++){
+    navbarItems[i].addEventListener("click", () => {
+        navbarCheck.checked = false;
+    })
+}
