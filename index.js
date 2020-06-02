@@ -87,7 +87,7 @@ sota.stackedBarChart({ selector: "#module-politics-abortion-d3", dataFile: "asse
 
 sota.pieChart({ selector: "#module-politics-local_politics-d3", dataFile: "assets/data/politics/local_politics"});
 
-sota.stackedBarChart({ selector: "#module-politics-censorshipXpolitics-d3", dataFile: "assets/data/politics/censorshipXpolitics", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
+sota.stackedBarChart({ selector: "#module-politics-censorshipXpolitics-d3", dataFile: "assets/data/politics/politics_old/censorshipXpolitics", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
 sota.stackedBarChart({ selector: "#module-politics-politicsXgender-d3", dataFile: "assets/data/politics/politicsXgender", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
