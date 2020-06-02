@@ -497,9 +497,6 @@ sota.pieChart({ selector: "#module-community-language-d3", dataFile: "assets/dat
 sota.stackedBarChart({ selector: "#module-community-languageXrace-d3", dataFile: "assets/data/community/languageXrace", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
 // masonry
-document.addEventListener("sotaChartRendered", () => {
-    console.log("chart rendered");
-})
 
 const sections = document.querySelectorAll(".container");
 
@@ -509,7 +506,6 @@ sections.forEach((e) => {
 
     e.addEventListener("sotaChartRendered", () => {
         count++;
-        console.log(e, count, total);
 
         if (count == total){
             const msnry = new Masonry(e, {

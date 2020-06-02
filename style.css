@@ -1,7 +1,3 @@
-body{
-    padding-top: 64px;
-}
-
 .sota-navbar{
     color: #fff;
 }
@@ -20,10 +16,23 @@ body{
     height: 100%;
 }
 
+.sota-navbar div.navbar-sota{ /* higher specificty */
+    font-family: "Gotham";
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.sota-navbar .sz-navbar-inner{
+    padding: 0 24px;
+}
+
 .sota-navbar .sz-navbar-item{
     height: 64px;
     flex-grow: 0;
     margin-right: 0;
+    font-family: "Mercury Text G1";
 }
 
 .sz-navbar-item{ /* lower specificity */
@@ -112,6 +121,10 @@ body{
     height: 64px;
     padding: 0 8px;
     display: block;
+}
+
+section:first-of-type{
+    padding-top: 64px;
 }
 
 section:before{
