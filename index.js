@@ -432,6 +432,7 @@ sota.pieChart({ selector: "#module-covid-social_distance-d3", dataFile: "assets/
 sota.stackedBarChart({ selector: "#module-covid-vacationXincome-d3", dataFile: "assets/data/covid/vacationXincome", labelStyle: "onBar", groupLabelStyle:"onBar", showLegend: true });
 
 // COMMUNITY
+
 sota.barChart({ selector: "#module-community-faculty_diversity-d3", dataFile: "assets/data/community/faculty_diversity", totalResp: 1020, displayPercentage: true });
 
 sota.pieChart({ selector: "#module-community-faculty_support-d3", dataFile: "assets/data/community/faculty_support" });
