@@ -479,7 +479,11 @@ sota.stackedBarChart({ selector: "#module-campus-promXclass-d3", dataFile: "asse
 // SCHOOL
     sota.lineGraph({selector: "#module-school-gpa-d3", dataFile: "assets/data/school/gpa", maxVal: 160})
 
-// module-school-gpaXgender-d3 // two lines
+    sota.lineGraph({selector: "#module-school-gpaXgender-d3", dataFile: "assets/data/school/gpaXgender", maxVal: 100})
+
+    // sota.lineGraph({selector: "#module-school-gpaXgender_man-d3", dataFile: "assets/data/school/gpaXgender_man", maxVal: 100})
+    //
+    // sota.lineGraph({selector: "#module-school-gpaXgender_woman-d3", dataFile: "assets/data/school/gpaXgender_woman", maxVal: 100})
 
 // module-school-gpaXincome
 
