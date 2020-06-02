@@ -160,7 +160,7 @@ sota.stackedBarChart({ selector: "#module-campus-councilXattended-d3", dataFile:
 
 sota.stackedBarChart({ selector: "#module-campus-fossil_fuelXincome-d3", dataFile: "assets/data/campus/fossil_fuelXincome", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
 
-sota.stackedBarChart({ selector: "#module-campus-fossil_fuelXpolitics-d3", dataFile: "assets/data/campus/fossil_fuelXpolitics", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+sota.stackedBarChart({ selector: "#module-campus-fossil_fuelXpolitics-d3", dataFile: "assets/data/campus/fossil_fuelXpolitics", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: false });
 
 sota.stackedColumnChart({ selector: "#module-campus-rape_cultureXgender-d3", dataFile: "assets/data/campus/rape_cultureXgender" })
 
