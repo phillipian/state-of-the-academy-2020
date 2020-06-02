@@ -430,8 +430,6 @@ window.onload = () => {
 
     sota.multiLineGraph({selector: "#module-school-gpaXgender-d3", dataFile: "assets/data/school/gpaXgender"})
 
-    sota.multiLineGraph({selector: "#module-school-gpaXincome-d3", dataFile: "assets/data/school/gpaXincome"})
-
     sota.lineGraph({
         selector: "#module-school-gpa2016-d3",
         dataFile: "assets/data/school/gpa2016",
