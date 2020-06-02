@@ -37,7 +37,7 @@
   display: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1200px) {
   .sz-navbar-inner {
     max-width: 1500px;
     position: relative;
@@ -59,7 +59,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .sz-navbar-inner {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
