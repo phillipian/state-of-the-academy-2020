@@ -285,145 +285,196 @@ window.onload = () => {
     })
 
 // CAMPUS CULTURE
-    sota.pieChart({selector: "#module-campus-student_council-d3", dataFile: "assets/data/campus/student_council"});
+// <<<<<<< HEAD
+sota.pieChart({ selector: "#module-campus-student_council-d3", dataFile: "assets/data/campus/student_council"});
 
-    sota.stackedBarChart({
-        selector: "#module-campus-aramark-d3",
-        dataFile: "assets/data/campus/aramark",
-        labelStyle: "onBar",
-        showLegend: true
-    });
+sota.stackedBarChart({ selector: "#module-campus-aramark-d3", dataFile: "assets/data/campus/aramark", labelStyle: "onBar", showLegend: true });
 
-    sota.pieChart({selector: "#module-campus-commons_staff-d3", dataFile: "assets/data/campus/commons_staff"});
+sota.pieChart({ selector: "#module-campus-commons_staff-d3", dataFile: "assets/data/campus/commons_staff"});
 
-    sota.stackedBarChart({
-        selector: "#module-campus-climate_change-d3",
-        dataFile: "assets/data/campus/climate_change",
-        labelStyle: "onBar",
-        showLegend: true
-    });
+sota.stackedBarChart({ selector: "#module-campus-climate_change-d3", dataFile: "assets/data/campus/climate_change", labelStyle: "onBar", showLegend: true });
 
-    sota.pieChart({selector: "#module-campus-fossil_fuel-d3", dataFile: "assets/data/campus/fossil_fuel"});
+sota.pieChart({ selector: "#module-campus-fossil_fuel-d3", dataFile: "assets/data/campus/fossil_fuel"});
 
-    sota.pieChart({
-        selector: "#module-campus-climate_curriculum-d3",
-        dataFile: "assets/data/campus/climate_curriculum"
-    });
+sota.pieChart({ selector: "#module-campus-climate_curriculum-d3", dataFile: "assets/data/campus/climate_curriculum"});
 
-    sota.pieChart({
-        selector: "#module-campus-cliamte_cafe_reasons-d3",
-        dataFile: "assets/data/campus/climate_cafe_reasons"
-    });
+sota.pieChart({ selector: "#module-campus-cliamte_cafe_reasons-d3", dataFile: "assets/data/campus/climate_cafe_reasons"});
 
-    sota.pieChart({selector: "#module-campus-rape_culture-d3", dataFile: "assets/data/campus/rape_culture"});
+sota.pieChart({ selector: "#module-campus-rape_culture-d3", dataFile: "assets/data/campus/rape_culture"});
 
-    sota.pieChart({selector: "#module-campus-bkh_valentines-d3", dataFile: "assets/data/campus/bkh_valentines"});
+sota.pieChart({ selector: "#module-campus-bkh_valentines-d3", dataFile: "assets/data/campus/bkh_valentines"});
 
-    sota.pieChart({selector: "#module-campus-prom-d3", dataFile: "assets/data/campus/prom"});
+sota.pieChart({ selector: "#module-campus-prom-d3", dataFile: "assets/data/campus/prom"});
 
-    sota.stackedBarChart({
-        selector: "#module-campus-ideological_diversity-d3",
-        dataFile: "assets/data/campus/ideological_diversity",
-        labelStyle: "onBar",
-        showLegend: true
-    });
+sota.stackedBarChart({ selector: "#module-campus-ideological_diversity-d3", dataFile: "assets/data/campus/ideological_diversity", labelStyle: "onBar", showLegend: true });
 
-    sota.stackedBarChart({
-        selector: "#module-campus-mlk_day-d3",
-        dataFile: "assets/data/campus/mlk_day",
-        labelStyle: "onBar",
-        showLegend: true
-    });
+sota.stackedBarChart({ selector: "#module-campus-mlk_day-d3", dataFile: "assets/data/campus/mlk_day", labelStyle: "onBar", showLegend: true });
 
-    sota.stackedBarChart({
-        selector: "#module-campus-indigenous_people-d3",
-        dataFile: "assets/data/campus/indigenous_people",
-        labelStyle: "onBar",
-        showLegend: true
-    });
+sota.stackedBarChart({ selector: "#module-campus-indigenous_people-d3", dataFile: "assets/data/campus/indigenous_people", labelStyle: "onBar", showLegend: true });
 
-    sota.stackedBarChart({
-        selector: "#module-campus-land_acknowledgement-d3",
-        dataFile: "assets/data/campus/land_acknowledgement",
-        labelStyle: "onBar",
-        showLegend: true
-    });
+sota.stackedBarChart({ selector: "#module-campus-land_acknowledgement-d3", dataFile: "assets/data/campus/land_acknowledgement", labelStyle: "onBar", showLegend: true });
 
-    sota.pieChart({selector: "#module-campus-combined_dorms-d3", dataFile: "assets/data/campus/combined_dorms"});
+sota.pieChart({ selector: "#module-campus-combined_dorms-d3", dataFile: "assets/data/campus/combined_dorms"});
 
-    sota.pieChart({selector: "#module-campus-food_order-d3", dataFile: "assets/data/campus/food_order"});
+sota.pieChart({ selector: "#module-campus-food_order-d3", dataFile: "assets/data/campus/food_order"});
 
-    sota.pieChart({selector: "#module-campus-den_purchases-d3", dataFile: "assets/data/campus/den_purchases"});
+sota.pieChart({ selector: "#module-campus-den_purchases-d3", dataFile: "assets/data/campus/den_purchases"});
 
-    sota.stackedBarChart({
-        selector: "#module-campus-athletics-d3",
-        dataFile: "assets/data/campus/athletics",
-        labelStyle: "onBar",
-        showLegend: true
-    });
+sota.stackedBarChart({ selector: "#module-campus-athletics-d3", dataFile: "assets/data/campus/athletics", labelStyle: "onBar", showLegend: true });
 
-    sota.pieChart({selector: "#module-campus-shuman-d3", dataFile: "assets/data/campus/shuman"});
+sota.pieChart({ selector: "#module-campus-shuman-d3", dataFile: "assets/data/campus/shuman"});
 
-    sota.pieChart({
-        selector: "#module-campus-rape_culture-d3",
-        dataFile: "assets/data/campus/rape_culture",
-        inputIsPercentage: true
-    });
+sota.pieChart({ selector: "#module-campus-rape_culture-d3", dataFile: "assets/data/campus/rape_culture", inputIsPercentage: true});
 
-    sota.stackedBarChart({
-        selector: "#module-campus-councilXattended-d3",
-        dataFile: "assets/data/campus/councilXattended",
-        labelStyle: "onBar",
-        groupLabelStyle: "onBar",
-        showLegend: true
-    });
+sota.stackedBarChart({ selector: "#module-campus-councilXattended-d3", dataFile: "assets/data/campus/councilXattended", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
 
-    sota.stackedBarChart({
-        selector: "#module-campus-fossil_fuelXincome-d3",
-        dataFile: "assets/data/campus/fossil_fuelXincome",
-        labelStyle: "onBar",
-        groupLabelStyle: "onBar",
-        showLegend: true
-    });
+sota.stackedBarChart({ selector: "#module-campus-fossil_fuelXincome-d3", dataFile: "assets/data/campus/fossil_fuelXincome", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
 
-    sota.stackedBarChart({
-        selector: "#module-campus-fossil_fuelXpolitics-d3",
-        dataFile: "assets/data/campus/fossil_fuelXpolitics",
-        labelStyle: "onBar",
-        groupLabelStyle: "onBar",
-        showLegend: true
-    });
+sota.stackedBarChart({ selector: "#module-campus-fossil_fuelXpolitics-d3", dataFile: "assets/data/campus/fossil_fuelXpolitics", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: false });
 
-    sota.stackedColumnChart({
-        selector: "#module-campus-rape_cultureXgender-d3",
-        dataFile: "assets/data/campus/rape_cultureXgender"
-    })
+sota.stackedColumnChart({ selector: "#module-campus-rape_cultureXgender-d3", dataFile: "assets/data/campus/rape_cultureXgender" })
 
-    sota.stackedBarChart({
-        selector: "#module-campus-promXclass-d3",
-        dataFile: "assets/data/campus/promXclass",
-        labelStyle: "onBar",
-        groupLabelStyle: "onBar",
-        showLegend: true
-    });
-
-    sota.stackedColumnChart({
-        selector: "#module-campus-ideological_diversityXpolitics-d3",
-        dataFile: "assets/data/campus/ideological_diversityXpolitics"
-    })
-
-    sota.stackedColumnChart({
-        selector: "#module-campus-mlk_dayXethnicity-d3",
-        dataFile: "assets/data/campus/mlk_dayXethnicity"
-    })
-
-    sota.stackedBarChart({
-        selector: "#module-campus-land_acknowledgementXgender-d3",
-        dataFile: "assets/data/campus/land_acknowledgementXgender",
-        labelStyle: "onBar",
-        groupLabelStyle: "onBar",
-        showLegend: true
-    });
+sota.stackedBarChart({ selector: "#module-campus-promXclass-d3", dataFile: "assets/data/campus/promXclass", labelStyle: "onBar", groupLabelStyle: "onBar", showLegend: true });
+// =======
+    // sota.pieChart({selector: "#module-campus-student_council-d3", dataFile: "assets/data/campus/student_council"});
+    //
+    // sota.stackedBarChart({
+    //     selector: "#module-campus-aramark-d3",
+    //     dataFile: "assets/data/campus/aramark",
+    //     labelStyle: "onBar",
+    //     showLegend: true
+    // });
+    //
+    // sota.pieChart({selector: "#module-campus-commons_staff-d3", dataFile: "assets/data/campus/commons_staff"});
+    //
+    // sota.stackedBarChart({
+    //     selector: "#module-campus-climate_change-d3",
+    //     dataFile: "assets/data/campus/climate_change",
+    //     labelStyle: "onBar",
+    //     showLegend: true
+    // });
+    //
+    // sota.pieChart({selector: "#module-campus-fossil_fuel-d3", dataFile: "assets/data/campus/fossil_fuel"});
+    //
+    // sota.pieChart({
+    //     selector: "#module-campus-climate_curriculum-d3",
+    //     dataFile: "assets/data/campus/climate_curriculum"
+    // });
+    //
+    // sota.pieChart({
+    //     selector: "#module-campus-cliamte_cafe_reasons-d3",
+    //     dataFile: "assets/data/campus/climate_cafe_reasons"
+    // });
+    //
+    // sota.pieChart({selector: "#module-campus-rape_culture-d3", dataFile: "assets/data/campus/rape_culture"});
+    //
+    // sota.pieChart({selector: "#module-campus-bkh_valentines-d3", dataFile: "assets/data/campus/bkh_valentines"});
+    //
+    // sota.pieChart({selector: "#module-campus-prom-d3", dataFile: "assets/data/campus/prom"});
+    //
+    // sota.stackedBarChart({
+    //     selector: "#module-campus-ideological_diversity-d3",
+    //     dataFile: "assets/data/campus/ideological_diversity",
+    //     labelStyle: "onBar",
+    //     showLegend: true
+    // });
+    //
+    // sota.stackedBarChart({
+    //     selector: "#module-campus-mlk_day-d3",
+    //     dataFile: "assets/data/campus/mlk_day",
+    //     labelStyle: "onBar",
+    //     showLegend: true
+    // });
+    //
+    // sota.stackedBarChart({
+    //     selector: "#module-campus-indigenous_people-d3",
+    //     dataFile: "assets/data/campus/indigenous_people",
+    //     labelStyle: "onBar",
+    //     showLegend: true
+    // });
+    //
+    // sota.stackedBarChart({
+    //     selector: "#module-campus-land_acknowledgement-d3",
+    //     dataFile: "assets/data/campus/land_acknowledgement",
+    //     labelStyle: "onBar",
+    //     showLegend: true
+    // });
+    //
+    // sota.pieChart({selector: "#module-campus-combined_dorms-d3", dataFile: "assets/data/campus/combined_dorms"});
+    //
+    // sota.pieChart({selector: "#module-campus-food_order-d3", dataFile: "assets/data/campus/food_order"});
+    //
+    // sota.pieChart({selector: "#module-campus-den_purchases-d3", dataFile: "assets/data/campus/den_purchases"});
+    //
+    // sota.stackedBarChart({
+    //     selector: "#module-campus-athletics-d3",
+    //     dataFile: "assets/data/campus/athletics",
+    //     labelStyle: "onBar",
+    //     showLegend: true
+    // });
+    //
+    // sota.pieChart({selector: "#module-campus-shuman-d3", dataFile: "assets/data/campus/shuman"});
+    //
+    // sota.pieChart({
+    //     selector: "#module-campus-rape_culture-d3",
+    //     dataFile: "assets/data/campus/rape_culture",
+    //     inputIsPercentage: true
+    // });
+    //
+    // sota.stackedBarChart({
+    //     selector: "#module-campus-councilXattended-d3",
+    //     dataFile: "assets/data/campus/councilXattended",
+    //     labelStyle: "onBar",
+    //     groupLabelStyle: "onBar",
+    //     showLegend: true
+    // });
+    //
+    // sota.stackedBarChart({
+    //     selector: "#module-campus-fossil_fuelXincome-d3",
+    //     dataFile: "assets/data/campus/fossil_fuelXincome",
+    //     labelStyle: "onBar",
+    //     groupLabelStyle: "onBar",
+    //     showLegend: true
+    // });
+    //
+    // sota.stackedBarChart({
+    //     selector: "#module-campus-fossil_fuelXpolitics-d3",
+    //     dataFile: "assets/data/campus/fossil_fuelXpolitics",
+    //     labelStyle: "onBar",
+    //     groupLabelStyle: "onBar",
+    //     showLegend: true
+    // });
+    //
+    // sota.stackedColumnChart({
+    //     selector: "#module-campus-rape_cultureXgender-d3",
+    //     dataFile: "assets/data/campus/rape_cultureXgender"
+    // })
+    //
+    // sota.stackedBarChart({
+    //     selector: "#module-campus-promXclass-d3",
+    //     dataFile: "assets/data/campus/promXclass",
+    //     labelStyle: "onBar",
+    //     groupLabelStyle: "onBar",
+    //     showLegend: true
+    // });
+    //
+    // sota.stackedColumnChart({
+    //     selector: "#module-campus-ideological_diversityXpolitics-d3",
+    //     dataFile: "assets/data/campus/ideological_diversityXpolitics"
+    // })
+    //
+    // sota.stackedColumnChart({
+    //     selector: "#module-campus-mlk_dayXethnicity-d3",
+    //     dataFile: "assets/data/campus/mlk_dayXethnicity"
+    // })
+    //
+    // sota.stackedBarChart({
+    //     selector: "#module-campus-land_acknowledgementXgender-d3",
+    //     dataFile: "assets/data/campus/land_acknowledgementXgender",
+    //     labelStyle: "onBar",
+    //     groupLabelStyle: "onBar",
+    //     showLegend: true
+    // });
 
 // SCHOOL
     sota.lineGraph({selector: "#module-school-gpa-d3", dataFile: "assets/data/school/gpa", maxVal: 160})
