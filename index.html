@@ -12,7 +12,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="sota.min.js"></script>
-<!--  <script src="http://localhost:5000/dist/sota.min.js"></script>-->
+<!--  <script src="http://localhost:5000/dist/sota.js"></script>-->
   <link rel="stylesheet" type="text/css" href="sz-navbar.css"/>
   <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
@@ -23,25 +23,70 @@
       <input type="checkbox" id="sz-navbar-check">
       <label for="sz-navbar-check" class="sz-navbar-hamburger">☰</label>
       <div class="navbar-logo"><a href="https://phillipian.net/"><img src="assets/graphics/nameplate.png" alt="Nameplate of The Phillipian"></a></div>
-      <div class="navbar-sota"><span>State of the Academy 2020</span></div>
+      <div class="navbar-sota"><span>SOTA 2020</span></div>
       <div class="sz-navbar-items">
-        <div class="sz-navbar-item navbar-sota"><span>State of the Academy 2020</span></div>
+        <div class="sz-navbar-item navbar-sota"><a href="#intro">State of the Academy 2020</a></div>
         <div class="sz-navbar-item sech-general"><a href="#general">General</a></div>
         <div class="sz-navbar-item sech-politics"><a href="#politics">Politics & Worldview</a></div>
-        <div class="sz-navbar-item sech-campus"><a href="#campus">Campus</a></div>
+        <div class="sz-navbar-item sech-campus"><a href="#campus">Campus Culture</a></div>
         <div class="sz-navbar-item sech-school"><a href="#school">School</a></div>
         <div class="sz-navbar-item sech-discipline"><a href="#discipline">Discipline</a></div>
         <div class="sz-navbar-item sech-sex"><a href="#sex">Sex</a></div>
-        <div class="sz-navbar-item sech-drugs"><a href="#drugs">Drugs</a></div>
+        <div class="sz-navbar-item sech-drugs"><a href="#drugs">Drugs & Alcohol</a></div>
         <div class="sz-navbar-item sech-wellness"><a href="#wellness">Wellness</a></div>
-        <div class="sz-navbar-item sech-covid"><a href="#covid">COVID</a></div>
-        <div class="sz-navbar-item sech-community"><a href="#community">Community</a></div>
+        <div class="sz-navbar-item sech-covid"><a href="#covid">COVID-19</a></div>
+        <div class="sz-navbar-item sech-community"><a href="#community">Community Diversity</a></div>
       </div>
     </div>
   </div>
+  <section id="intro">
+    <div class="home-hero">
+      <div class="hero-blurb">
+        <div class="hero-logo"><img src="assets/img/p-square.png"></div>
+        <div class="hero-sota">
+          <span>
+            State<br/>
+            of the<br/>
+            Academy<br/>
+            <span class="hero-sota-year">2020</span>
+          </span>
+        </div>
+        <p>On April 17, <i>The Phillipian</i>, vol. CXLIII, sent out the 2020 “State of the Academy” survey to all Andover students in the hopes of obtaining valuable information about the school community.</p>
+        <p>Despite the challenges of not being on campus, <i>The Phillipian</i> received a participation rate of 93.2 percent of the student body— 1043 participants— surpassing our expectations. The anonymous survey asked a comprehensive set of 185 questions, comprised of ten sections: General, Politics & Worldview, Wellness, Sex, Drugs & Alcohol, School, Campus Culture, Community Diversity, Discipline, and COVID-19. The 2020 issue is the first to include a Campus Culture section, as well as a COVID-19 section. <i>The Phillipian</i> will also publish more extensive results from the entire survey on the State of the Academy website later this week. We sincerely thank members of the student body for their willingness to share information and personal experiences for this special issue of <i>The Phillipian</i>, and we hope that the State of the Academy will serve to inform, enlighten, and create a more holistic narrative of the students at Andover.</p>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-credit"><span><a href="https://phillipian.net/author/melindazhang/">Melinda Zhang</a>/<i>The Phillipian</i></span></div>
+        <img src="assets/img/sota-cover.jpg">
+      </div>
+    </div>
+    <div class="home-sections">
+      <a href="#general">
+        <div class="home-section sec-general"><span>General</span></div>
+      </a><a href="#politics">
+      <div class="home-section sec-politics"><span>Politics & Worldview</span></div>
+    </a><a href="#campus">
+      <div class="home-section sec-campus"><span>Campus Culture</span></div>
+    </a><a href="#school">
+      <div class="home-section sec-school"><span>School</span></div>
+    </a><a href="#discipline">
+      <div class="home-section sec-discipline"><span>Discipline</span></div>
+    </a><a href="#sex">
+      <div class="home-section sec-sex"><span>Sex</span></div>
+    </a><a href="#drugs">
+      <div class="home-section sec-drugs"><span>Drugs & Alcohol</span></div>
+    </a><a href="#wellness">
+      <div class="home-section sec-wellness"><span>Wellness</span></div>
+    </a><a href="#covid">
+      <div class="home-section sec-covid"><span>COVID-19</span></div>
+    </a><a href="#community">
+      <div class="home-section sec-community"><span>Community Diversity</span></div>
+    </a>
+    </div>
+  </section>
+
   <section id="general">
     <h1>General</h1>
-    <div class="container">
+    <div class="container hide">
       <div class="module">
           <div class="sota-big"><span>1042</span></div>
           <div class="subtitle"><span>students responded</span></div>
@@ -138,7 +183,7 @@
 
   <section id="politics">
     <h1>Politics and Worldview</h1>
-    <div class="container">
+    <div class="container hide">
       <div class="module" id="module-politics-affiliation-d3">
         <h3>What is your political affiliation?</h3>
       </div>
@@ -246,6 +291,7 @@
 
   <section id="campus">
     <h1>Campus Culture</h1>
+<<<<<<< HEAD
     <div class="container">
       <div class="module">
         <h3>Student Council</h3>
@@ -256,6 +302,23 @@
           <h3>Responses by Years Attended</h3>
           <p>Editor's note: Correlated statistics from respondents who have attended Andover for five years have been removed in an effort to protect the complete anonymity of these respondents.</p>
         </div>
+=======
+    <div class="container hide">
+      <div class="module" id="module-campus-student_council-d3">
+        <h3>Do you think that Student Council is able to implement meaningful changes?</h3>
+      </div>
+      <div class="module" id="module-campus-aramark-d3">
+        <h3>Do you think Andover should reconsider its partnership with Aramark?</h3>
+      </div>
+      <div class="module" id="module-campus-commons_staff-d3">
+        <h3>Do you think Andover students adequately respect the Commons staff?</h3>
+      </div>
+      <div class="module" id="module-campus-climate_change-d3">
+        <h3>Does the school do enough to combat climate change?</h3>
+      </div>
+      <div class="module" id="module-campus-fossil_fuel-d3">
+        <h3>Do you believe that Andover should divest from fossil fuel companies?</h3>
+>>>>>>> 475ccaa62c4095f8a517fe74fb9e5943b8d3a491
       </div>
       <div class="module">
         <h3>Climate Change</h3>
@@ -368,7 +431,7 @@
 
   <section id="school">
     <h1>School</h1>
-    <div class="container">
+    <div class="container hide">
       <div class="module">
           <div class="sota-big"><span>5.25</span></div>
           <div class="subtitle"><span>WAS THE AVERAGE WINTER 2019-2020 G.P.A.</span></div>
@@ -461,7 +524,7 @@
 
   <section id="discipline">
     <h1>Discipline</h1>
-    <div class="container">
+    <div class="container hide">
       <div class="module" id="module-discipline-understand_processes-d3">
         <h3>Do you understand the Community Conduct Council (CCC) and Disciplinary Committee (DC) processes?</h3>
       </div>
@@ -518,7 +581,7 @@
 
   <section id="sex">
     <h1>Sex</h1>
-    <div class="container">
+    <div class="container hide">
       <div class="module" id="module-sex-sexXclass-d3">
         <h3>Have you ever participated in sexual activity? x class</h3>
       </div>
@@ -597,7 +660,7 @@
 
   <section id="drugs">
     <h1>Drugs and Alcohol</h1>
-    <div class="container">
+    <div class="container hide">
       <div class="module" id="module-drugs-alcoholXclass-d3">
         <h3>Have you ever consumed alcohol recreationally? X What class are you in?</h3>
       </div>
@@ -665,7 +728,7 @@
 
   <section id="wellness">
     <h1>Wellness</h1>
-    <div class="container">
+    <div class="container hide">
       <div class="module" id="module-wellness-sleep-d3">
         <h3>On average, how many hours of sleep do you get per night?</h3>
         <div class="sota-big"><span>7.08 hours</span></div>
@@ -754,7 +817,7 @@
 
   <section id="covid">
     <h1>COVID-19</h1>
-    <div class="container">
+    <div class="container hide">
       <div class="module" id="module-covid-currently_residing-d3">
         <h3>Where are you currently residing while off campus due to the pandemic (where "domestic" and "abroad" are in relation to your home country)?</h3>
       </div>
@@ -802,7 +865,7 @@
 
   <section id="community">
     <h1>Community and Diversity</h1>
-    <div class="container">
+    <div class="container hide">
       <div class="module" id="module-community-faculty_diversity-d3">
         <h3>Do you think the faculty is lacking in diversity?</h3>
       </div>
