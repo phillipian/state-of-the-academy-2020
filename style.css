@@ -263,7 +263,7 @@ section:before{
     flex-flow: column nowrap;
 }
 
-.hero-image{
+.hero-image-inner{
     position: relative;
 }
 
