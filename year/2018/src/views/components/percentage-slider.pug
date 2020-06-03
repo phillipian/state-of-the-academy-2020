@@ -1,0 +1,12 @@
+mixin percentage_slider(id, yes_responses, no_responses, accent_color, invert) 
+  div(id = id class = "percentage-slider" data-yes = yes_responses data-no = no_responses data-accent = accent_color)
+    .tooltip.hidden
+    - var width = 100 * yes_responses / (yes_responses + no_responses)
+    if invert == "true"
+      .left(style = "width:" + width + "%;")= (width > 4 ? "YES" : "\u200C")
+      .right(style = "width:" + (100 - width) + "%;background:" + accent_color + ";")= (100 - width > 4 ? "NO" : "\u200C")
+    else 
+      .left(style = "width:" + width + "%;background:" + accent_color + ";color:white;")= (width > 4 ? "YES" : "\u200C")
+      .right(style = "width:" + (100 - width) + "%;background:white;color:#2c3e50;")= (100 - width > 4 ? "NO" : "\u200C")
+    
+  

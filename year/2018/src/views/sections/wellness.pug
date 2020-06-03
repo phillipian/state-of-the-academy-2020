@@ -1,0 +1,65 @@
+h3 On average, how many hours of sleep do you get per night?
+.multipane#sleep(data-labels = "Senior,Upper,Lower,Junior")
+  +line_chart("chart", accent_color, 300, "Amount of sleep in hours", "Respondents", "./assets/data/wellness/sleep-2018.csv", "false", 1, "", "true")
+  +line_chart("chart", accent_color, 300, "Amount of sleep in hours", "Respondents", "./assets/data/wellness/sleep-2019.csv", "false", 1, "", "true")
+  +line_chart("chart", accent_color, 300, "Amount of sleep in hours", "Respondents", "./assets/data/wellness/sleep-2020.csv", "false", 1, "", "true")
+  +line_chart("chart", accent_color, 300, "Amount of sleep in hours", "Respondents", "./assets/data/wellness/sleep-2021.csv", "false", 1, "", "true")
+hr.dotted
+h3 Do you feel insecure about your academic ability and/or intelligence?
++horizontal_barchart("insecurity-intelligence", accent_color, 200, "./assets/data/wellness/insecurity-intelligence.csv", "", "Responses", "100")
+hr.dotted
+h3 Do you feel insecure about your body, physical health, and/or appearance?
++horizontal_barchart("insecurity-appearance", accent_color, 200, "./assets/data/wellness/insecurity-appearance.csv", "", "Responses", "100")
+hr.dotted
+h3 Insecurity about appearance by gender.
+p <i>Note: Percentages for certain categories may be skewed due to a low number of responses.</i>
++text_fact("59.83%", "of men have felt insecure about their appearance")
++text_fact("89.66%", "of women have felt insecure about their appearance")
+br
++grouped_barchart("insecurity-gender", "#6abf8f,#98e2b8", 300, "./assets/data/wellness/insecurity-gender.csv", "", "% that has felt insecure", "Has felt insecure,Has never felt insecure", "true")
+hr.dotted
+h3 Insecurity about appearance by race.
+p <i>Note: Percentages for certain categories may be skewed due to a low number of responses.</i>
+.multipane#insecurity-race(data-labels = "Males,Females")
+  +vertical_barchart("insecurity-race-men", accent_color, 300, "./assets/data/wellness/insecurity-race-men.csv", "Race", "% that has felt insecure", "true")
+  +vertical_barchart("insecurity-race-women", accent_color, 300, "./assets/data/wellness/insecurity-race-women.csv", "Race", "% that has felt insecure", "true")
+hr.dotted
+h3 Have you ever been diagnosed with anxiety?
++horizontal_barchart("anxiety", accent_color, 200, "./assets/data/wellness/anxiety.csv", "", "Responses", "150")
+hr.dotted
+h3 Have you ever been diagnosed with depression?
++horizontal_barchart("depression", accent_color, 200, "./assets/data/wellness/depression.csv", "", "Responses", "150")
+hr.dotted
+h3 Have you ever had, or do you currently have, an eating disorder?
++horizontal_barchart("eating", accent_color, 200, "./assets/data/wellness/eating.csv", "", "Responses", "150")
+hr.dotted
+h3 Have you ever engaged, or do you currently engage, in self-harm?
++horizontal_barchart("self-harm", accent_color, 250, "./assets/data/wellness/self-harm.csv", "", "Responses", "175")
+hr.dotted
+h3 Generally speaking, do you consider yourself happy at Andover?
++percentage_slider("are-you-happy", 829, 225, accent_color)
+br
+h3 In general, do you think that Andover students are happy?
++percentage_slider("are-andover-students-happy", 665, 389, accent_color)
+hr.dotted
+h3 Happiness by race
+p <i>Note: Percentages for certain categories may be skewed due to a low number of responses.</i>
++grouped_barchart("happiness-race", "#6abf8f,#98e2b8", 300, "./assets/data/wellness/happiness-race.csv", "", "Percentage per category", "Happy,Unhappy", "true")
+hr.dotted
+h3 What social media platforms do you use at Andover?
+p <i>Note: Respondents may have selected more than one</i>
+.multipane#social-media(data-labels = "Senior,Upper,Lower,Junior,Everyone")
+  +vertical_barchart("social-media-2018", accent_color, 250, "./assets/data/wellness/social-media-2018.csv", "", "Responses", "", "293")
+  +vertical_barchart("social-media-2019", accent_color, 250, "./assets/data/wellness/social-media-2019.csv", "", "Responses", "", "286")
+  +vertical_barchart("social-media-2020", accent_color, 250, "./assets/data/wellness/social-media-2020.csv", "", "Responses", "", "276")
+  +vertical_barchart("social-media-2021", accent_color, 250, "./assets/data/wellness/social-media-2021.csv", "", "Responses", "", "199")
+  +vertical_barchart("social-media", accent_color, 250, "./assets/data/wellness/social-media.csv", "", "Responses", "", "1054")
+hr.dotted
+h3 Have you ever been to Graham House or the Sykes Wellness Center to see a counselor?
++percentage_slider("counselors", 466, 588, accent_color)
+hr.dotted
+h3 Have you ever been bullied or hazed while at Andover?
++horizontal_barchart("bullying", accent_color, 200, "./assets/data/wellness/bullying.csv", "", "Responses", "125")
+hr.dotted
+h3 Do you feel alone on campus?
++horizontal_barchart("alone", accent_color, 200, "./assets/data/wellness/alone.csv", "", "Responses", "100")

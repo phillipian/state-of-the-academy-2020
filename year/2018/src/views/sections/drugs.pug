@@ -1,0 +1,61 @@
+h3 Juuling by the years
++text_fact("39.10%", "of 2017-2018 respondents have juuled")
++text_fact("28.86%", "of 2016-2017 respondents have juuled")
+hr.dotted
+h3 Have you ever used hallucinogens or hard drugs?
+p <i>Note: Respondents may have selected more than one.</i>
++vertical_barchart("drugs", accent_color, 250, "./assets/data/drugs/drug.csv", "Drug", "Responses", "", "1046")
+hr.dotted
+h3 Have you ever used pharmaceutical drugs in the hopes of enhancing academic performance at Andover? (i.e. "study drugs") 
++horizontal_barchart("study-drugs", accent_color, 200, "./assets/data/drugs/study-drugs.csv", "", "Responses", "175")
+hr.dotted
+h3 Have you ever sold someone drugs, alcohol, or your prescription medication?
++horizontal_barchart("dealing", accent_color, 200, "./assets/data/drugs/dealing.csv", "", "Responses", "125")
+hr.dotted
+h3 Have you ever attended a school-sponsored event while under the influence of drugs or alcohol?
++percentage_slider("school-sponsored-drugs", 226, 820, accent_color)
+hr.dotted
+h3 How often do you consume drugs or alcohol on campus?
++vertical_barchart("frequency-drugs", accent_color, 250, "./assets/data/drugs/frequency.csv", "", "Responses")
+hr.dotted
+h3 Marijuana usage by class
+.pie-center
+  +pie_chart("marijuana-class-2018", "77,7,55,151", "Yes (on and off campus),Yes (on campus),Yes (off campus),No", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 75, "Senior")
+  +pie_chart("marijuana-class-2019", "65,9,29,182", "Yes (on and off campus),Yes (on campus),Yes (off campus),No", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 75, "Upper")
+  +pie_chart("marijuana-class-2020", "45,5,24,201", "Yes (on and off campus),Yes (on campus),Yes (off campus),No", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 75, "Lower")
+  +pie_chart("marijuana-class-2021", "11,1,16,168", "Yes (on and off campus),Yes (on campus),Yes (off campus),No", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 75, "Junior")
+hr.dotted
+h3 Alcohol usage by class
+.pie-center 
+  +pie_chart("alcohol-class-2018", "113,2,119,56", "Yes (on and off campus),Yes (on campus),Yes (off campus),No", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 75, "Senior")
+  +pie_chart("alcohol-class-2019", "96,3,104,82", "Yes (on and off campus),Yes (on campus),Yes (off campus),No", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 75, "Upper")
+  +pie_chart("alcohol-class-2020", "49,0,125,101", "Yes (on and off campus),Yes (on campus),Yes (off campus),No", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 75, "Lower")
+  +pie_chart("alcohol-class-2021", "15,2,73,106", "Yes (on and off campus),Yes (on campus),Yes (off campus),No", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 75, "Junior")
+hr.dotted
+h3 Tobacco usage by class
+.pie-center
+  +pie_chart("tobacco-class-2018", "52,2,46,290", "Yes (on and off campus),Yes (on campus),Yes (off campus),No", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 75, "Senior")
+  +pie_chart("tobacco-class-2019", "49,5,22,285", "Yes (on and off campus),Yes (on campus),Yes (off campus),No", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 75, "Upper")
+  +pie_chart("tobacco-class-2020", "28,1,21,275", "Yes (on and off campus),Yes (on campus),Yes (off campus),No", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 75, "Lower")
+  +pie_chart("tobacco-class-2021", "9,1,6,196", "Yes (on and off campus),Yes (on campus),Yes (off campus),No", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 75, "Junior")
+hr.dotted
+h3 Juul and E-Cigarette usage by class
+.pie-center
+  +pie_chart("juuling-class-2018", "94,11,42,143", "Yes (on and off campus),Yes (on campus),Yes (off campus),No", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 75, "Senior")
+  +pie_chart("juuling-class-2019", "75,15,28,167", "Yes (on and off campus),Yes (on campus),Yes (off campus),No", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 75, "Upper")
+  +pie_chart("juuling-class-2020", "60,6,28,181", "Yes (on and off campus),Yes (on campus),Yes (off campus),No", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 75, "Lower")
+  +pie_chart("juuling-class-2021", "23,12,15,146", "Yes (on and off campus),Yes (on campus),Yes (off campus),No", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 75, "Junior")
+hr.dotted
+h3 Have you felt pressured to consume alcohol by your peers?
+//+vertical_barchart("alcohol-pressure-usage", accent_color, 300, "./assets/data/drugs/alcohol-pressure-usage.csv", "Have you consumed alcohol?", "Percentage of each category", "true")
++grouped_barchart("alcohol-pressure-usage", "#FCCB9D,#DD2B0E,#F46534,#F7904B", 300, "./assets/data/drugs/alcohol-pressure-usage.csv", "", "Percentage for each category", "Yes (I have consumed alcohol on and off campus),Yes (on campus),Yes (off campus),No", "true")
+hr.dotted
+h3 By socioeconomic class, do you own/have you ever purchased a fake id? 
+.percentage-with-label
+  .label(style = "width:100px;")
+    h4 Upper class:
+  +percentage_slider("fake-id-upperclass", 55, 305, accent_color)
+.percentage-with-label
+  .label(style = "width:100px;")
+    h4 Everyone else:
+  +percentage_slider("fake-id-everyone", 43, 741, accent_color)

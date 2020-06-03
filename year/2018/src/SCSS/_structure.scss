@@ -1,0 +1,191 @@
+/*
+  structure.scss
+  Layout of the webpage
+*/
+
+#wrapper{
+  overflow-x: hidden;
+}
+
+// ** HEADER **
+header{
+  background: gray;
+  height: 80vh;
+  position: relative;
+
+  #background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #636e72;
+    opacity: 0.5;
+    z-index: 50;
+  }
+
+  #img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/graphics/samphil-saturation.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  #logo{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 50px;
+    z-index: 100;
+  }
+
+  center{
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    color: $white;
+    z-index: 100;
+
+    text-shadow: 0 0 4px $black;
+
+    h2{
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+    h1{
+      font-family: "gotham_bold";
+      font-size: 3.5em;
+    }
+    h3{
+      font-family: "Georgia";
+      font-size: 2em;
+      &:before, &:after {
+        background-color: $white;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 10%;
+      }
+
+      &:before {
+        right: 0.5em;
+        margin-left: -50%;
+      }
+
+      &:after {
+        left: 0.5em;
+        margin-right: -50%;
+      }
+    }
+  }
+}
+
+//Photo credits
+.caption{
+  text-align: right;
+  padding: 5px;
+  font-family: georgia;
+  margin: 0;
+}
+
+// ** DISCLAIMER TEXT BOX **
+#text{
+  padding: 70px 0 50px;
+  p{
+    width: 80%;
+    margin: 0 auto;
+    columns: 2;
+  }
+
+  .buttons{
+    text-align: center;
+    .button{
+      border: 2px solid $black;
+      color: $black;
+      padding: 10px 20px;
+      font-family: "gotham_bold";
+
+      &:first-child{
+        margin-right: 5px;
+      }
+    }
+    .button-filled{
+      color: $white;
+      background: $blue;
+      border-color: $blue;
+    }
+  }
+}
+
+// ** VISUALIZATION **
+#data{
+  background: #ECF0F1;
+  position: relative;
+  width: 100vw;
+  padding: 80px 40px;
+
+  //** SIDEBAR **
+  #sidebar{
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    width: 15%;
+    color: #6C7A89;
+
+    h2{  //TODO: Make this a different color
+      font-size: 1.25em;
+    }
+
+    .section-nav{
+      a{
+        color: #6C7A89;
+        font-size: 1.1em;
+        transition: 0.2s;
+        &:hover{
+          color: $black;
+        }
+      }
+
+      margin-bottom: 10px;
+    }
+  }
+
+  // ** SECTIONS **
+  #sections{
+    margin-left: 20%;
+    width: 70%;
+    .section{
+      h2, h3, h4{
+        font-family: "gotham_bold";
+        color: $black;
+      }
+
+      h2{
+        font-size: 1.75em;
+      }
+
+      h3{
+        font-size: 1.4em;
+        margin-bottom: 3px;
+      }
+
+      h4{
+        font-size: 0.8em;
+      }
+
+      margin: 20px 0;
+    }
+  }
+}
+
+// ** FOOTER **
+footer{
+  padding: 20px;
+}

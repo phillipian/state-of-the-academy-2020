@@ -1,0 +1,27 @@
+{
+  "name": "state-of-the-academy-2018",
+  "version": "1.0.0",
+  "description": "The Phillipian's annual State of the Academy survey",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillipian/State-of-the-Academy-2018.git"
+  },
+  "author": "Jeffrey Shen <jeffreyshencc@gmail.com> (http://jeffreyshen.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phillipian/State-of-the-Academy-2018/issues"
+  },
+  "homepage": "https://github.com/phillipian/State-of-the-Academy-2018#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^2.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.2.1",
+    "gulp-webserver": "^0.9.1"
+  }
+}

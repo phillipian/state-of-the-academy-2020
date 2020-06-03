@@ -1,0 +1,65 @@
+h3 Have you ever engaged in sexual activity? 
+p <i>Note: respondents may have selected more than one</i>
+.multipane#sexual-activity(data-labels = "Everyone,Senior,Upper,Lower,Junior")
+  +vertical_barchart("sex", accent_color, 250, "./assets/data/sex/sexual-activity.csv", "Sexual act", "Responses", "", "1049")
+  +vertical_barchart("sex-2018", accent_color, 250, "./assets/data/sex/sexual-activity-2018.csv", "Sexual act", "Responses", "", "291")
+  +vertical_barchart("sex-2019", accent_color, 250, "./assets/data/sex/sexual-activity-2019.csv", "Sexual act", "Responses", "", "285")
+  +vertical_barchart("sex-2020", accent_color, 250, "./assets/data/sex/sexual-activity-2020.csv", "Sexual act", "Responses", "", "276")
+  +vertical_barchart("sex-2021", accent_color, 250, "./assets/data/sex/sexual-activity-2021.csv", "Sexual act", "Responses", "", "197")
+hr.dotted  
+h3 With how many people have you engaged in sexual activity with?
++vertical_barchart("sex-partners", accent_color, 250, "./assets/data/sex/sexual-partners.csv", "Number of Partners", "Responses")  
+hr.dotted
+h3 Relationship status by sexuality
+p <i>Note: Percentages for certain categories may be skewed due to a low number of responses.</i>
++grouped_barchart("sexuality-commited-relationship", "#dd318b,#fec5e4", 300, "./assets/data/sex/sexuality-commited-relationship.csv", "", "Percentage of that sexuality", "In a committed relationship,Not in a committed relationship", "true")
+hr.dotted
+h3 Do you consistently ask your partner for verbal consent?
++pie_chart("consent", "394,138,517", "Yes,No,Not applicable", "#dd318b,#E854A6,#fec5e4")
+hr.dotted
+h3 Do you use barrier-method protection while engaging in sexual activity?
+p <i>Note: Respondents may have selected more than one.</i>
++vertical_barchart("protection", accent_color, 250, "./assets/data/sex/protection.csv", "", "Responses", "", "1049")
+hr.dotted
+h3 Do you think that the current sexual education curriculum at Andover is adequate?
+p <i>Note: Percentages for certain categories may be skewed due to a low number of responses.</i>
++percentage_slider("sex-ed", 697, 352, accent_color)
+br
++vertical_barchart("sex-ed-gender", accent_color, 300, "./assets/data/sex/sex-ed-gender.csv", "Gender", "% that said yes", "true")  
+hr.dotted
+h3 Do you believe that there is a hook-up culture at Andover?
++percentage_slider("hookup-culture", 954, 95, accent_color)
+br
+h3 Belief in a hook-up culture by gender
+p <i>Note: Percentages for certain categories may be skewed do to a low number of responses.</i>
++vertical_barchart("hookup-culture-gender", accent_color, 300, "./assets/data/sex/hookup-culture-gender.csv", "Gender", "% believing in hook-up culture", "true")  
+hr.dotted
+h3 Have you ever felt pressure by your peers to participate in Andover's hook-up culture?
++pie_chart("hookup-culture-pressure", "402,582,65", "Yes,No,Not applicable", "#dd318b,#E854A6,#fec5e4")
+hr.dotted
+h3 Have you ever felt pressured by a partner to engage in sexual activity? 
+p <i>Note: Percentages for certain categories may be skewed do to a low number of responses.</i>
++vertical_barchart("pressure-sex", accent_color, 300, "./assets/data/sex/pressure-sex.csv", "Gender", "Percentage per category", "true") 
+hr.dotted
+h3 Have you ever masturbated?
+.percentage-with-label
+  .label
+    h4 Males:
+  +percentage_slider("masturbation-men", 454, 36, accent_color)
+.percentage-with-label
+  .label
+    h4 Females:
+  +percentage_slider("masturbation-women", 302, 255, accent_color)
+hr.dotted
+h3 Have you ever watched porn?
+.percentage-with-label
+  .label
+    h4 Males:
+  +percentage_slider("porn-men", 435, 55, accent_color)
+.percentage-with-label
+  .label
+    h4 Females:
+  +percentage_slider("porn-women", 257, 300, accent_color)
+br
+h3 Porn by grade
++grouped_barchart("porn-grade", "#dd318b,#fec5e4", 300, "./assets/data/sex/porn-grade.csv", "", "Percentage per grade", "Has watched porn,Has not watched porn", "true")

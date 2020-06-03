@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+>
+  <title>State of the Academy 2014</title>
+  <link data-turbolinks-track="true" href="../assets/application-4a9d4b4b59a3681a3f65705a4e9ec934.css" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="../assets/application-814047460195a22ea6260f3be2cee536.js"></script>
+  <script src="http://www.google.com/jsapi"></script>
+<script src="../assets/chartkick-724363322419626f7598f52445e181c1.js"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="iJJ1O+NPHh+MugNWONCN48mpaIK2llW5QMWpHFQjtbU=" name="csrf-token" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="main-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://www.phillipian.net">The Phillipian</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav" id="main-nav">
+        <li class=""><a href="../index.html">Welcome</a></li>
+        <li class=""><a href="general.html">General</a></li>
+        <li class=""><a href="drugs_and_alcohol.html">Drugs/Alcohol</a></li>
+        <li class=""><a href="wellness.html">Wellness</a></li>
+        <li class="active"><a href="academics.html">Academics</a></li>
+        <li class=""><a href="social.html">Sex</a></li>
+        <li class=""><a href="social2.html">Social</a></li>
+        <!-- <li class="<#%= is_active?(sections_custom_path)             %>"><#%= link_to "Custom!",        sections_custom_path            %></li> -->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</header>
+
+  <div class="container">
+    <div class="bs-sidebar affix">
+  <br /><br />
+  <ul class="nav bs-sidenav">
+    <h4>Topics</h4><hr />
+    <li><a href="academics.html#grades">Grades</a></li>
+    <li><a href="academics.html#disp_infl">Grading disparities/inflation</a></li>
+    <li><a href="academics.html#dishonesty">Academic dishonesty</a></li>
+    <li><a href="academics.html#misc">Miscellaneous</a></li>
+  </ul>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-10">
+
+      <hr id="grades" class="col-md-12">
+      <h3>Grades</h3>
+      <div class="owl-carousel">
+        <div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "What was your rounded Winter 2013-2014 GPA?" },"legend": { "enabled": false },"xAxis": { "categories": [ "3.0 or lower","3.5","4.0","4.5","5.0","5.5","6.0" ] },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true,"formatter": barTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "type": "bar","renderTo": "gradegraph" },"subtitle": {  },"plotOptions": { "bar": { "colorByPoint": true } },"series": [{ "data": [ [ "3.0 or lower",4 ],[ "3.5",14 ],[ "4.0",68 ],[ "4.5",135 ],[ "5.0",276 ],[ "5.5",194 ],[ "6.0",59 ] ],"name": null }] };
+        
+        window.chart_gradegraph = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="gradegraph"></div></div>
+        <div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": null },"legend": { "align": "bottom","verticalAlign": "top","layout": "vertical","title": { "text": "What was your rounded Winter 2013-2014 GPA?" } },"xAxis": { "categories": [ "Female","Male" ],"title": { "text": "What is your sex?" } },"yAxis": { "title": { "text": "Percentage" },"labels": {  } },"tooltip": { "enabled": true,"formatter": xRefBarTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "gradesbysex" },"subtitle": {  },"plotOptions": { "bar": { "stacking": "percent" } },"series": [{ "type": "bar","name": "3.0 or lower","data": [ 2,2 ] },{ "type": "bar","name": "3.5","data": [ 6,8 ] },{ "type": "bar","name": "4.0","data": [ 29,39 ] },{ "type": "bar","name": "4.5","data": [ 64,71 ] },{ "type": "bar","name": "5.0","data": [ 163,113 ] },{ "type": "bar","name": "5.5","data": [ 113,81 ] },{ "type": "bar","name": "6.0","data": [ 37,22 ] }] };
+        
+        window.chart_gradesbysex = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="gradesbysex"></div></div>
+      </div>
+      
+      <hr id="disp_infl" class="col-md-12">
+      <h3>Grading Disparity and Inflation</h3>
+      <div class="owl-carousel">
+        <div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "Are there grading disparities between teachers of the same subject at Andover?" },"legend": { "layout": "vertical","style": { "left": "auto","bottom": "auto","right": "50px","top": "100px" } },"xAxis": {  },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true,"formatter": pieTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "pie","renderTo": "disparities" },"subtitle": {  },"plotOptions": { "pie": { "allowPointSelect": true,"cursor": "pointer","dataLabels": { "enabled": true,"color": "black","style": { "font": "13px Trebuchet MS, Verdana, sans-serif" } } } },"series": [{ "type": "pie","data": [ [ "Yes, to an unfair degree",522 ],[ "Yes, to a permissible degree",218 ],[ "No",10 ] ],"name": null }] };
+        
+        window.chart_disparities = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="disparities"></div></div>
+        <div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "In which department is there the largest grading disparity?" },"legend": { "enabled": false },"xAxis": { "categories": [ "English","History","Science","Math","Language","Art","RelPhil","Music","Theatre" ] },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true,"formatter": barTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "type": "bar","renderTo": "disparitiesdepartments" },"subtitle": {  },"plotOptions": { "bar": { "colorByPoint": true } },"series": [{ "data": [ [ "English",570 ],[ "History",68 ],[ "Science",34 ],[ "Math",28 ],[ "Language",15 ],[ "Art",8 ],[ "RelPhil",7 ],[ "Music",2 ],[ "Theatre",2 ] ],"name": null }] };
+        
+        window.chart_disparitiesdepartments = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="disparitiesdepartments"></div></div>
+      </div>
+      <div class="owl-carousel">
+        <div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "Do you think there is grade inflation at Andover?" },"legend": { "layout": "vertical","style": { "left": "auto","bottom": "auto","right": "50px","top": "100px" } },"xAxis": {  },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true,"formatter": pieTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "pie","renderTo": "inflation" },"subtitle": {  },"plotOptions": { "pie": { "allowPointSelect": true,"cursor": "pointer","dataLabels": { "enabled": true,"color": "black","style": { "font": "13px Trebuchet MS, Verdana, sans-serif" } } } },"series": [{ "type": "pie","data": [ [ "Yes",397 ],[ "No",353 ] ],"name": null }] };
+        
+        window.chart_inflation = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="inflation"></div></div>
+        <div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": null },"legend": { "align": "bottom","verticalAlign": "top","layout": "vertical","title": { "text": "Do you think there is grade inflation at Andover?" } },"xAxis": { "categories": [ "3.0 or lower","3.5","4.0","4.5","5.0","5.5","6.0" ],"title": { "text": "What was your rounded Winter 2013-2014 GPA?" } },"yAxis": { "title": { "text": "Percentage" },"labels": {  } },"tooltip": { "enabled": true,"formatter": xRefBarTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "inflationbygpa" },"subtitle": {  },"plotOptions": { "bar": { "stacking": "percent" } },"series": [{ "type": "bar","name": "Yes","data": [ 3,5,33,73,144,102,37 ] },{ "type": "bar","name": "No","data": [ 1,9,35,62,132,92,22 ] }] };
+        
+        window.chart_inflationbygpa = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="inflationbygpa"></div></div>
+	<div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": null },"legend": { "align": "bottom","verticalAlign": "top","layout": "vertical","title": { "text": "Do you think there is grade inflation at Andover?" } },"xAxis": { "categories": [ "2014","2015","2016","2017" ],"title": { "text": "What class are you in?" } },"yAxis": { "title": { "text": "Percentage" },"labels": {  } },"tooltip": { "enabled": true,"formatter": xRefBarTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "inflationbyclass" },"subtitle": {  },"plotOptions": { "bar": { "stacking": "percent" } },"series": [{ "type": "bar","name": "Yes","data": [ 127,120,106,44 ] },{ "type": "bar","name": "No","data": [ 76,97,91,89 ] }] };
+        
+        window.chart_inflationbyclass = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="inflationbyclass"></div></div>
+      </div>
+      
+      <hr id="dishonesty" class="col-md-12">
+      <h3>Academic Dishonesty</h3>
+      <div class="owl-carousel">
+        <div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "Have you ever cheated on any tests, quizzes or in-class assessments?" },"legend": { "layout": "vertical","style": { "left": "auto","bottom": "auto","right": "50px","top": "100px" } },"xAxis": {  },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true,"formatter": pieTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "pie","renderTo": "cheating" },"subtitle": {  },"plotOptions": { "pie": { "allowPointSelect": true,"cursor": "pointer","dataLabels": { "enabled": true,"color": "black","style": { "font": "13px Trebuchet MS, Verdana, sans-serif" } } } },"series": [{ "type": "pie","data": [ [ "No",569 ],[ "Yes",157 ] ],"name": null }] };
+        
+        window.chart_cheating = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="cheating"></div></div>
+        <div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": null },"legend": { "align": "bottom","verticalAlign": "top","layout": "vertical","title": { "text": "Have you ever cheated on any tests, quizzes or in-class assessments?" } },"xAxis": { "categories": [ "2014","2015","2016","2017" ],"title": { "text": "What class are you in?" } },"yAxis": { "title": { "text": "Percentage" },"labels": {  } },"tooltip": { "enabled": true,"formatter": xRefBarTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "cheatingbyclass" },"subtitle": {  },"plotOptions": { "bar": { "stacking": "percent" } },"series": [{ "type": "bar","name": "Yes","data": [ 62,46,35,14 ] },{ "type": "bar","name": "No","data": [ 136,165,156,112 ] }] };
+        
+        window.chart_cheatingbyclass = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="cheatingbyclass"></div></div>
+      </div>
+      <div class="owl-carousel">
+	<div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "Have you ever plagiarized?" },"legend": { "layout": "vertical","style": { "left": "auto","bottom": "auto","right": "50px","top": "100px" } },"xAxis": {  },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true,"formatter": pieTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "pie","renderTo": "plagairized" },"subtitle": {  },"plotOptions": { "pie": { "allowPointSelect": true,"cursor": "pointer","dataLabels": { "enabled": true,"color": "black","style": { "font": "13px Trebuchet MS, Verdana, sans-serif" } } } },"series": [{ "type": "pie","data": [ [ "Yes, on a major assignment",7 ],[ "Yes, on a minor assignment",52 ],[ "Yes, on both a major and minor assignment",18 ],{ "name": "No","y": 649,"sliced": true,"selected": true } ],"name": null }] };
+        
+        window.chart_plagairized = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="plagairized"></div></div>
+	<div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": null },"legend": { "align": "bottom","verticalAlign": "top","layout": "vertical","title": { "text": "Have you ever plagiarized?" } },"xAxis": { "categories": [ "2014","2015","2016","2017" ],"title": { "text": "What class are you in?" } },"yAxis": { "title": { "text": "Percentage" },"labels": {  } },"tooltip": { "enabled": true,"formatter": xRefBarTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "plagairizedbyclass" },"subtitle": {  },"plotOptions": { "bar": { "stacking": "percent" } },"series": [{ "type": "bar","name": "Yes, on a major assignment","data": [ 5,2,0,0 ] },{ "type": "bar","name": "Yes, on a minor assignment","data": [ 12,21,14,5 ] },{ "type": "bar","name": "Yes, on both a major and minor assignment","data": [ 5,7,4,2 ] },{ "type": "bar","name": "No","data": [ 176,181,173,119 ] }] };
+        
+        window.chart_plagairizedbyclass = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="plagairizedbyclass"></div></div>
+      </div>
+      
+      <hr id="misc" class="col-md-12">
+      <h3>Miscellaneous</h3>
+      <div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "How do you feel about your overall academic experience here?" },"legend": { "layout": "vertical","style": { "left": "auto","bottom": "auto","right": "50px","top": "100px" } },"xAxis": {  },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true,"formatter": pieTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "pie","renderTo": "experience" },"subtitle": {  },"plotOptions": { "pie": { "allowPointSelect": true,"cursor": "pointer","dataLabels": { "enabled": true,"color": "black","style": { "font": "13px Trebuchet MS, Verdana, sans-serif" } } } },"series": [{ "type": "pie","data": [ [ "A little hard",413 ],[ "Just right",191 ],[ "Too hard",120 ],[ "A little easy",20 ],[ "Too easy",6 ] ],"name": null }] };
+        
+        window.chart_experience = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="experience"></div></div>
+      <div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "Would you take easier classes for the better grade, or harder classes with the risk of a worse grade?" },"legend": { "layout": "vertical","style": { "left": "auto","bottom": "auto","right": "50px","top": "100px" } },"xAxis": {  },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true,"formatter": pieTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "pie","renderTo": "easyhard" },"subtitle": {  },"plotOptions": { "pie": { "allowPointSelect": true,"cursor": "pointer","dataLabels": { "enabled": true,"color": "black","style": { "font": "13px Trebuchet MS, Verdana, sans-serif" } } } },"series": [{ "type": "pie","data": [ [ "Harder classes, risk of worse grade",421 ],[ "Easier classes, better grade",331 ] ],"name": null }] };
+        
+        window.chart_easyhard = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="easyhard"></div></div>
+      <div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "How many hours do you spend on course work outside of class each day?" },"legend": { "enabled": false },"xAxis": { "categories": [ "2 or fewer","3","4","5","6","7 or more" ] },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true,"formatter": barTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "type": "bar","renderTo": "hours" },"subtitle": {  },"plotOptions": { "bar": { "colorByPoint": true } },"series": [{ "data": [ [ "2 or fewer",63 ],[ "3",113 ],[ "4",275 ],[ "5",196 ],[ "6",75 ],[ "7 or more",28 ] ],"name": null }] };
+        
+        window.chart_hours = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="hours"></div></div>
+      <div class="owl-carousel">
+	<div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "How do you think attending Andover affects your chances of attending a “top college” (however you define the term)?" },"legend": { "layout": "vertical","style": { "left": "auto","bottom": "auto","right": "50px","top": "100px" } },"xAxis": {  },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true,"formatter": pieTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "pie","renderTo": "collegechance" },"subtitle": {  },"plotOptions": { "pie": { "allowPointSelect": true,"cursor": "pointer","dataLabels": { "enabled": true,"color": "black","style": { "font": "13px Trebuchet MS, Verdana, sans-serif" } } } },"series": [{ "type": "pie","data": [ [ "Decreased",391 ],[ "Increased",249 ],[ "Did not change",110 ] ],"name": null }] };
+        
+        window.chart_collegechance = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="collegechance"></div></div>
+	<div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": null },"legend": { "align": "bottom","verticalAlign": "top","layout": "vertical","title": { "text": "How do you think attending Andover affects your chances of attending a “top college” (however you define the term)?" } },"xAxis": { "categories": [ "2014","2015","2016","2017" ],"title": { "text": "What class are you in?" } },"yAxis": { "title": { "text": "Percentage" },"labels": {  } },"tooltip": { "enabled": true,"formatter": xRefBarTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "collegechancebyclass" },"subtitle": {  },"plotOptions": { "bar": { "stacking": "percent" } },"series": [{ "type": "bar","name": "Increased","data": [ 46,64,79,60 ] },{ "type": "bar","name": "Decreased","data": [ 110,131,98,52 ] },{ "type": "bar","name": "Did not change","data": [ 47,22,20,21 ] }] };
+        
+        window.chart_collegechancebyclass = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="collegechancebyclass"></div></div>
+      </div>
+      <div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "Do you like technology in the classroom?" },"legend": { "layout": "vertical","style": { "left": "auto","bottom": "auto","right": "50px","top": "100px" } },"xAxis": {  },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true,"formatter": pieTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "pie","renderTo": "techinclass" },"subtitle": {  },"plotOptions": { "pie": { "allowPointSelect": true,"cursor": "pointer","dataLabels": { "enabled": true,"color": "black","style": { "font": "13px Trebuchet MS, Verdana, sans-serif" } } } },"series": [{ "type": "pie","data": [ [ "Yes, I like the way it is",381 ],[ "Yes, I would like to see more",211 ],[ "No",149 ] ],"name": null }] };
+        
+        window.chart_techinclass = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="techinclass"></div></div>
+      
+      <hr class="col-md-12">
+
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div id="footer">
+  <div class="container">
+    <br />
+    <p class="muted credit" id="footer-text">The Phillipian © 2014. Questions or Comments? <a href="http://www.phillipian.net/contact">Contact us.</a></p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+/*
+  mobile.scss
+  Code for responsiveness
+*/
+
+@media screen and (min-width: 900px){
+  .other-hr{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px){
+  #data{
+    #sidebar{
+      position: relative;
+      color: #6C7A89;
+      width: 100%;
+      top: 0;
+      left: 0;
+
+      hr.main{
+        display: none;
+      }
+
+      hr.other-hr{
+        width: calc(100% - 80px);
+      }
+
+      .section-nav{
+        margin-right: 8px;
+        display: inline;
+      }
+
+      .sub-nav{
+        display: none;
+      }
+    }
+
+    #sections{
+      margin-top: 40px;
+      margin-left: 0%;
+      width: calc(100% - 80px);
+      .section{
+        h2, h3{
+          font-family: "gotham_bold";
+          color: $black;
+        }
+
+        h2{
+          font-size: 1.75em;
+        }
+
+        h3{
+          font-size: 1.4em;
+        }
+
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  #text{
+    padding: 70px 0;
+    p{
+      width: 80%;
+      margin: 0 auto;
+      columns: 1;
+    }
+  }
+
+  #data{
+    padding: 80px 15px;
+
+    #sidebar{
+      position: relative;
+      color: #6C7A89;
+      width: 100%;
+      top: 0;
+      left: 0;
+
+      hr.main{
+        display: none;
+      }
+
+      hr.other-hr{
+        width: calc(100% - 30px);
+      }
+
+      h2{
+        margin-bottom: 5px;
+      }
+
+      .section-nav{
+        margin: 0px;
+        display: block;
+      }
+    }
+
+    #sections{
+      width: calc(100% - 30px);
+    }
+  }
+}

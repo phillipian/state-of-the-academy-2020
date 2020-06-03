@@ -1,0 +1,60 @@
+h3 What class are you in? 
++horizontal_barchart("class", accent_color, 200, "./assets/data/general/class.csv", "Class", "Responses")
+hr.dotted
+h3 Are you a boarding student? 
++percentage_slider("boardingstudent", 780, 283, accent_color)
+hr.dotted
+h3 Where are you from? 
+.multipane#where-are-you-from(data-labels = "Map,Bar Chart")
+  +us_map("us_map", "./assets/graphics/map.svg", "5,658,74,36,79,41,170", accent_color)
+  +vertical_barchart("whereareyoufrom", accent_color, 400, "./assets/data/general/map.csv", "Region", "Responses")
+hr.dotted
+h3 (For students from the United States) What is your immigration status?
++vertical_barchart("immigrationstatus", accent_color, 300, "./assets/data/general/immigration.csv", "", "Responses")
+hr.dotted 
+h3 What is your ethnicity?
+p <i>Note: respondents may have selected more than one</i>
++horizontal_barchart("ethnicity", accent_color, 400, "./assets/data/general/ethnicity.csv", "", "Responses", "120", "1063")
+hr.dotted
+h3 What is your gender?   
++vertical_barchart("gender", accent_color, 300, "./assets/data/general/gender.csv", "Gender Identification", "Responses")
+hr.dotted
+h3 What is your sexual orientation? 
+p Sexual orientation is "a person's sexual identity in relation to the gender to which they are attracted" (Oxford Dictionaries). Each term is defined as follows:
+br
+ul 
+  li Asexual — without sexual attraction
+  li Bisexual — sexually attracted to both men and women
+  li Demisexual — sexually attracted only after developing an emotional connection
+  li Heterosexual — sexually attracted to the opposite sex or gender
+  li Homosexual — sexually attracted to the same sex or gender
+  li Pansexual — sexually attracted to others regardless of sex or gender
++vertical_barchart("sexual-orientation", accent_color, 300, "./assets/data/general/sexual-orientation.csv", "Sexual Orientation", "Responses")
+hr.dotted
+h3 What is your romantic orientation?   
+p Romantic orientation is "an individual's pattern of romantic attraction based on a person's gender" (AVENwiki). Each term is defined as follows:
+br
+ul
+  li Aromantic — without romantic attraction
+  li Biromantic — romantically attracted to both men and women
+  li Demiromantic — romantically attracted only after developing an emotional connection
+  li Heteroromantic — romantically attracted to the opposite sex or gender
+  li Homoromantic — romantically attracted to the same sex or gender
+  li Panromantic — romantically attracted to others regardless of sex or gender
++vertical_barchart("romantic-orientation", accent_color, 300, "./assets/data/general/romantic-orientation.csv", "Romantic Orientation", "Responses")
+hr.dotted
+h3 What are your preferred gender pronouns (PGPs)?  
++vertical_barchart("pgp", accent_color, 300, "./assets/data/general/pgp.csv", "PGP", "Responses")
+hr.dotted
+h3 Are you on any form of financial aid?
++percentage_slider("financialaid", 494, 564, accent_color)
+hr.dotted
+h3 If you attend college, will you be a first-generation college student?
++percentage_slider("financialaid", 77, 986, accent_color)
+hr.dotted
+h3 Are you a varsity athlete? 
++percentage_slider("varsityathlete", 484, 579, accent_color)
+hr.dotted
+h3 With which religion or faith system do you identify, if any?
+p <i>Note: respondents may have selected more than one</i>
++horizontal_barchart("religion", accent_color, 400, "./assets/data/general/religion.csv", "Religion", "Responses", "100", "1063")

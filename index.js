@@ -317,8 +317,6 @@ window.onload = () => {
         displayPercentage:true
     });
 
-    sota.pieChart({selector: "#module-campus-rape_culture-d3", dataFile: "assets/data/campus/rape_culture"});
-
     sota.pieChart({selector: "#module-campus-bkh_valentines-d3", dataFile: "assets/data/campus/bkh_valentines"});
 
     sota.pieChart({selector: "#module-campus-prom-d3", dataFile: "assets/data/campus/prom"});
@@ -668,12 +666,13 @@ window.onload = () => {
         selector: "#module-sex-partner_pressure-d3",
         dataFile: "assets/data/sex/hookup_cultureXclass",
         labelStyle: "onBar",
+        groupLabelStyle: "onBar",
         showLegend: true
     });
 
     sota.stackedBarChart({
         selector: "#module-sex-partner_pressureXgender-d3",
-        dataFile: "assets/data/sex/hookup_cultureXclass",
+        dataFile: "assets/data/sex/partner_pressureXgender",
         labelStyle: "onBar",
         groupLabelStyle: "onBar",
         showLegend: true

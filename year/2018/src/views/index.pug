@@ -1,0 +1,145 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name = "description" content = "The Phillipian's annual State of the Academy survey, for 2018.")
+    meta(name = "author" content = "Jeffrey Shen")
+    title The State of the Academy 2018
+    link(rel = "icon" type = "image/png" sizes = "32x32" href = "assets/graphics/favicon.png")
+    link(href='bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css' rel='stylesheet' type='text/css')
+    link(href='dist/CSS/main.css', rel='stylesheet', type='text/css')
+  body
+    include components/percentage-slider.pug
+    include components/us-map.pug
+    include components/piechart.pug
+    include components/text-fact.pug
+    include components/line-chart.pug
+    include components/barcharts/vertical-barchart.pug
+    include components/barcharts/horizontal-barchart.pug
+    include components/barcharts/stacked-barchart.pug
+    include components/barcharts/group-barchart.pug
+    #wrapper
+      header
+        #background
+        #img
+        img#logo(src = "assets/graphics/logo/light.png") 
+        center
+          h2.phillipian-name The Phillipian
+          h1 State of the Academy
+          h3 2018  
+      p.caption M.CALLAHAN/The Phillipian
+      #text
+        //TODO: make p have two columns
+        p On April 7, <i>The Phillipian</i>, vol. CXLI, sent out the 2018 “State of Academy” survey to all Andover students in hopes of obtaining valuable information about the school community. This year, 1043 students participated. The anonymous survey asked a comprehensive set of 111 questions, comprised of eight sections: General, Politics and Worldview, Wellness, Sex, Drugs and Alcohol, School, Community Diversity, and Discipline. The final product includes seven sections of data graphics and information, with the results from Community Diversity split into other sections. This year, <i>The Phillipian</i> will also publish raw results from the entire survey in a State of the Academy Website to be viewed in tandem with the printed copy. We sincerely thank participating members of the Andover community for their willingness to share information and their own personal experiences for this special issue of <i>The Phillipian</i>, and we hope that the State of the Academy will serve to inform, enlighten, and create a more holistic narrative of the students at Andover. 
+          br
+          br
+          i Editor’s Note: In order to maintain complete transparency, please note the following: due to an administrative error, the “State of the Academy” survey gathered responses from nine students who are currently or permanently off campus. Seeing as these nine students represent only 0.78% of the total number of respondents, however, we hope that the data will not be significantly altered in any meaningful way.
+          br
+        br
+        br
+        .buttons
+          a.button(href = "https://github.com/phillipian/State-of-the-Academy-2018" target = "_blank") Source Code
+          a.button.button-filled(href = "https://github.com/phillipian/State-of-the-Academy-2018/blob/master/assets/data/responses.csv" target = "_blank") See Response Data
+      footer
+        .left
+          p 
+            i Website by Jeffrey Shen
+      #data
+        #sidebar
+          h2.phillipian-name State of the Academy 2018
+          hr.main
+          #general-nav.section-nav
+            a(href = "#general") General
+            ol.sub-nav(hidden)
+          #school-nav.section-nav
+            a(href = "#school") School
+            ol.sub-nav(hidden)
+          #politics-nav.section-nav
+            a(href = "#politics") Politics &amp; Worldview
+            ol.sub-nav(hidden)
+          #wellness-nav.section-nav
+            a(href = "#wellness") Wellness
+            ol.sub-nav(hidden)
+          #sex-nav.section-nav
+            a(href = "#sex") Sex
+            ol.sub-nav(hidden)
+          #drugs-nav.section-nav
+            a(href = "#drugs") Drugs
+            ol.sub-nav(hidden)
+          #discipline-nav.section-nav
+            a(href = "#discipline") Discipline
+            ol.sub-nav(hidden)
+          hr.other-hr(align = "left")
+        #sections
+          -var accent_color = "rgb(12,61,139)"
+          #general.section
+            br
+            h2 General
+            br
+            include sections/general.pug
+            br 
+            hr
+          #school.section
+            br
+            -var accent_color = "#14195C"
+            h2 School
+            p Academics are a large part of the life of an Andover student, involving both the school day and an average of 4.2 hours of homework outside of the classroom. Many students also participate in additional extracurricular activities. 64% of respondents reported that they participated in extracurriculars partly to increase their chances of admission to a selective college, and 7% reported participating in extracurriculars solely for this reason. Finally, faculty voted earlier this week to adopt a new schedule, Model A3, beginning the fall of  the 2018-2019 school year. 55% of respondents, however, do not support a change in the current academic schedule.
+            include sections/school.pug
+            br
+            hr
+          #politics.section
+            br
+            -var accent_color = "#521A7E"
+            h2 Politics &amp; Worldview
+            p Andover is generally known for its politically liberal culture, which is further evidenced by the 44.2% of students that identify as identify as Liberals. 16.3% of respondents identify as Conservatives, nearly three times less than those who identify as liberal. This clear majority has impacted the atmospheres of political discussions on campus, resulting in 61.9% of respondents feeling the need to censor themselves due to their political leaning. Looking at current national issues, about 60% of respondents support affirmative action. Black respondents were nearly unanimous (90.35%) in their support of affirmative action. In addition, 33.8% of respondents believed that reverse racism — defined as system “prejudice, discrimination, or antagonism on the basis of race directed against a member of a dominant or privileged racial group” (Oxford Dictionaries) — exists. Additionally, 48.8% of respondents believe that there is a rape culture at Andover. Finally, 87% of respondents supported all-gender housing following its first year of implementation at Andover, a 3% increase from last year. 
+            br
+            include sections/politics.pug
+            br
+            hr
+          #wellness.section
+            br
+            -var accent_color = "#6abf8f"
+            h2 Wellness
+            p Addressing student wellness has been at the forefront of Andover’s mission to help students stay balanced. On average, Andover students sleep just under 6.7 hours per night. 78.7% of respondents consider themselves generally happy at Andover, while 63.0% of respondents think that Andover students as a whole are happy. 38.5% of students find support systems in their friends, the largest percentage. Students who find their support systems including faculty and/or Sykes staff come a close second at 33.40%. 166 students have been diagnosed with depression, and 187 students have been diagnosed with anxiety, either before or after coming to Andover. 
+            br
+            include sections/wellness.pug
+            br
+            hr
+          #sex.section
+            -var accent_color = "rgb(220,48,138)"
+            br
+            h2 Sex
+            p An overwhelming 91% majority of student respondents believe in the existence of a hook-up culture at Andover, and 38.3% of all respondents have felt pressured to participate in the hook-up culture. 49% of respondents have engaged in sexual activity, compared to 52% from last year’s survey. 66% of respondents believe that the current sexual education curriculum at Andover is adequate. 37 respondents have been sexually assaulted on campus, and 91 have been sexually assaulted off campus, in addition to 28 both on and off campus. 21.2% of female respondents have been sexually assaulted while 7.6% of male respondents and 0% of intersex respondents have been sexually assaulted. 33 respondents have been sexually harassed on campus, and 208 have been sexually harassed off campus, in addition to 125 both on and off campus. 54.05% of female respondents have been sexually harassed while 13.1% of male respondents. 
+              br
+              br
+              i Editor’s note: Correlated statistics from respondents who identified as intersex have been removed to protect the complete anonymity of these respondents.
+            br
+            include sections/sex.pug
+            br
+            hr
+          #drugs.section
+            br
+            -var accent_color = "#EE601B"
+            h2 Drugs
+            p Like other high schools, Andover is susceptible to a pervasive drug and alcohol culture. 27.82% of students have felt pressured by peers to consume drugs or alcohol. Out of all Andover students, 21.6% have attended a school-sponsored event under the influence of drugs or alcohol while 11.6% have used drugs or alcohol during the academic school day. Students of the upper socioeconomic class have the highest percentages in consuming alcohol and tobacco products on and off campus, using Juuls, hallucinogens, or hard drugs on and off campus; using pharmaceutical or “study drugs”; and purchasing or owning a fake ID. 
+            br
+            include sections/drugs.pug
+            br
+            hr
+          #discipline.section
+            br
+            -var accent_color = "#da5251"
+            h2 Discipline
+            p When it is determined that an Andover student has committed a major offense, they are called upon a Disciplinary Committee (DC). 61 respondents have sat before a DC, with the highest percentage by socioeconomic class from the lower socioeconomic class (18.2%). 306 respondents reported having cheated on tests, quizzes, or in-class assessments. 89% of respondents support changes to make room visit policies more lenient. 78.04% of students believe that the school’s disciplinary system favors students of privileged backgrounds. 
+            br
+            include sections/discipline.pug
+            br
+      footer
+        .left
+          p <strong>State of the Academy 2018</strong>
+    script(src='bower_components/jquery/dist/jquery.min.js')
+    script(src='bower_components/d3/d3.min.js')
+    script(src='dist/script.js')
+    //script(src='dist/script-min.js')

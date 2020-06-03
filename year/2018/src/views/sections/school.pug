@@ -1,0 +1,80 @@
++text_fact("5.18", "was the average school-wide Winter 2017-2018 G.P.A")
+br
+br
+h3 What was your rounded Winter 2017-2018 (unweighted) G.P.A.?
+p <i>Note: If respondents were between two numbers, they were instructed to round up to the next closest decimal — a 5.3 G.P.A. would round to a 5.4</i>
++line_chart("chart", accent_color, 300, "GPA", "Respondents", "./assets/data/school/gpa.csv", "false", 1, "", "true")
+//+line_chart("chart", accent_color, 300, "GPA", "Respondents", "./assets/data/school/gpa-4.csv", "false", 2, "A \"4\" is not a good grade,A \"4\" is a good grade", "false")
+hr.dotted
+h3 How many hours do you spend on coursework outside of class each day?
++vertical_barchart("coursework", accent_color, 200, "./assets/data/school/coursework.csv", "Time spent in hours", "Responses")
+hr.dotted
+h3 Average GPA by Hours spent on coursework
++line_chart("average-gpa-coursework", accent_color, 300, "Time spent on coursework in hours", "Average GPA", "./assets/data/school/gpa-coursework.csv", "false", 1, "", "true")
+hr.dotted
+h3 Do you think that grading disparities exist between teachers of the same subject at Andover?
++percentage_slider("grading-disparities", 1032, 13, accent_color)
+br
+h3 In which department is there the largest grading disparity between teachers?
++horizontal_barchart("grading-disparity-department", accent_color, 300, "./assets/data/school/grading-disparity.csv", "", "Responses", "170")
+hr.dotted
+h3 Are day students are able to integrate with boarding students on campus?
+.percentage-with-label
+  .label(style = "width: 120px;")
+    h4 Boarders:
+  +percentage_slider("boarders-students-integrate", 598, 172, accent_color)
+.percentage-with-label
+  .label(style = "width: 120px;")
+    h4 Day Students:
+  +percentage_slider("day-students-integrate", 172, 104, accent_color)
+br
+hr.dotted
+h3 Have you ever switched teachers within the same course in order to attain a better grade?
++percentage_slider("switching-teacher", 327, 718, accent_color)
+hr.dotted
+h3 Do you think attending Andover affects your chances of attending a selective college?
++pie_chart("selective-college", "532,442,71", "Yes (positively),Yes (negatively),No", "#14195C,#353f9a,#6d75b8")
+hr.dotted
+h3 Do you participate in any extracurriculars because you think they will increase your chances of getting into a selective college?
++pie_chart("extracurriculars", "75,675,295", "Yes (solely),Yes (partly),No", "#14195C,#353f9a,#6d75b8")
+hr.dotted
+h3 Do you think that the majority of your teachers care about your health and wellbeing?
++percentage_slider("teacher-wellbeing", 817, 228, accent_color)
+hr.dotted
+h3 Has attending Andover affected your relationship with your family?
++pie_chart("relationship-parents", "422,352,271", "Yes (positively),Yes (negatively),No", "#14195C,#353f9a,#6d75b8")
+hr.dotted
+h3 Have you ever considered leaving Andover permanently?
++percentage_slider("leaving-permanently", 467, 578, accent_color)
+hr.dotted
+h3 Would you want your children to attend Andover?
++percentage_slider("children-attend", 773, 272, accent_color)
+hr.dotted
+h3 Do you support a change in the current academic schedule? 
++percentage_slider("academic-schedule", 469, 576, accent_color)
+hr.dotted
+h3 Is the faculty diverse enough?
+.percentage-with-label
+  .label(style = "width: 250px;")
+    h4 Overall:
+  +percentage_slider("faculty-diverse", 616, 428, accent_color)
+.percentage-with-label
+  .label(style = "width: 250px;")
+    h4 White:
+  +percentage_slider("faculty-diverse-white", 433, 215, accent_color)
+.percentage-with-label
+  .label(style = "width: 250px;")
+    h4 Asian:
+  +percentage_slider("faculty-diverse-asian", 205, 155, accent_color)
+.percentage-with-label
+  .label(style = "width: 250px;")
+    h4 Black:
+  +percentage_slider("faculty-diverse-black", 21, 90, accent_color)
+.percentage-with-label
+  .label(style = "width: 250px;")
+    h4 Original People of the Americas:
+  +percentage_slider("faculty-diverse-native-american", 11, 30, accent_color)
+.percentage-with-label
+  .label(style = "width: 250px;")
+    h4 Native Hawaiian or Pacific Islander:
+  +percentage_slider("faculty-diverse-pacific-islander", 8, 5, accent_color)

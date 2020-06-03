@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+>
+  <title>State of the Academy 2014</title>
+  <link data-turbolinks-track="true" href="../assets/application-4a9d4b4b59a3681a3f65705a4e9ec934.css" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="../assets/application-814047460195a22ea6260f3be2cee536.js"></script>
+  <script src="http://www.google.com/jsapi"></script>
+<script src="../assets/chartkick-724363322419626f7598f52445e181c1.js"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="iJJ1O+NPHh+MugNWONCN48mpaIK2llW5QMWpHFQjtbU=" name="csrf-token" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="main-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://www.phillipian.net">The Phillipian</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav" id="main-nav">
+        <li class=""><a href="../index.html">Welcome</a></li>
+        <li class=""><a href="general.html">General</a></li>
+        <li class="active"><a href="drugs_and_alcohol.html">Drugs/Alcohol</a></li>
+        <li class=""><a href="wellness.html">Wellness</a></li>
+        <li class=""><a href="academics.html">Academics</a></li>
+        <li class=""><a href="social.html">Sex</a></li>
+        <li class=""><a href="social2.html">Social</a></li>
+        <!-- <li class="<#%= is_active?(sections_custom_path)             %>"><#%= link_to "Custom!",        sections_custom_path            %></li> -->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</header>
+
+  <div class="container">
+    <div class="bs-sidebar affix">
+  <br /><br />
+  <ul class="nav bs-sidenav">
+    <h4>Topics</h4><hr />
+    <li><a href="drugs_and_alcohol.html#alcohol">Alcohol Usage</a></li>
+    <li><a href="drugs_and_alcohol.html#marijuana">Marijuana Usage</a></li>
+    <li><a href="drugs_and_alcohol.html#hard_drugs">Hard Drugs</a></li>
+    <li><a href="drugs_and_alcohol.html#study">Study Drugs</a></li>
+    <li><a href="drugs_and_alcohol.html#misc">Miscellaneous</a></li>
+  </ul>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-10">
+
+      <hr id="alcohol" class="col-md-12">
+      <h3>Alcohol Usage</h3>
+      <div class="owl-carousel">
+	<div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "Have you ever consumed alcohol?" },"legend": { "layout": "vertical","style": { "left": "auto","bottom": "auto","right": "50px","top": "100px" } },"xAxis": {  },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true,"formatter": pieTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "pie","renderTo": "alcgraph" },"subtitle": {  },"plotOptions": { "pie": { "allowPointSelect": true,"cursor": "pointer","dataLabels": { "enabled": true,"color": "black","style": { "font": "13px Trebuchet MS, Verdana, sans-serif" } } } },"series": [{ "type": "pie","data": [ [ "Yes, on campus",15 ],[ "Yes, off campus",323 ],[ "Yes, on and off campus",150 ],{ "name": "No","y": 286,"sliced": true,"selected": true } ],"name": null }] };
+        
+        window.chart_alcgraph = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="alcgraph"></div></div>
+	<div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": null },"legend": { "align": "bottom","verticalAlign": "top","layout": "vertical","title": { "text": "Have you ever consumed alcohol?" } },"xAxis": { "categories": [ "2014","2015","2016","2017" ],"title": { "text": "What class are you in?" } },"yAxis": { "title": { "text": "Percentage" },"labels": {  } },"tooltip": { "enabled": true,"formatter": xRefBarTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "alcbyclass" },"subtitle": {  },"plotOptions": { "bar": { "stacking": "percent" } },"series": [{ "type": "bar","name": "Yes, on campus","data": [ 3,9,3,0 ] },{ "type": "bar","name": "Yes, off campus","data": [ 104,103,72,44 ] },{ "type": "bar","name": "Yes, on and off campus","data": [ 52,42,45,11 ] },{ "type": "bar","name": "No","data": [ 48,72,84,82 ] }] };
+        
+        window.chart_alcbyclass = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="alcbyclass"></div></div>
+      </div>
+
+      <hr id="marijuana" class="col-md-12">
+      <h3>Marijuana Usage</h3>
+      <div class="owl-carousel">
+	<div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "Have you ever used marijuana?" },"legend": { "layout": "vertical","style": { "left": "auto","bottom": "auto","right": "50px","top": "100px" } },"xAxis": {  },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true,"formatter": pieTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "pie","renderTo": "margraph" },"subtitle": {  },"plotOptions": { "pie": { "allowPointSelect": true,"cursor": "pointer","dataLabels": { "enabled": true,"color": "black","style": { "font": "13px Trebuchet MS, Verdana, sans-serif" } } } },"series": [{ "type": "pie","data": [ [ "Yes, on campus",24 ],[ "Yes, off campus",101 ],[ "Yes, on and off campus",107 ],{ "name": "No","y": 542,"sliced": true,"selected": true } ],"name": null }] };
+        
+        window.chart_margraph = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="margraph"></div></div>
+	<div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": null },"legend": { "align": "bottom","verticalAlign": "top","layout": "vertical","title": { "text": "Have you ever used marijuana?" } },"xAxis": { "categories": [ "2014","2015","2016","2017" ],"title": { "text": "What class are you in?" } },"yAxis": { "title": { "text": "Percentage" },"labels": {  } },"tooltip": { "enabled": true,"formatter": xRefBarTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "marbyclass" },"subtitle": {  },"plotOptions": { "bar": { "stacking": "percent" } },"series": [{ "type": "bar","name": "Yes, on campus","data": [ 7,9,6,2 ] },{ "type": "bar","name": "Yes, off campus","data": [ 40,34,19,8 ] },{ "type": "bar","name": "Yes, on and off campus","data": [ 42,36,26,3 ] },{ "type": "bar","name": "No","data": [ 118,147,153,124 ] }] };
+        
+        window.chart_marbyclass = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="marbyclass"></div></div>
+      </div>
+      
+      <hr id="hard_drugs" class="col-md-12">
+      <h3>Hallucinogenics, Narcotics, and Hard Drugs</h3>
+      <div class="owl-carousel">
+	<div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "Have you ever used hallucinogens, narcotics or hard drugs?" },"legend": { "layout": "vertical","style": { "left": "auto","bottom": "auto","right": "50px","top": "100px" } },"xAxis": {  },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true,"formatter": pieTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "pie","renderTo": "hardgraph" },"subtitle": {  },"plotOptions": { "pie": { "allowPointSelect": true,"cursor": "pointer","dataLabels": { "enabled": true,"color": "black","style": { "font": "13px Trebuchet MS, Verdana, sans-serif" } } } },"series": [{ "type": "pie","data": [ [ "Yes, on campus",15 ],[ "Yes, off campus",28 ],[ "Yes, on and off campus",36 ],{ "name": "No","y": 695,"sliced": true,"selected": true } ],"name": null }] };
+        
+        window.chart_hardgraph = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="hardgraph"></div></div>
+	<div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": null },"legend": { "align": "bottom","verticalAlign": "top","layout": "vertical","title": { "text": "Have you ever used hallucinogens, narcotics or hard drugs?" } },"xAxis": { "categories": [ "2014","2015","2016","2017" ],"title": { "text": "What class are you in?" } },"yAxis": { "title": { "text": "Percentage" },"labels": {  } },"tooltip": { "enabled": true,"formatter": xRefBarTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "hardbyclass" },"subtitle": {  },"plotOptions": { "bar": { "stacking": "percent" } },"series": [{ "type": "bar","name": "Yes, on campus","data": [ 4,7,3,1 ] },{ "type": "bar","name": "Yes, off campus","data": [ 13,11,3,1 ] },{ "type": "bar","name": "Yes, on and off campus","data": [ 15,9,8,4 ] },{ "type": "bar","name": "No","data": [ 175,199,190,131 ] }] };
+        
+        window.chart_hardbyclass = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="hardbyclass"></div></div>
+      </div>
+      
+      <hr id="study" class="col-md-12">
+      <h3>Study Drugs</h3>
+      <div class="owl-carousel">
+	<div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "Have you ever used study drugs for which you did not have your own prescription?" },"legend": { "layout": "vertical","style": { "left": "auto","bottom": "auto","right": "50px","top": "100px" } },"xAxis": {  },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true,"formatter": pieTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "pie","renderTo": "studygraph" },"subtitle": {  },"plotOptions": { "pie": { "allowPointSelect": true,"cursor": "pointer","dataLabels": { "enabled": true,"color": "black","style": { "font": "13px Trebuchet MS, Verdana, sans-serif" } } } },"series": [{ "type": "pie","data": [ [ "Yes, on campus",36 ],[ "Yes, off campus",7 ],[ "Yes, on and off campus",24 ],{ "name": "No","y": 707,"sliced": true,"selected": true } ],"name": null }] };
+        
+        window.chart_studygraph = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="studygraph"></div></div>
+	<div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": null },"legend": { "align": "bottom","verticalAlign": "top","layout": "vertical","title": { "text": "Have you ever used study drugs for which you did not have your own prescription?" } },"xAxis": { "categories": [ "2014","2015","2016","2017" ],"title": { "text": "What class are you in?" } },"yAxis": { "title": { "text": "Percentage" },"labels": {  } },"tooltip": { "enabled": true,"formatter": xRefBarTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "studybyclass" },"subtitle": {  },"plotOptions": { "bar": { "stacking": "percent" } },"series": [{ "type": "bar","name": "Yes, on campus","data": [ 22,9,5,0 ] },{ "type": "bar","name": "Yes, off campus","data": [ 2,3,1,1 ] },{ "type": "bar","name": "Yes, on and off campus","data": [ 9,10,3,2 ] },{ "type": "bar","name": "No","data": [ 174,204,195,134 ] }] };
+        
+        window.chart_studybyclass = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="studybyclass"></div></div>
+	<div>        <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": null },"legend": { "align": "bottom","verticalAlign": "top","layout": "vertical","title": { "text": "Have you ever used study drugs for which you did not have your own prescription?" } },"xAxis": { "categories": [ "3.0 or lower","3.5","4.0","4.5","5.0","5.5","6.0" ],"title": { "text": "What was your rounded Winter 2013-2014 GPA?" } },"yAxis": { "title": { "text": "Percentage" },"labels": {  } },"tooltip": { "enabled": true,"formatter": xRefBarTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "studybygpa" },"subtitle": {  },"plotOptions": { "bar": { "stacking": "percent" } },"series": [{ "type": "bar","name": "Yes, on campus","data": [ 0,1,3,7,16,6,0 ] },{ "type": "bar","name": "Yes, off campus","data": [ 0,0,2,1,2,1,0 ] },{ "type": "bar","name": "Yes, on and off campus","data": [ 2,1,4,1,9,4,2 ] },{ "type": "bar","name": "No","data": [ 2,12,59,126,249,183,57 ] }] };
+        
+        window.chart_studybygpa = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="studybygpa"></div></div>
+      </div>
+      
+      <hr id="misc" class="col-md-12">
+      <h3>Miscellaneous</h3>
+              <script type="text/javascript">
+        (function() {
+          var onload = window.onload;
+          window.onload = function(){
+            if (typeof onload == "function") onload();
+                    var options = { "title": { "text": "Have you ever attended a school-sponsored event under the influence of drugs or alcohol?" },"legend": { "layout": "vertical","style": { "left": "auto","bottom": "auto","right": "50px","top": "100px" } },"xAxis": {  },"yAxis": { "title": { "text": null },"labels": {  } },"tooltip": { "enabled": true,"formatter": pieTooltipFormatter },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "pie","renderTo": "highatevent" },"subtitle": {  },"plotOptions": { "pie": { "allowPointSelect": true,"cursor": "pointer","dataLabels": { "enabled": true,"color": "black","style": { "font": "13px Trebuchet MS, Verdana, sans-serif" } } } },"series": [{ "type": "pie","data": [ [ "No",635 ],[ "Yes repeatedly",77 ],[ "Yes once",62 ] ],"name": null }] };
+        
+        window.chart_highatevent = new Highcharts.Chart(options);
+
+          };
+        })()
+        </script>
+<div id="highatevent"></div>
+
+      <hr class="col-md-12">
+
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div id="footer">
+  <div class="container">
+    <br />
+    <p class="muted credit" id="footer-text">The Phillipian © 2014. Questions or Comments? <a href="http://www.phillipian.net/contact">Contact us.</a></p>
+  </div>
+</div>
+
+</body>
+</html>
