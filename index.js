@@ -4,7 +4,7 @@ let colorsArray = {
     "campus": ["#762670", "#945E98", "#A77FAD", "#BC98B9", "#D9C6D8"],
     "school": ["#812F54", "#AA7281", "#BF97A0", "#BF97A0", "#DCC5C3"],
     "discipline": ["#B53432", "#C74F50", "#D47173","#E4A8A6", "#F0D1CA"],
-    "sex": ["#D5127D", "#DF5694", "#E680A9", "#ECA8C1", "#F8D3DD"],
+    "sex": ["#D5127D", "#DF5694", "#E680A9", "#ECA8C1", "#F8D3DD", "#fbe7ec"],
     "drugs": ["#E77929", "#EFA05E", "#F3B572", "#F6CC99", "#FAE3C4"],
     "wellness": ["#69B645", "#98C970", "#B1D281", "#CEDFA6", "#E3EFCE"],
     "covid": ["#088446", "#32A068", "#7CC193", "#B2DAB8", "#E2F1E1"],
@@ -26,7 +26,7 @@ window.onload = () => {
 
     sota.pieChart({selector: "#module-general-boarding-d3", dataFile: "assets/data/general/boarding"});
 
-    sota.pieChart({selector: "#module-general-from-d3", dataFile: "assets/data/general/from"});
+    sota.pieChart({selector: "#module-general-from-d3", dataFile: "assets/data/general/from", sorted: false});
 
     sota.pieChart({selector: "#module-general-community-d3", dataFile: "assets/data/general/community_type"});
 
@@ -37,7 +37,7 @@ window.onload = () => {
         displayPercentage: true
     });
 
-    sota.pieChart({selector: "#module-general-legacy-d3", dataFile: "assets/data/general/andover_legacy"});
+    sota.pieChart({selector: "#module-general-legacy-d3", dataFile: "assets/data/general/andover_legacy", sorted: false});
 
     sota.barChart({
         selector: "#module-general-sex-d3",
@@ -93,7 +93,7 @@ window.onload = () => {
 
     sota.pieChart({
         selector: "#module-general-learning-disability-d3",
-        dataFile: "assets/data/general/learning_disability"
+        dataFile: "assets/data/general/learning_disability", sorted: false
     });
 
     sota.stackedBarChart({
@@ -103,9 +103,9 @@ window.onload = () => {
         showLegend: true
     })
 
-    sota.pieChart({selector: "#module-general-varsity-d3", dataFile: "assets/data/general/varsity"});
+    sota.pieChart({selector: "#module-general-varsity-d3", dataFile: "assets/data/general/varsity", sorted: false});
 
-    sota.pieChart({selector: "#module-general-income-d3", dataFile: "assets/data/general/income"});
+    sota.pieChart({selector: "#module-general-income-d3", dataFile: "assets/data/general/income", sorted: false});
 
     sota.columnChart({
         selector: "#module-general-finAid-d3",
@@ -137,7 +137,7 @@ window.onload = () => {
         showLegend: true
     })
 
-    sota.pieChart({selector: "#module-general-incarcerated-d3", dataFile: "assets/data/general/incarcerated"});
+    sota.pieChart({selector: "#module-general-incarcerated-d3", dataFile: "assets/data/general/incarcerated", sorted: false});
 
 // POLITICS AND WORLDVIEW
     sota.pieChart({
@@ -184,7 +184,7 @@ window.onload = () => {
 
     sota.pieChart({selector: "#module-politics-immigration-d3", dataFile: "assets/data/politics/immigration"});
 
-    sota.pieChart({selector: "#module-politics-border_security-d3", dataFile: "assets/data/politics/border_security"});
+    sota.pieChart({selector: "#module-politics-border_security-d3", dataFile: "assets/data/politics/border_security", sorted: false});
 
     sota.stackedBarChart({
         selector: "#module-politics-abortion-d3",
@@ -193,7 +193,7 @@ window.onload = () => {
         showLegend: true
     });
 
-    sota.pieChart({selector: "#module-politics-local_politics-d3", dataFile: "assets/data/politics/local_politics"});
+    sota.pieChart({selector: "#module-politics-local_politics-d3", dataFile: "assets/data/politics/local_politics", sorted:false});
 
     sota.stackedBarChart({
         selector: "#module-politics-censorshipXpolitics-d3",
@@ -219,7 +219,7 @@ window.onload = () => {
         showLegend: true
     });
 
-    sota.pieChart({selector: "#module-politics-informed-d3", dataFile: "assets/data/politics/informed"});
+    sota.pieChart({selector: "#module-politics-informed-d3", dataFile: "assets/data/politics/informed", sorted: false});
 
     sota.stackedBarChart({
         selector: "#module-politics-politicsXnews_sources-d3",
@@ -285,7 +285,7 @@ window.onload = () => {
     })
 
 // CAMPUS CULTURE
-    sota.pieChart({selector: "#module-campus-student_council-d3", dataFile: "assets/data/campus/student_council"});
+    sota.pieChart({selector: "#module-campus-student_council-d3", dataFile: "assets/data/campus/student_council", sorted: false});
 
     sota.stackedBarChart({
         selector: "#module-campus-aramark-d3",
@@ -317,9 +317,9 @@ window.onload = () => {
         displayPercentage:true
     });
 
-    sota.pieChart({selector: "#module-campus-bkh_valentines-d3", dataFile: "assets/data/campus/bkh_valentines"});
+    sota.pieChart({selector: "#module-campus-bkh_valentines-d3", dataFile: "assets/data/campus/bkh_valentines", sorted: false});
 
-    sota.pieChart({selector: "#module-campus-prom-d3", dataFile: "assets/data/campus/prom"});
+    sota.pieChart({selector: "#module-campus-prom-d3", dataFile: "assets/data/campus/prom", sorted: false});
 
     sota.stackedBarChart({
         selector: "#module-campus-ideological_diversity-d3",
@@ -349,7 +349,7 @@ window.onload = () => {
         showLegend: true
     });
 
-    sota.pieChart({selector: "#module-campus-combined_dorms-d3", dataFile: "assets/data/campus/combined_dorms"});
+    sota.pieChart({selector: "#module-campus-combined_dorms-d3", dataFile: "assets/data/campus/combined_dorms", sorted: false});
 
     sota.barChart({selector: "#module-campus-food_order-d3", dataFile: "assets/data/campus/food_order",totalResp: 1022,displayPercentage: true});
 
@@ -367,7 +367,7 @@ window.onload = () => {
     sota.pieChart({
         selector: "#module-campus-rape_culture-d3",
         dataFile: "assets/data/campus/rape_culture",
-        inputIsPercentage: true
+        inputIsPercentage: true, sorted: false
     });
 
     sota.stackedBarChart({
@@ -452,7 +452,7 @@ window.onload = () => {
         dataFile: "assets/data/school/school_old/hours_on_courseworkXgender"
     });
 
-    sota.pieChart({selector: "#module-school-switch_teacher-d3", dataFile: "assets/data/school/switch_teacher"});
+    sota.pieChart({selector: "#module-school-switch_teacher-d3", dataFile: "assets/data/school/switch_teacher", sorted: false});
 
     sota.stackedBarChart({
         selector: "#module-school-extracurriculars-d3",
@@ -527,11 +527,11 @@ window.onload = () => {
         showLegend: true
     });
 
-    sota.pieChart({selector: "#module-school-study_spaces-d3", dataFile: "assets/data/school/study_spaces"});
+    sota.pieChart({selector: "#module-school-study_spaces-d3", dataFile: "assets/data/school/study_spaces", sorted:false});
 
-    sota.pieChart({selector: "#module-school-student_leader-d3", dataFile: "assets/data/school/student_leader"});
+    sota.pieChart({selector: "#module-school-student_leader-d3", dataFile: "assets/data/school/student_leader", sorted: false});
 
-    sota.pieChart({selector: "#module-school-board_member-d3", dataFile: "assets/data/school/board_member"});
+    sota.pieChart({selector: "#module-school-board_member-d3", dataFile: "assets/data/school/board_member", sorted: false});
 
     sota.stackedColumnChart({
         selector: "#module-school-student_leaderXtemperament-d3",
@@ -554,7 +554,7 @@ window.onload = () => {
         showLegend: true
     });
 
-    sota.pieChart({selector: "#module-discipline-CCCDC-d3", dataFile: "assets/data/discipline/CCCDC"});
+    sota.pieChart({selector: "#module-discipline-CCCDC-d3", dataFile: "assets/data/discipline/CCCDC", sorted: false});
 
     sota.columnChart({
         selector: "#module-discipline-consequences-d3",
@@ -570,20 +570,20 @@ window.onload = () => {
         showLegend: true
     });
 
-    sota.pieChart({selector: "#module-discipline-cruise-d3", dataFile: "assets/data/discipline/cruise"});
+    sota.pieChart({selector: "#module-discipline-cruise-d3", dataFile: "assets/data/discipline/cruise", sorted: false});
 
-    sota.pieChart({selector: "#module-discipline-cheated-d3", dataFile: "assets/data/discipline/cheated"});
+    sota.pieChart({selector: "#module-discipline-cheated-d3", dataFile: "assets/data/discipline/cheated", sorted: false});
 
     sota.stackedColumnChart({
         selector: "#module-discipline-cheatedXclass-d3",
         dataFile: "assets/data/discipline/cheatedXclass"
     });
 
-    sota.pieChart({selector: "#module-discipline-plagiarized-d3", dataFile: "assets/data/discipline/plagiarized"});
+    sota.pieChart({selector: "#module-discipline-plagiarized-d3", dataFile: "assets/data/discipline/plagiarized", sorted: false});
 
     sota.pieChart({
         selector: "#module-discipline-major_offenses-d3",
-        dataFile: "assets/data/discipline/major_offenses"
+        dataFile: "assets/data/discipline/major_offenses", sorted: false
     });
 
     sota.stackedBarChart({
@@ -596,7 +596,7 @@ window.onload = () => {
 
     sota.pieChart({
         selector: "#module-discipline-contraband_search-d3",
-        dataFile: "assets/data/discipline/contraband_search"
+        dataFile: "assets/data/discipline/contraband_search", sorted: false
     });
 
     sota.stackedBarChart({
@@ -622,9 +622,9 @@ window.onload = () => {
         showLegend: false
     });
 
-    sota.pieChart({selector: "#module-discipline-room_visit-d3", dataFile: "assets/data/discipline/room_visit"});
+    sota.pieChart({selector: "#module-discipline-room_visit-d3", dataFile: "assets/data/discipline/room_visit", sorted: false});
 
-    sota.pieChart({selector: "#module-discipline-parietal-d3", dataFile: "assets/data/discipline/parietal"});
+    sota.pieChart({selector: "#module-discipline-parietal-d3", dataFile: "assets/data/discipline/parietal", sorted: false});
 
 // SEX
     sota.groupedBarChart({
@@ -648,7 +648,7 @@ window.onload = () => {
         displayPercentage: true
     });
 
-    sota.pieChart({selector: "#module-sex-hookup_culture-d3", dataFile: "assets/data/sex/hookup_culture"});
+    sota.pieChart({selector: "#module-sex-hookup_culture-d3", dataFile: "assets/data/sex/hookup_culture", sorted: false});
 
     sota.stackedBarChart({
         selector: "#module-sex-hookup_cultureXclass-d3",
@@ -658,7 +658,7 @@ window.onload = () => {
         showLegend: true
     });
 
-    sota.pieChart({selector: "#module-sex-peer_pressure-d3", dataFile: "assets/data/sex/peer_pressure"});
+    sota.pieChart({selector: "#module-sex-peer_pressure-d3", dataFile: "assets/data/sex/peer_pressure", sorted: false});
 
     sota.stackedBarChart({
         selector: "#module-sex-partner_pressure-d3",
@@ -685,7 +685,7 @@ window.onload = () => {
 
     sota.barChart({selector: "#module-sex-protection-d3", dataFile: "assets/data/sex/protection", totalResp:336, displayPercentage:true});
 
-    sota.pieChart({selector: "#module-sex-hookup-d3", dataFile: "assets/data/sex/hookup"});
+    sota.pieChart({selector: "#module-sex-hookup-d3", dataFile: "assets/data/sex/hookup", sorted: false});
 
     sota.stackedBarChart({
         selector: "#module-sex-relationshipXclass-d3",
@@ -739,7 +739,6 @@ window.onload = () => {
         showLegend: true
     });
 
-// inputIsPercentage error
     sota.columnChart({
         selector: "#module-sex-assault-d3",
         dataFile: "assets/data/sex/assault",
@@ -754,7 +753,7 @@ window.onload = () => {
         showLegend: true
     });
 
-    sota.pieChart({selector: "#module-sex-explicit_photo-d3", dataFile: "assets/data/sex/explicit_photo"});
+    sota.pieChart({selector: "#module-sex-explicit_photo-d3", dataFile: "assets/data/sex/explicit_photo", sorted: false});
 
 // DRUGS AND ALCOHOL
     sota.stackedBarChart({
@@ -801,7 +800,7 @@ window.onload = () => {
         showLegend: true
     });
 
-    sota.pieChart({selector: "#module-drugs-study_drugs-d3", dataFile: "assets/data/drugs-alcohol/study_drugs"});
+    sota.pieChart({selector: "#module-drugs-study_drugs-d3", dataFile: "assets/data/drugs-alcohol/study_drugs", sorted: false});
 
     sota.stackedBarChart({
         selector: "#module-drugs-juulXincome-d3",
@@ -816,7 +815,7 @@ window.onload = () => {
         dataFile: "assets/data/drugs-alcohol/normalizedXconsumption"
     });
 
-    sota.pieChart({selector: "#module-drugs-normalized-d3", dataFile: "assets/data/drugs-alcohol/normalized"});
+    sota.pieChart({selector: "#module-drugs-normalized-d3", dataFile: "assets/data/drugs-alcohol/normalized", sorted: false});
 
     sota.barChart({
         selector: "#module-drugs-hard_drugs-d3",
@@ -839,7 +838,7 @@ window.onload = () => {
         showLegend: true
     });
 
-    sota.pieChart({selector: "#module-drugs-selling-d3", dataFile: "assets/data/drugs-alcohol/selling"});
+    sota.pieChart({selector: "#module-drugs-selling-d3", dataFile: "assets/data/drugs-alcohol/selling", sorted: false});
 
     sota.barChart({selector: "#module-drugs-influence-d3", dataFile: "assets/data/drugs-alcohol/influence", totalResp:1028, displayPercentage:true});
 
@@ -888,16 +887,16 @@ window.onload = () => {
         showLegend: true
     });
 
-    sota.pieChart({selector: "#module-wellness-insecure_body-d3", dataFile: "assets/data/wellness/insecure_body"});
+    sota.pieChart({selector: "#module-wellness-insecure_body-d3", dataFile: "assets/data/wellness/insecure_body", sorted: false});
 
     sota.pieChart({
         selector: "#module-wellness-insecure_academic-d3",
-        dataFile: "assets/data/wellness/insecure_academic"
+        dataFile: "assets/data/wellness/insecure_academic", sorted: false
     });
 
-    sota.pieChart({selector: "#module-wellness-sykes-d3", dataFile: "assets/data/wellness/sykes"});
+    sota.pieChart({selector: "#module-wellness-sykes-d3", dataFile: "assets/data/wellness/sykes", sorted: false});
 
-    sota.pieChart({selector: "#module-wellness-sykes_resources-d3", dataFile: "assets/data/wellness/sykes_resources"});
+    sota.pieChart({selector: "#module-wellness-sykes_resources-d3", dataFile: "assets/data/wellness/sykes_resources", sorted: false});
 
     sota.stackedBarChart({
         selector: "#module-wellness-counselorXgender-d3",
@@ -917,12 +916,12 @@ window.onload = () => {
 
     sota.pieChart({
         selector: "#module-wellness-sykes_phy_resources-d3",
-        dataFile: "assets/data/wellness/sykes_phy_resources"
+        dataFile: "assets/data/wellness/sykes_phy_resources", sorted: false
     });
 
     sota.pieChart({selector: "#module-wellness-happiness-d3", dataFile: "assets/data/wellness/happiness"});
 
-    sota.pieChart({selector: "#module-wellness-general_happiness-d3", dataFile: "assets/data/wellness/happiness"});
+    sota.pieChart({selector: "#module-wellness-general_happiness-d3", dataFile: "assets/data/wellness/general_happiness"});
 
     sota.barChart({
         selector: "#module-wellness-support_system-d3",
@@ -963,7 +962,6 @@ window.onload = () => {
         dataFile: "assets/data/wellness/happinessXtemperament"
     });
 
-    // sota.pieChart({selector: "#module-wellness-bullied-d3", dataFile: "assets/data/wellness/bullied"});
     sota.stackedBarChart({
         selector: "#module-wellness-bullied-d3",
         dataFile: "assets/data/wellness/bullied",
@@ -1023,7 +1021,7 @@ window.onload = () => {
         showLegend: true
     });
 
-    sota.pieChart({selector: "#module-covid-immunocompromised-d3", dataFile: "assets/data/covid/immunocompromised"});
+    sota.pieChart({selector: "#module-covid-immunocompromised-d3", dataFile: "assets/data/covid/immunocompromised", sorted: false});
 
     sota.stackedBarChart({
         selector: "#module-covid-andover_response-d3",
@@ -1040,7 +1038,7 @@ window.onload = () => {
         showLegend: false
     });
 
-    sota.pieChart({selector: "#module-covid-social_distance-d3", dataFile: "assets/data/covid/social_distance"});
+    sota.pieChart({selector: "#module-covid-social_distance-d3", dataFile: "assets/data/covid/social_distance", sorted: false});
 
     sota.stackedBarChart({
         selector: "#module-covid-vacationXincome-d3",
@@ -1101,7 +1099,7 @@ window.onload = () => {
         displayPercentage: true
     });
 
-    sota.pieChart({selector: "#module-community-day_student-d3", dataFile: "assets/data/community/day_student"});
+    sota.pieChart({selector: "#module-community-day_student-d3", dataFile: "assets/data/community/day_student", sorted: false});
 
     sota.stackedBarChart({
         selector: "#module-community-faculty_diversityXrace-d3",
@@ -1205,7 +1203,7 @@ window.onload = () => {
         showLegend: false
     });
 
-// sota.pieChart({ selector: "#module-community-ebi-d3", dataFile: "assets/data/community/ebi", inputIsPercentage: true });
+sota.pieChart({ selector: "#module-community-ebi-d3", dataFile: "assets/data/community/ebi", inputIsPercentage: true, sorted: false});
 
     sota.stackedBarChart({
         selector: "#module-community-ebiXclass-d3",
@@ -1255,7 +1253,6 @@ sota.barChart({ selector: "#module-community-lower_rightXvarsity-d3", dataFile: 
     });
 
 // masonry
-
     const sections = document.querySelectorAll(".container");
 
     sections.forEach((e) => {
