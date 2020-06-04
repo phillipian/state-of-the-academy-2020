@@ -21,7 +21,7 @@ body{
 }
 
 .sota-navbar div.navbar-sota{ /* higher specificty */
-    font-family: "Gotham";
+    font-family: "Montserrat";
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -243,7 +243,7 @@ section:before{
     text-decoration: none;
     text-align: center;
     color: #fff;
-    font-family: "Gotham";
+    font-family: "Montserrat";
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -269,7 +269,7 @@ section:before{
 
 .hero-image-credit{
     position: absolute;
-    font-family: "Gotham";
+    font-family: "Montserrat";
     font-weight: 400;
     color: #fff;
     bottom: 24px;
@@ -293,7 +293,7 @@ section:before{
 }
 
 .hero-sota{
-    font-family: "Gotham";
+    font-family: "Montserrat";
     font-weight: 700;
     font-size: 48px;
     text-transform: uppercase;
