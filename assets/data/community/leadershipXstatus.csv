@@ -1,2 +1,6 @@
-group,Upper class,Upper-middle class,Middle class,Lower-middle class,Lower class
-Yes,58,64,25,17,10
+group,Yes,No
+Upper class,58,239
+Upper-middle class,64,344
+Middle class,25,183
+Lower-middle class,17,49
+Lower class,10,25

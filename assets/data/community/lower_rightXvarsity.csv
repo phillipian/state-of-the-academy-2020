@@ -1,2 +1,3 @@
-group,Yes (varsity),No (not varsity)
-Yes, 55.7, 34.3
+label,value
+Varsity,55.7
+Not varsity,34.3

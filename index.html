@@ -197,7 +197,7 @@
         <p>Editor's note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, nonbinary, and other gender identities have been removed in an effort to protect the complete anonymity of these respondents.</p>
       </div>
       <div class="module" id="module-politics-politicsXleadership-d3">
-        <h3>Political Affiliation by Student Leadership</h3>
+        <h3>Student Leadership by Political Affiliation</h3>
       </div>
       <div class="module" id="module-politics-news_sources-d3">
         <h3>How do you get your news?</h3>
@@ -207,7 +207,6 @@
       </div>
       <div class="module" id="module-politics-politicsXnews_sources-d3">
         <h3>News Source by Political Affiliation</h3>
-        <p>*I don't read the news</p>
       </div>
       <div class="module" id="module-politics-informed-d3">
         <h3>How informed do you believe you are about politics and/or current events?</h3>
@@ -234,6 +233,30 @@
         </div>
       </div>
       <div class="module">
+        <h3>Reverse Racism</h3>
+        <p>“prejudice, discrimination, or antagonism on the basis of race directed against a member of a dominant or privileged racial group” (Oxford Dictionaries)</p>
+        <p>Editor’s Note: The Phillipian used the Oxford Dictionaries' definition of reverse racism and acknowledges significant flaws with it. To read our full statement, please see the following: <a href=https://phillipian.net/2020/06/02/statement-from-um/>statement</a>.</p>
+        <div id="module-politics-reverse_racism-d3">
+          <p>Do you believe that reverse racism exists?</p>
+        </div>
+        <div id="module-politics-reverse_racismXclass-d3">
+          <h3>By Grade</h3>
+        </div>
+      </div>
+      <div class="module" id="module-politics-blm-d3">
+        <h3>Do you support the Black Lives Matter movement?</h3>
+        <p>Editor’s Note: These numbers, as was all of the data in SOTA 2020, were collected between April 17 and 24, 2020.</p>
+      </div>
+      <div class="module">
+        <h3>Immigration & Border Security</h3>
+        <div id="module-politics-immigration-d3">
+          <p>Do you believe that it should be easier to legally immigrate to the United States?</p>
+        </div>
+        <div id="module-politics-border_security-d3">
+          <p>Do you believe that the United States should increase border security?</p>
+        </div>
+      </div>
+      <div class="module">
         <h3>Feminism</h3>
         <div id="module-politics-womens_rights-d3">
           <p>Do you support "the advocacy of women's rights on the ground of the equality of the sexes?"</p>
@@ -251,26 +274,6 @@
         <p>Editor's note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, nonbinary, and other gender identities have been removed in an effort to protect the complete anonymity of these respondents.</p>
       </div>
       <div class="module">
-        <h3>Reverse Racism</h3>
-        <p>“prejudice, discrimination, or antagonism on the basis of race directed against a member of a dominant or privileged racial group” (Oxford Dictionaries)</p>
-        <p>Editor’s Note: The Phillipian used the Oxford Dictionaries' definition of reverse racism and acknowledges significant flaws with it. To read our full statement, please see the following: <a href=https://phillipian.net/2020/06/02/statement-from-um/>statement</a>.</p>
-        <div id="module-politics-reverse_racism-d3">
-          <p>Do you believe that reverse racism exists?</p>
-        </div>
-        <div id="module-politics-reverse_racismXclass-d3">
-          <h3>By Grade</h3>
-        </div>
-      </div>
-      <div class="module">
-        <h3>Immigration & Border Security</h3>
-        <div id="module-politics-immigration-d3">
-          <p>Do you believe that it should be easier to legally immigrate to the United States?</p>
-        </div>
-        <div id="module-politics-border_security-d3">
-          <p>Do you believe that the United States should increase border security?</p>
-        </div>
-      </div>
-      <div class="module">
         <h3>Abortion</h3>
         <div id="module-politics-abortion-d3">
           <p>Do you think that people should have the right to have an abortion?</p>
@@ -279,9 +282,6 @@
           <h3>By Gender Identity</h3>
           <p>Editor's note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, nonbinary, and other gender identities have been removed in an effort to protect the complete anonymity of these respondents.</p>
         </div>
-      </div>
-      <div class="module" id="module-politics-blm-d3">
-        <h3>Do you support the Black Lives Matter movement?</h3>
       </div>
       <div class="module" id="module-politics-climate_change-d3">
         <h3>Do you believe humans are responsible for climate change?</h3>
@@ -397,12 +397,6 @@
       <div class="module" id="module-campus-commons_staff-d3">
         <h3>Do you think Andover students adequately respect the Commons staff?</h3>
       </div>
-      <div class="module" id="module-campus-food_order-d3">
-        <h3>How often do you order food?</h3>
-      </div>
-      <div class="module" id="module-campus-den_purchases-d3">
-        <h3>How often do you make purchases in the Den?</h3>
-      </div>
       <div class="module" id="module-campus-combined_dorms-d3">
         <h3>Do you support combined 9th/10th grade dorms?</h3>
       </div>
@@ -420,6 +414,12 @@
       </div>
       <div class="module" id="module-campus-shuman-d3">
         <h3>Do you think that the Shuman Office of Admissions does a good job of accurately presenting the school?</h3>
+      </div>
+      <div class="module" id="module-campus-food_order-d3">
+        <h3>How often do you order food?</h3>
+      </div>
+      <div class="module" id="module-campus-den_purchases-d3">
+        <h3>How often do you make purchases in the Den?</h3>
       </div>
     </div>
   </section>
@@ -439,12 +439,9 @@
           <h3>By Gender Identity</h3>
           <p>Editor's note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer,  nonbinary, and other gender identities have been removed in an effort to protect the complete anonymity of these respondents.</p>
         </div>
-        <div id="module-school-gpaXincome-d3">
-          <h3>By Net Income</h3>
-        </div>
         <div id="module-school-gpa2016-d3">
           <h3>Average G.P.A. since 2016</h3>
-          <p>This question uses data from the 2016 to 2020 State of the Academy surveys.</p>
+          <p>*This question uses data from the 2016 to 2020 State of the Academy surveys.</p>
         </div>
       </div>
       <div class="module">
@@ -675,7 +672,8 @@
         </div>
       </div>
       <div class="module" id="module-sex-sex_ed2015-d3">
-        <h3>Do you think that your sexual education at Andover has been/is adequate? since 2015</h3>
+        <h3>Sexual Education Over The Years</h3>
+        <p>*This question uses data from the 2016 to 2020 State of the Academy surveys.</p>
       </div>
       <div class="module" id="module-sex-explicit_photo-d3">
         <h3>Have you ever sent a sexually explicit photo of yourself?</h3>
@@ -760,7 +758,6 @@
       <div class="module" id="module-drugs-dorm_influenceXcluster-d3">
         <h3>Dorm Culture</h3>
         <p>Do you think your dorm significantly influences how you think about/use drugs and alcohol?</p>
-        <p>*I'm a day student</p>
         <p>For this question, all statistics include only the answers of boarding students</p>
       </div>
       <div class="module">
@@ -956,9 +953,6 @@
         <div class="sota-big"><span>49.0%</span></div>
         <div class="subtitle"><span>ofrespondents know someone who has tested positive for COVID-19 or has tested positive themself (as of March 24, 2020).</span></div>
       </div>
-      <div class="module" id="module-covid-test_positive-d3">
-        <h3>Do you know someone personally who has tested positive for COVID-19?</h3>
-      </div>
       <div class="module" id="module-covid-social_distance-d3">
         <h3>Social Distancing</h3>
         <p>Have you been practicing effective social distancing (more than 6 feet between you and others, avoiding nonessential travel, etc.)?</p>
@@ -978,38 +972,40 @@
         <h3>Faculty Diversity</h3>
         <div id="module-community-faculty_diversity-d3">
           <p>Do you think the faculty is lacking in diversity?</p>
-          <p>*I think the faculty is diverse enough</p>
         </div>
         <div id="module-community-faculty_diversityXrace-d3">
+          <p>Do you think the faculty is lacking in diversity of race?</p>
           <h3>By Race</h3>
         </div>
         <div id="module-community-faculty_diversityXgender-d3">
+          <p>Do you think the faculty is lacking in diversity of gender identity?</p>
           <h3>By Gender Identity</h3>
           <p>Editor's note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer,  nonbinary, and other gender identities have been removed in an effort to protect the complete anonymity of these respondents.</p>
         </div>
       </div>
       <div class="module" id="module-community-discrimination-d3">
         <h3>Have you ever felt discriminated against at Andover due to your __________?</h3>
-        <p></p>
       </div>
       <div class="module">
         <h3>Social Divide</h3>
         <div id="module-community-social_divide-d3">
           <p>Do you feel like there is a social divide at Andover between students of different __________?</p>
-          <p>*There are no social divides at Andover</p>
         </div>
         <div id="module-community-social_divideXrace-d3">
+          <p>Do you feel like there is a social divide at Andover between students of different race?</p>
           <h3>By Race</h3>
         </div>
         <div id="module-community-social_divideXstatus-d3">
+          <p>Do you feel like there is a social divide at Andover between students of different socioeconomic status?</p>
           <h3>By Socioeconomic Status</h3>
         </div>
         <div id="module-community-social_divideXpolitics-d3">
+          <p>Do you feel like there is a social divide at Andover between students of different political affiliation?</p>
           <h3>By Politcal Affiliation</h3>
         </div>
         <div id="module-community-social_divideXclass-d3">
+          <p>Do you feel like there is a social divide at Andover between students of different class year?</p>
           <h3>By Class Year</h3>
-          <p>*There are no social divides at Andover</p>
         </div>
       </div>
       <div class="module" id="module-community-identity_discussion-d3">
@@ -1023,13 +1019,16 @@
           <p>*There are no facets of my identity that affect my capability to attain leadership positions</p>
         </div>
         <div id="module-community-leadershipXgender-d3">
+          <p>Do you think your capability to attain leadership positions at Andover is affected by your gender identity?</p>
           <h3>By Gender Identity</h3>
           <p>Editor's note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer,  nonbinary, and other gender identities have been removed in an effort to protect the complete anonymity of these respondents.</p>
         </div>
         <div id="module-community-leadershipXrace-d3">
+          <p>Do you think your capability to attain leadership positions at Andover is affected by your race?</p>
           <h3>By Race</h3>
         </div>
         <div id="module-community-leadershipXstatus-d3">
+          <p>Do you think your capability to attain leadership positions at Andover is affected by your socioeconomic status?</p>
           <h3>By Socioeconomic Status</h3>
         </div>
       </div>
@@ -1040,10 +1039,12 @@
           <p>*There are not facets of my identity that affect my level of comfort in a classroom setting</p>
         </div>
         <div id="module-community-classroom_comfortXgender-d3">
+          <p>While at Andover, has your gender identity significantly and consistently affected your level of comfort in a classroom setting?</p>
           <h3>By Gender Identity</h3>
           <p>Editor's note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer,  nonbinary, and other gender identities have been removed in an effort to protect the complete anonymity of these respondents.</p>
         </div>
         <div id="module-community-classroom_comfortXethnicity-d3">
+          <p>While at Andover, has your ethnicity significantly and consistently affected your level of comfort in a classroom setting?</p>
           <h3>By Ethnicity</h3>
           <p>Editor's note: Correlated statistics from respondents who identify as North African or Pacific Islander have been removed in an effort to protect the complete anonymity of these respondents.</p>
         </div>
@@ -1078,8 +1079,7 @@
       </div>
       <div class="module">
         <h3>Comfort on Campus</h3>
-        <p>Do you feel comfortable in __________?</p>
-        <h3>The Fitness Center</h3>
+        <p>Do you feel comfortable in the fitness center?</p>
         <div id="module-community-fitness_centerXgender-d3">
           <h3>By Gender Identity</h3>
           <p>Editor's note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer,  nonbinary, and other gender identities have been removed in an effort to protect the complete anonymity of these respondents.</p>
@@ -1087,18 +1087,18 @@
         <div id="module-community-fitness_centerXvarsity-d3">
           <h3>Are you a varsity athlete?</h3>
         </div>
-        <h3>CAMD</h3>
+        <p>Do you feel comfortable in CAMD?</p>
         <div id="module-community-camdXrace-d3">
           <h3>By Race</h3>
         </div>
         <div id="module-community-camdXpolitics-d3">
           <h3>By Political Affiliation</h3>
         </div>
-        <h3>Silent Study</h3>
+        <p>Do you feel comfortable in silent study?</p>
         <div id="module-community-silentXrace-d3">
           <h3>By Race</h3>
         </div>
-        <h3>Lower Right</h3>
+        <p>Do you feel comfortable in Lower Right?</p>
         <div id="module-community-lower_rightXrace-d3">
           <h3>By Race</h3>
         </div>

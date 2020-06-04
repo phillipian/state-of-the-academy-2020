@@ -1,2 +1,6 @@
-group,Asian,Black,Native Hawaiian or Pacific Islander,Indigenous Peoples of the Americas,White
-No,105,64,1,14,111
+group,Yes,No
+Asian,272,105
+Black,46,64
+Native Hawaiian or Pacific Islander,11,1
+Indigenous Peoples of the Americas,11,14
+White,501,111
