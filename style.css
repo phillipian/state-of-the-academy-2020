@@ -154,47 +154,7 @@ section:before{
     display: none;
 }
 
-.sec-general, .sech-general:hover{
-    background-color: #235085;
-}
-
-.sec-politics, .sech-politics:hover{
-    background-color: #2C3278;
-}
-
-.sec-campus, .sech-campus:hover{
-    background-color: #762670;
-}
-
-.sec-school, .sech-school:hover{
-    background-color: #812F54;
-}
-
-.sec-discipline, .sech-discipline:hover{
-    background-color: #B53432;
-}
-
-.sec-sex, .sech-sex:hover{
-    background-color: #C7327E;
-}
-
-.sec-drugs, .sech-drugs:hover{
-    background-color: #E77929;
-}
-
-.sec-wellness, .sech-wellness:hover{
-    background-color: #6CB645;
-}
-
-.sec-covid, .sech-covid:hover{
-    background-color: #008244;
-}
-
-.sec-community, .sech-community:hover{
-    background-color: #089181;
-}
-
-.home-sections, .home-hero{
+.home-container{
     padding: 64px 24px;
     box-sizing: border-box;
     max-width: 1500px;
@@ -211,8 +171,15 @@ section:before{
     width: 100%;
 }
 
-.home-sections{
+.home-sections, .home-mid{
+    padding: 16px 24px;
     grid-column-gap: 8px;
+}
+
+.home-mid h3{
+    font-family: "Mercury Text G1";
+    font-size: 24px;
+    margin-bottom: 0;
 }
 
 @media (min-width: 600px){
@@ -249,6 +216,7 @@ section:before{
 }
 
 .home-section{
+    background-color: #222;
     padding: 16px 0;
     margin-bottom: 8px;
 }
@@ -329,4 +297,45 @@ section:before{
     .home-hero{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+}
+
+
+.sec-general, .sech-general:hover{
+    background-color: #235085;
+}
+
+.sec-politics, .sech-politics:hover{
+    background-color: #2C3278;
+}
+
+.sec-campus, .sech-campus:hover{
+    background-color: #762670;
+}
+
+.sec-school, .sech-school:hover{
+    background-color: #812F54;
+}
+
+.sec-discipline, .sech-discipline:hover{
+    background-color: #B53432;
+}
+
+.sec-sex, .sech-sex:hover{
+    background-color: #C7327E;
+}
+
+.sec-drugs, .sech-drugs:hover{
+    background-color: #E77929;
+}
+
+.sec-wellness, .sech-wellness:hover{
+    background-color: #6CB645;
+}
+
+.sec-covid, .sech-covid:hover{
+    background-color: #008244;
+}
+
+.sec-community, .sech-community:hover{
+    background-color: #089181;
 }
